@@ -21,18 +21,18 @@ function calculate(){
 		$error = 1;
 	 }
 	 if($_POST['yourPoints'] == ''){
-                echo "<br>Enter your points.";
 		if($error != 1) echo "<br>";
+		echo "<br>Enter your points.";
 		$error = 1;
          }
 	 if($_POST['finalPoints'] == ''){
-                echo "<br>Enter the total worth of the final exam in points.";
 		if($error != 1)	echo "<br>";
+		echo "<br>Enter the total worth of the final exam in points.";
 		$error = 1;
          }
 	 if($_POST['desiredPercent'] == ''){
-                echo "<br>Enter the desired percentage grade in the class.";
 		if($error != 1)	echo "<br>";
+		echo "<br>Enter the desired percentage grade in the class.";
 		$error = 1;
          }
 
