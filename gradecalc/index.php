@@ -1,13 +1,9 @@
-<html>
-  <head>
-    <title>GradeCalc</title>
-  </head>
-  <body>
-    <h1>GradeCalc</h1>
-    <div id=frontPageText>
+<?PHP include("header.php"); ?>
+<?PHP include("sidebar.php"); ?>
+      <div id=frontPageText>
       <ul>
 	<li>Easily calculate the grades you need to ace your classes</li>
-	<li>Click here to see how!
+	<li><a href="help.php">Click here to see how!</a>
 	  <br>
 	  - or -
 	  <br>
@@ -15,5 +11,4 @@
 	</li>
       </ul>
     </div>
-  </body>
-</html>
+<?PHP include("footer.php"); ?>
