@@ -7,4 +7,4 @@
       <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
     </div>
-    <h1>GradeCalc</h1>
+    <div id=siteTitle><h1>GradeCalc</h1></div>
