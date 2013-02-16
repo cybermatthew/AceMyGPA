@@ -14,19 +14,36 @@
 
 <?php
 function calculate(){
-	 echo "<br>";
+	 $error = 0;
+
 	 if($_POST['totalPossible'] == ''){
 	 	echo "<br>Enter the total points possible.";
+		$error = 1;
 	 }
 	 if($_POST['yourPoints'] == ''){
                 echo "<br>Enter your points.";
+		if($error != 1) echo "<br>";
+		$error = 1;
          }
 	 if($_POST['finalPoints'] == ''){
                 echo "<br>Enter the total worth of the final exam in points.";
+		if($error != 1)	echo "<br>";
+		$error = 1;
          }
 	 if($_POST['desiredPercent'] == ''){
                 echo "<br>Enter the desired percentage grade in the class.";
+		if($error != 1)	echo "<br>";
+		$error = 1;
          }
+
+	 if($error == 1) return;
+
+	 $totalPossible = $_POST["totalPossible"];
+	 $yourPoints = $_POST["yourPoints"];
+	 $finalPoints = $_POST['finalPoints'];
+	 $desiredPercent = $_POST['desiredPercent'];
+
+	 echo $totalPossible;
 }
 
 function setForm(){
