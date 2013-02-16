@@ -3,7 +3,7 @@
 <?PHP include("calcLabels.php"); ?>
       <div id=pointPageText>
       	   <form action="pointcalc.php" method="post">
-	   	 Total Possible: <input type="text" name="totalPossible"><br>
+	   	  Total Possible: <input type="text" name="totalPossible"><br>
 	  	  Your Points: <input type="text" name="yourPoints"><br> 
 		  <hr>
 	   	  Final Exam Points: <input type="text" name="finalPoints"><br>
@@ -19,7 +19,17 @@
 
 <?php
 function calculate(){
+	 echo "<br>";
 	 if($_POST['totalPossible'] == ''){
-	 	echo 'Enter the total points possible.';
+	 	echo "<br>Enter the total points possible.";
 	 }
+	 if($_POST['yourPoints'] == ''){
+                echo "<br>Enter your points.";
+         }
+	 if($_POST['finalPoints'] == ''){
+                echo "<br>Enter the total worth of the final exam in points.";
+         }
+	 if($_POST['desiredPercent'] == ''){
+                echo "<br>Enter the desired percentage grade in the class.";
+         }
 }
