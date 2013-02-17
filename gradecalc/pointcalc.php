@@ -38,12 +38,14 @@ function calculate(){
 
 	 if($error == 1) return;
 
-	 $totalPossible = (int)$_POST["totalPossible"];
-	 $yourPoints = (int)$_POST["yourPoints"];
-	 $finalPoints = (int)$_POST['finalPoints'];
-	 $desiredPercent = (int)$_POST['desiredPercent'];
+	 $totalPossible = (double)$_POST["totalPossible"];
+	 $yourPoints = (double)$_POST["yourPoints"];
+	 $finalPoints = (double)$_POST['finalPoints'];
+	 $desiredPercent = (double)$_POST['desiredPercent'];
 
-	 echo (($desiredPercent/100)*($totalPossible+$finalPoints)-$yourPoints);
+	 $result = ($desiredPercent/100)*($totalPossible+$finalPoints)-$yourPoints;
+
+	 echo $result . " ~ " . ($result/$finalPoints*100) . "%";
 }
 
 function setForm(){
