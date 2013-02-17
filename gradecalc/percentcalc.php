@@ -2,7 +2,7 @@
 <?PHP include("sidebar.php"); ?>
 <?PHP include("calcLabels.php"); ?>
       <div id=pointPageText>
-      	   <form action="pointcalc.php" method="post">
+      	   <form action="percentcalc.php" method="post">
 	   	  <?php setForm(); ?>
 	   	  <input type="submit" value="Calculate!">
 	   </form>
@@ -16,41 +16,35 @@
 function calculate(){
 	 $error = 0;
 
-	 if($_POST['totalPossible'] == ''){
-	 	echo "<br><br>Enter the total points possible.";
+	 if($_POST['currentPercent'] == ''){
+	 	echo "<br><br>Enter your current percentage in the class.";
 		$error = 1;
 	 }
-	 if($_POST['yourPoints'] == ''){
+	 if($_POST['finalPercent'] == ''){
 		if($error != 1) echo "<br>";
-		echo "<br>Enter your points.";
-		$error = 1;
-         }
-	 if($_POST['finalPoints'] == ''){
-		if($error != 1)	echo "<br>";
-		echo "<br>Enter the total worth of the final exam in points.";
+		echo "<br>Enter the percentage weight of the final.";
 		$error = 1;
          }
 	 if($_POST['desiredPercent'] == ''){
 		if($error != 1)	echo "<br>";
-		echo "<br>Enter the desired percentage grade in the class.";
+		echo "<br>Enter your desired percent in class.";
 		$error = 1;
          }
 
 	 if($error == 1) return;
 
-	 $totalPossible = (double)$_POST["totalPossible"];
-	 $yourPoints = (double)$_POST["yourPoints"];
-	 $finalPoints = (double)$_POST['finalPoints'];
-	 $desiredPercent = (double)$_POST['desiredPercent'];
+	 $currentPercent = (double)$_POST["currentPercent"];
+	 $finalPercent = (double)$_POST["finalPercent"];
+	 $desiredPercent = (double)$_POST["desiredPercent"];
 
-	 $result = ($desiredPercent/100)*($totalPossible+$finalPoints)-$yourPoints;
+	 $result = ((($currentPercent/100)*(100-$finalPercent))-$desiredPercent)/(-$finalPercent);
 
-	 echo $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
+	 echo ($result*100) . "%";
 }
 
 function setForm(){
 	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br>';
-	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['fnalPercent'].'" name="finalPercent">%<br>';
+	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['finalPercent'].'" name="finalPercent">%<br>';
 	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br>';
 	 echo '<hr>';
 }
