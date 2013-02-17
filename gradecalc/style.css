@@ -13,3 +13,11 @@ body{
     background-repeat: no-repeat;
 }
 
+#frontPageText{
+    list-style-image: url("images/arrow.png");
+    margin-left: 25%;
+    font-size:150%;
+    margin-right: 15%;
+    border-style:solid;
+    border-width: 10px;
+}

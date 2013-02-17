@@ -3,6 +3,7 @@
       <div id=frontPageText>
       <ul>
 	<li>Easily calculate the grades you need to ace your classes</li>
+	<br>
 	<li><a href="help.php">Click here to see how!</a>
 	  <br>
 	  - or -
