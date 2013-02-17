@@ -45,7 +45,8 @@ function calculate(){
 
 	 $result = ($desiredPercent/100)*($totalPossible+$finalPoints)-$yourPoints;
 
-	 echo $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
+	 if($result <= 0) echo "You got this nomatter what!";
+	 else echo $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
 }
 
 function setForm(){
