@@ -1,4 +1,4 @@
-<?PHP include("header.php"); ?>
+<?PHP include("homeHeader.php"); ?>
 <?PHP include("sidebar.php"); ?>
       <div id=frontPageText>
       <ul>

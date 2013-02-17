@@ -6,9 +6,10 @@ body{
 }
 
 #topPane{
-    border-style:solid;
-    border-width: 10px;
+//    border-style:solid;
+//    border-width: 10px;
     background-image: url("images/BinderTop.png");
     background-position:center top;
     background-repeat: no-repeat;
 }
+
