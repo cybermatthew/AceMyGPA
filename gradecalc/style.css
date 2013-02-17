@@ -5,19 +5,23 @@ body{
     background-position:center top;
 }
 
-#topPane{
-//    border-style:solid;
-//    border-width: 10px;
-    background-image: url("images/BinderTop.png");
-    background-position:center top;
-    background-repeat: no-repeat;
+#wrap{
+    width: 440px;
+    margin: 0 auto;
+    border:none;
 }
 
 #frontPageText{
     list-style-image: url("images/arrow.png");
-    margin-left: 25%;
-    font-size:150%;
-    margin-right: 15%;
-    border-style:solid;
-    border-width: 10px;
+    text-align:left;
+    margin-left: 40px;
+    font-size:25px;
+}
+
+#footer{
+    position:absolute;
+    bottom:0;
+    margin-bottom:13px;
+    text-align: center;
+    width:530px;
 }
