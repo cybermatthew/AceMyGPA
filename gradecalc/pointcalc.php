@@ -17,7 +17,7 @@ function calculate(){
 	 $error = 0;
 
 	 if($_POST['totalPossible'] == ''){
-	 	echo "<br>Enter the total points possible.";
+	 	echo "<br><br>Enter the total points possible.";
 		$error = 1;
 	 }
 	 if($_POST['yourPoints'] == ''){
@@ -38,12 +38,12 @@ function calculate(){
 
 	 if($error == 1) return;
 
-	 $totalPossible = $_POST["totalPossible"];
-	 $yourPoints = $_POST["yourPoints"];
-	 $finalPoints = $_POST['finalPoints'];
-	 $desiredPercent = $_POST['desiredPercent'];
+	 $totalPossible = (int)$_POST["totalPossible"];
+	 $yourPoints = (int)$_POST["yourPoints"];
+	 $finalPoints = (int)$_POST['finalPoints'];
+	 $desiredPercent = (int)$_POST['desiredPercent'];
 
-	 echo $totalPossible;
+	 echo (($desiredPercent/100)*($totalPossible+$finalPoints)-$yourPoints);
 }
 
 function setForm(){
@@ -51,7 +51,7 @@ function setForm(){
 	 echo 'Your Points: <input type="text" value="'.$_POST['yourPoints'].'" name="yourPoints"><br>';
 	 echo '<hr>';
 	 echo 'Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br>';
-	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent"><br>';
+	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br>';
 	 echo '<hr>';
 }
 
