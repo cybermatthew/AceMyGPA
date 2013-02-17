@@ -6,8 +6,8 @@
 	   	  <?php setForm(); ?>
 	   	  <input type="submit" value="Calculate!">
 	   </form>
-	   <p>Necessary Grade on Final<br>
-	   	Points: <?php calculate(); ?>
+	   <p>
+		Necessary Percent on Final: <?php calculate(); ?>
 	  </p>
       </div>
 <?PHP include("footer.php"); ?>
@@ -49,10 +49,8 @@ function calculate(){
 }
 
 function setForm(){
-	 echo 'Total Possible: <input type="text" value="'.$_POST['totalPossible'].'" name="totalPossible"><br>';
-	 echo 'Your Points: <input type="text" value="'.$_POST['yourPoints'].'" name="yourPoints"><br>';
-	 echo '<hr>';
-	 echo 'Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br>';
+	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br>';
+	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['fnalPercent'].'" name="finalPercent">%<br>';
 	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br>';
 	 echo '<hr>';
 }

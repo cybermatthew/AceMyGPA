@@ -1,4 +1,4 @@
 <div id=calcLabels>
+     <a href="percentcalc.php">Percent</a>
      <a href="pointcalc.php">Points</a>
-     <a href="bincalc.php">Bins</a>
 </div>
