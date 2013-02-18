@@ -1,13 +1,18 @@
 body{
+    text-align: center;
     background-image: url("images/Binder3.png");
     background-repeat: repeat-y;
     background-color: #4a170b;
     background-position:center top;
+
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 #wrap{
     width: 440px;
-    margin: 0 auto;
+    margin: auto;
     border:none;
 }
 
@@ -19,9 +24,9 @@ body{
 }
 
 #footer{
-    position:absolute;
+    position: absolute;
     bottom:0;
     margin-bottom:13px;
-    text-align: center;
     width:530px;
+    border: solid;
 }
