@@ -1,7 +1,6 @@
 <?PHP include("header.php"); ?>
-<?PHP include("sidebar.php"); ?>
-      <div id=frontPageText>
-      <ul>
+      <div id=frontPageText> 
+      <ul> 
 	<li>Easily calculate the grades you need to ace your classes</li>
 	<br>
 	<li><a href="help.php">Click here to see how!</a>

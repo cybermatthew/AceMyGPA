@@ -4,7 +4,7 @@ body{
     background-repeat: repeat-y;
     background-color: #4a170b;
     background-position:center top;
-
+  
     overflow: auto;
     overflow-x: auto;
     overflow-y: auto;
@@ -28,5 +28,36 @@ body{
     bottom:0;
     margin-bottom:13px;
     width:530px;
-    border: solid;
+}
+
+#topbar{
+    width: 630px;
+    margin-top:-10px;
+    background: url("images/topbar.png");
+    background-repeat: no-repeat;
+    margin-left:auto;
+    margin-right:auto;
+    height: 90px;
+}
+
+#topbar a, #topbar a:link, #topbar a:visited{
+    color:black;
+    text-decoration:none;
+}
+
+a.button, a.button:link, a.button:visited{
+    background-repeat:no-repeat;
+    display:inline;
+    float: left;
+    height:60px;
+    width:140px;
+    font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
+    background-image:url("images/ClosedTab.png");
+    text-align:center;
+    padding-top:18px;
+}
+
+#indexButton{
+    margin-left:90px;
+    padding-top:40x;
 }
