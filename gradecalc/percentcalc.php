@@ -15,6 +15,8 @@
 function calculate(){
 	 $error = 0;
 
+	 echo "<div id=errors>";
+
 	 if($_POST['currentPercent'] == ''){
 		echo "<div id=currentPercent>Enter your current percentage in the class.</div>";
 		$error = 1;
@@ -33,6 +35,8 @@ function calculate(){
          }else{
 		echo "<div id=invisibleDesiredPercent></div>";
 	}
+
+	echo "</div>";
 
 	 if($error == 1) return;
 

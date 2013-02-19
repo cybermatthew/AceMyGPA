@@ -15,6 +15,8 @@
 function calculate(){
 	 $error = 0;
 
+	 echo "<div id=errors>";
+
 	 if($_POST['totalPossible'] == ''){
 	 	echo "<div id=totalPossible>Enter the total points possible.</div>";
 		$error = 1;
@@ -39,6 +41,8 @@ function calculate(){
          }else{
                 echo "<div id=invisibleDesiredPts></div>";
          }
+
+	 echo "</div>";
 
 	 if($error == 1) return;
 
