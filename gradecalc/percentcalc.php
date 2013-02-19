@@ -41,10 +41,13 @@ function calculate(){
 	 $desiredPercent = (double)$_POST["desiredPercent"];
 
 	 $result = (-(($currentPercent/100)*(100-$finalPercent))+$desiredPercent)/($finalPercent);
+
 	 echo "<div id=percentMessage>";
+
 	 if($result <= 0) echo "You got this nomatter what!";
 	 else if($result >1) echo "Not a chance! ~ ".($result*100)."%";
 	 else echo ($result*100) . "%";
+
 	 echo "</div>";
 }
 

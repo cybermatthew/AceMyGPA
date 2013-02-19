@@ -100,8 +100,15 @@ a.button, a.button:link, a.button:visited{
     margin-left: 25px;
     text-align: left;
     z-index:1;
-    height: 285px;
+    height: 330px;
 }
+
+/*
+#errors{
+    z-index:2;
+    color:#e51c1c;
+}*/
+
 
 #currentPercent{
     z-index:2;
@@ -163,4 +170,69 @@ a.button, a.button:link, a.button:visited{
 hr{
     height:2px;
     background-color:black;
+}
+
+#totalPossible{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:-295px;
+    margin-left:75px;
+}
+
+#yourPoints{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:35px;
+    margin-left:75px;
+}
+
+#finalPoints{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:43px;
+    margin-left:75px;
+}
+
+#desiredPts{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:40px;
+    margin-left:75px;
+}
+
+#invisibleTotalPossible{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:-295px;
+    margin-left:75px;
+    height: 18px;
+}
+
+#invisibleYourPoints{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:35px;
+    margin-left:75px;
+    height: 18px;
+}
+
+#invisibleFinalPoints{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:43px;
+    margin-left:75px;
+    height: 18px;
+}
+
+#invisibleDesiredPts{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:40px;
+    margin-left:75px;
+    height: 18px;
+}
+
+#pointMessage{
+    margin-top:72px;
+    margin-left:50px;
 }
