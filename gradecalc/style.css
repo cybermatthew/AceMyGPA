@@ -67,7 +67,7 @@ a.button, a.button:link, a.button:visited{
     padding-top: 15px;
 }
 
-a.button:hover{
+#topbar a.button:hover{
     background-image:url("images/buttonFilled.png");
     color:white;
     text-decoration:none;
