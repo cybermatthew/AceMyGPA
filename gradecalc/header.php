@@ -11,6 +11,7 @@
       <?PHP include("topbar.php"); ?>
       <div id=topPane>
 	<a href="about.html">About</a>
+	 | 
 	<a href="faq.html">FAQ</a>
       </div>
       
