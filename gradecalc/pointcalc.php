@@ -16,23 +16,28 @@ function calculate(){
 	 $error = 0;
 
 	 if($_POST['totalPossible'] == ''){
-	 	echo "<br><br>Enter the total points possible.";
+	 	echo "<div id=totalPossible>Enter the total points possible.</div>";
 		$error = 1;
-	 }
+	 }else{
+                echo "<div id=invisibleTotalPossible></div>";
+         }
 	 if($_POST['yourPoints'] == ''){
-		if($error != 1) echo "<br>";
-		echo "<br>Enter your points.";
+		echo "<div id=yourPoints>Enter your points.</div>";
 		$error = 1;
+         }else{
+                echo "<div id=invisibleYourPoints></div>";
          }
 	 if($_POST['finalPoints'] == ''){
-		if($error != 1)	echo "<br>";
-		echo "<br>Enter the total worth of the final exam in points.";
+		echo "<div id=finalPoints>Enter the total worth of the final exam in points.</div>";
 		$error = 1;
+         }else{
+                echo "<div id=invisibleFinalPoints></div>";
          }
 	 if($_POST['desiredPercent'] == ''){
-		if($error != 1)	echo "<br>";
-		echo "<br>Enter the desired percentage grade in the class.";
+		echo "<div=desiredPts>Enter the desired percentage grade in the class.</div>";
 		$error = 1;
+         }else{
+                echo "<div id=invisibleDesiredPts></div>";
          }
 
 	 if($error == 1) return;
@@ -49,11 +54,11 @@ function calculate(){
 }
 
 function setForm(){
-	 echo 'Total Possible: <input type="text" value="'.$_POST['totalPossible'].'" name="totalPossible"><br>';
-	 echo 'Your Points: <input type="text" value="'.$_POST['yourPoints'].'" name="yourPoints"><br>';
+	 echo 'Total Possible: <input type="text" value="'.$_POST['totalPossible'].'" name="totalPossible"><br><br><br>';
+	 echo 'Your Points: <input type="text" value="'.$_POST['yourPoints'].'" name="yourPoints"><br><br><br>';
 	 echo '<hr>';
-	 echo 'Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br>';
-	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br>';
+	 echo 'Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br><br><br>';
+	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br><br>';
 	 echo '<hr>';
 }
 
