@@ -53,6 +53,7 @@ a.button, a.button:link, a.button:visited{
     float: left;
     height:60px;
     width:135px;
+    color: black;
     font:normal normal 30px Calibri,Tahoma,Verdana,sans-serif;
     background-image:url("images/button.png");
     text-align:center;
@@ -62,6 +63,6 @@ a.button, a.button:link, a.button:visited{
 }
 
 a.button:hover{
-
-
+    background-image:url("images/buttonFilled.png");
+    text-decoration:none;
 }
