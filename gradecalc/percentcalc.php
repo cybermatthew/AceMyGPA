@@ -41,16 +41,17 @@ function calculate(){
 	 $desiredPercent = (double)$_POST["desiredPercent"];
 
 	 $result = (-(($currentPercent/100)*(100-$finalPercent))+$desiredPercent)/($finalPercent);
-
+	 echo "<div id=percentMessage>";
 	 if($result <= 0) echo "You got this nomatter what!";
 	 else if($result >1) echo "Not a chance! ~ ".($result*100)."%";
 	 else echo ($result*100) . "%";
+	 echo "</div>";
 }
 
 function setForm(){
-	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br>';
-	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['finalPercent'].'" name="finalPercent">%<br>';
-	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br>';
+	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br><br><br>';
+	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['finalPercent'].'" name="finalPercent">%<br><br><br>';
+	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br><br>';
 	 echo '<hr>';
 }
 

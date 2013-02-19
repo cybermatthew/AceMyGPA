@@ -96,52 +96,51 @@ a.button, a.button:link, a.button:visited{
 }
 
 #calcPageText{
-    border:solid;
     margin-top:60px;
-    margin-left: 5px;
+    margin-left: 25px;
     text-align: left;
     z-index:1;
-    height: 250px;
+    height: 225px;
 }
 
 #currentPercent{
     z-index:2;
     color:#e51c1c;
-    margin-top:-160px;
-    margin-left: 250px;
+    margin-top:-240px;
+    margin-left: 75px;
     width: 290px;
 }
 
 #finalPercent{
     z-index:2;
     color:#e51c1c;
-    margin-top:5px;
-    margin-left:275px;
+    margin-top:43px;
+    margin-left:75px;
     width: 270px;
 }
 
 #desiredPercent{
     z-index:2;
     color:#e51c1c;
-    margin-top:7px;
-    margin-left:305px;
+    margin-top:43px;
+    margin-left:75px;
     width: 270px;
 }
 
 #invisibleCurrentPercent{
     z-index:2;
     color:#e51c1c;
-    margin-top:-160px;
-    margin-left: 250px;
+    margin-top:-240px;
+    margin-left: 75px;
     width: 290px;
-    height:18px;
+    height: 18px;
 }
 
 #invisibleFinalPercent{
     z-index:2;
     color:#e51c1c;
-    margin-top:5px;
-    margin-left:275px;
+    margin-top:43px;
+    margin-left:75px;
     width: 270px;
     height: 18px;
 }
@@ -149,10 +148,16 @@ a.button, a.button:link, a.button:visited{
 #invisibleDesiredPercent{
     z-index:2;
     color:#e51c1c;
-    margin-top:7px;
-    margin-left:305px;
+    margin-top:43px;
+    margin-left:75px;
     width: 270px;
     height: 18px;
+}
+
+
+#percentMessage{
+    margin-top:60px;
+    margin-left:185px;
 }
 
 hr{
