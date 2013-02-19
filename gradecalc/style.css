@@ -90,7 +90,6 @@ a.button, a.button:link, a.button:visited{
 
 #percentLabel, #pointLabel{
     float:left;
-//    border:solid;
     margin-left:35px;
     width: 90px;
     margin-top:-15px;
@@ -99,8 +98,61 @@ a.button, a.button:link, a.button:visited{
 #calcPageText{
     border:solid;
     margin-top:60px;
-    margin-left: 25px;
+    margin-left: 5px;
     text-align: left;
+    z-index:1;
+    height: 250px;
+}
+
+#currentPercent{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:-160px;
+    margin-left: 250px;
+    width: 290px;
+}
+
+#finalPercent{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:5px;
+    margin-left:275px;
+    width: 270px;
+}
+
+#desiredPercent{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:7px;
+    margin-left:305px;
+    width: 270px;
+}
+
+#invisibleCurrentPercent{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:-160px;
+    margin-left: 250px;
+    width: 290px;
+    height:18px;
+}
+
+#invisibleFinalPercent{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:5px;
+    margin-left:275px;
+    width: 270px;
+    height: 18px;
+}
+
+#invisibleDesiredPercent{
+    z-index:2;
+    color:#e51c1c;
+    margin-top:7px;
+    margin-left:305px;
+    width: 270px;
+    height: 18px;
 }
 
 hr{

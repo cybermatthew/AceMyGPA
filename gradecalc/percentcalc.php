@@ -16,19 +16,23 @@ function calculate(){
 	 $error = 0;
 
 	 if($_POST['currentPercent'] == ''){
-	 	echo "<br><br>Enter your current percentage in the class.";
+		echo "<div id=currentPercent>Enter your current percentage in the class.</div>";
 		$error = 1;
+	 }else{
+		echo "<div id=invisibleCurrentPercent></div>";
 	 }
 	 if($_POST['finalPercent'] == ''){
-		if($error != 1) echo "<br>";
-		echo "<br>Enter the percentage weight of the final.";
+		echo "<div id=finalPercent>Enter the percentage weight of the final.</div>";
 		$error = 1;
-         }
+         }else{
+		echo "<div id=invisibleFinalPercent></div>";
+	}
 	 if($_POST['desiredPercent'] == ''){
-		if($error != 1)	echo "<br>";
-		echo "<br>Enter your desired percent in class.";
+		echo "<div id=desiredPercent>Enter your desired percent in class.</div>";
 		$error = 1;
-         }
+         }else{
+		echo "<div id=invisibleDesiredPercent></div>";
+	}
 
 	 if($error == 1) return;
 
