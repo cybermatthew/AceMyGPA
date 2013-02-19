@@ -1,6 +1,6 @@
 <?PHP include("header.php"); ?>
-<?PHP include("calcLabels.php"); ?>
-      <div id=pointPageText>
+<?PHP include("percentCalcLabels.php"); ?>
+      <div id=calcPageText>
       	   <form action="percentcalc.php" method="post">
 	   	  <?php setForm(); ?>
 	   	  <input type="submit" value="Calculate!">

@@ -32,15 +32,6 @@ body{
     margin-bottom:13px;
     width:530px;
 }
-/*
-#topbar{
-    width: 628px;
-    margin-left:auto;
-    margin-right:auto;
-    height: 90px;
-    margin-top: -10px;
-}
-*/
 
 #topbar a, #topbar a:link, #topbar a:visited{
     color:black;
@@ -88,4 +79,25 @@ a.button, a.button:link, a.button:visited{
 
 #topPane a:hover{
     text-decoration: underline;
+}
+
+#calcLabels{
+    text-align:left;
+    margin-top:27px;
+    margin-left:25px;
+    font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
+}
+
+#percentLabel, #pointLabel{
+    float:left;
+    border:solid;
+    margin-left:35px;
+    width: 90px;
+    margin-top:-10px;
+}
+
+#calcPageText{
+
+
+
 }
