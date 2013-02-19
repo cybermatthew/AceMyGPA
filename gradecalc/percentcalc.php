@@ -1,5 +1,4 @@
 <?PHP include("header.php"); ?>
-<?PHP include("sidebar.php"); ?>
 <?PHP include("calcLabels.php"); ?>
       <div id=pointPageText>
       	   <form action="percentcalc.php" method="post">
