@@ -104,11 +104,14 @@ a.button, a.button:link, a.button:visited{
 }
 
 
-#errors{
+#errors{]
     z-index:2;
     color:#e51c1c;
 }
 
+/*
+  Percent error formatting.
+*/
 
 #currentPercent{
     margin-top:-240px;
@@ -160,6 +163,10 @@ hr{
     background-color:black;
 }
 
+/*
+  Points error formatting
+*/
+
 #totalPossible{
     margin-top:-295px;
     margin-left:75px;
@@ -205,6 +212,6 @@ hr{
 }
 
 #pointMessage{
-    margin-top:72px;
+    margin-top:71px;
     margin-left:50px;
 }

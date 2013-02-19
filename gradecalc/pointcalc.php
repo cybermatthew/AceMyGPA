@@ -56,6 +56,7 @@ function calculate(){
 	 echo "<div id=pointMessage>";
 
 	 if($result <= 0) echo "You got this nomatter what!";
+	 else if($result > $finalPoints) echo "Not a chance! ~ " . $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
 	 else echo $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
 	 
 	 echo "</div>";
