@@ -18,13 +18,13 @@ function calculate(){
 	 echo "<div id=errors>";
 
 	 if($_POST['totalPossible'] == ''){
-	 	echo "<div id=totalPossible>Enter the total points possible.</div>";
+	 	echo "<div id=totalPossible>Enter the total points possible before the final.</div>";
 		$error = 1;
 	 }else{
                 echo "<div id=invisibleTotalPossible></div>";
          }
 	 if($_POST['yourPoints'] == ''){
-		echo "<div id=yourPoints>Enter your points.</div>";
+		echo "<div id=yourPoints>Enter your points before the final.</div>";
 		$error = 1;
          }else{
                 echo "<div id=invisibleYourPoints></div>";
