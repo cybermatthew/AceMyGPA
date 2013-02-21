@@ -91,7 +91,7 @@ a.button, a.button:link, a.button:visited{
 #percentLabel, #pointLabel{
     float:left;
     margin-left:35px;
-    width: 90px;
+    width: 100px;
     margin-top:-15px;
 }
 
@@ -104,9 +104,10 @@ a.button, a.button:link, a.button:visited{
 }
 
 
-#errors{]
+#errors{
     z-index:2;
     color:#e51c1c;
+    position:absolute;
 }
 
 /*
