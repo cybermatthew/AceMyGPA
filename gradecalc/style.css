@@ -11,12 +11,11 @@ body{
 }
 
 #wrap{
-    border: solid;
     width: 500px;
     margin: auto;
     border:none;
     padding-top:20px;
-    padding-left: 50px;
+    padding-left: 75px;
 }
 
 #frontPageText{
