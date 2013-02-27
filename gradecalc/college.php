@@ -77,32 +77,32 @@
                 <div id=sideLabels>
                         <td>C+</td>
                 </div>
-                        <td><input type="text" name="Cp1" size="10"></td>
-                        <td><input type="text" name="Cp2" size="10"></td>
-                        <td><input type="text" name="Cp3" size="10"></td>
-                        <td><input type="text" name="Cp4" size="10"></td>
-                        <td><input type="text" name="Cp5" size="10"></td>
+                        <?php echo '<td><input type="text" name="Cp1" value="'.$_POST['Cp1'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cp2" value="'.$_POST['Cp2'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cp3" value="'.$_POST['Cp3'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cp4" value="'.$_POST['Cp4'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cp5" value="'.$_POST['Cp5'].'" size="10"></td>'; ?>
                 </tr>
 
 		<tr>  
 		<div id=sideLabels>  
                         <td>C</td>			
 		</div>
-			<td><input type="text" name="C1" size="10"></td>
-			<td><input type="text" name="C2" size="10"></td>
-			<td><input type="text" name="C3" size="10"></td>
-			<td><input type="text" name="C4" size="10"></td>
-			<td><input type="text" name="C5" size="10"></td>
+			<?php echo '<td><input type="text" name="C1" value="'.$_POST['C1'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="C2" value="'.$_POST['C2'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="C3" value="'.$_POST['C3'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="C4" value="'.$_POST['C4'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="C5" value="'.$_POST['C5'].'" size="10"></td>'; ?>
                 </tr>
                 <tr>
                 <div id=sideLabels>
                         <td>C-</td>
                 </div>
-                        <td><input type="text" name="Cm1" size="10"></td>
-                        <td><input type="text" name="Cm2" size="10"></td>
-                        <td><input type="text" name="Cm3" size="10"></td>
-                        <td><input type="text" name="Cm4" size="10"></td>
-                        <td><input type="text" name="Cm5" size="10"></td>
+                        <?php echo '<td><input type="text" name="Cm1" value="'.$_POST['Cm1'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cm2" value="'.$_POST['Cm2'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cm3" value="'.$_POST['Cm3'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cm4" value="'.$_POST['Cm4'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cm5" value="'.$_POST['Cm5'].'" size="10"></td>'; ?>
                 </tr>
 
                 <tr>
