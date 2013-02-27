@@ -109,31 +109,31 @@
                 <div id=sideLabels>
                         <td>D+</td>
                 </div>
-                        <td><input type="text" name="Dp1" size="10"></td>
-                        <td><input type="text" name="Dp2" size="10"></td>
-	     		<td><input type="text" name="Dp3" size="10"></td>
-                        <td><input type="text" name="Dp4" size="10"></td>
-                        <td><input type="text" name="Dp5" size="10"></td>
+                        <?php echo '<td><input type="text" name="Dp1" value="'.$_POST['Dp1'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dp2" value="'.$_POST['Dp2'].'" size="10"></td>'; ?>
+	     		<?php echo '<td><input type="text" name="Dp3" value="'.$_POST['Dp3'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dp4" value="'.$_POST['Dp4'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dp5" value="'.$_POST['Dp5'].'" size="10"></td>'; ?>
 		</tr>
 		<tr>  
 		<div id=sideLabels>  
                         <td>D</td>
 		</div>
-			<td><input type="text" name="D1" size="10"></td>
-			<td><input type="text" name="D2" size="10"></td>
-			<td><input type="text" name="D3" size="10"></td>
-			<td><input type="text" name="D4" size="10"></td>
-			<td><input type="text" name="D5" size="10"></td>
+			<?php echo '<td><input type="text" name="D1" value="'.$_POST['D1'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="D2" value="'.$_POST['D2'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="D3" value="'.$_POST['D3'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="D4" value="'.$_POST['D4'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="D5" value="'.$_POST['D5'].'" size="10"></td>'; ?>
                 </tr>
                 <tr>
                 <div id=sideLabels>
                         <td>D-</td>
                 </div>
-                        <td><input type="text" name="Dm1" size="10"></td>
-                        <td><input type="text" name="Dm2" size="10"></td>
-			<td><input type="text" name="Dm3" size="10"></td>
-   		        <td><input type="text" name="Dm4" size="10"></td>
-                        <td><input type="text" name="Dm5" size="10"></td>
+                        <?php echo '<td><input type="text" name="Dm1" value="'.$_POST['Dm1'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dm2" value="'.$_POST['Dm2'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="Dm3" value="'.$_POST['Dm3'].'" size="10"></td>'; ?>
+   		        <?php echo '<td><input type="text" name="Dm4" value="'.$_POST['Dm4'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dm5" value="'.$_POST['Dm5'].'" size="10"></td>'; ?>
                 </tr>
 
 
@@ -141,11 +141,11 @@
 		<div id=sideLabels>
                         <td>F</td>
 		</Div>
-			<td><input type="text" name="F1" size="10"></td>
-			<td><input type="text" name="F2" size="10"></td>
-			<td><input type="text" name="F3" size="10"></td>
-			<td><input type="text" name="F4" size="10"></td>
-			<td><input type="text" name="F5" size="10"></td>
+			<?php echo '<td><input type="text" name="F1" value="'.$_POST['F1'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="F2" value="'.$_POST['F2'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="F3" value="'.$_POST['F3'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="F4" value="'.$_POST['F4'].'" size="10"></td>'; ?>
+			<?php echo '<td><input type="text" name="F5" value="'.$_POST['F5'].'" size="10"></td>'; ?>
                 </tr>
 	   </table>
 	   <input type="submit" value="Calculate!">
