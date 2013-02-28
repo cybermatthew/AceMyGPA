@@ -182,11 +182,11 @@
 <?php
 
 function calculate(){
- $Apval=4.3;  $Aval=4.0;  $Amval=3.7;
- $Bpval=3.3;  $Bval=3.0;  $Bmval=2.7;
- $Cpval=2.3;  $Cval=2.0;  $Cmval=1.7;
- $Dpval=1.3;  $Dval=1.0;  $Dmval=0.7;
- $Fval = 0.0;
+ $Apval=getVal('Apval');  $Aval=getVal('Aval');  $Amval=getVal('Amval');
+ $Bpval=getVal('Bpval');  $Bval=getVal('Bval');  $Bmval=getVal('Bmval');
+ $Cpval=getVal('Cpval');  $Cval=getVal('Cpval');  $Cmval=getVal('Cmval');
+ $Dpval=getVal('Dpval');  $Dval=getVal('Dval');  $Dmval=getVal('Dmval');
+ $Fval=getVal('Fpval');
 
  $Ap1=0;  $Ap2=0;  $Ap3=0;  $Ap4=0;  $Ap5=0;
  $A1=0;  $A2=0;  $A3=0;  $A4=0;  $A5=0;
