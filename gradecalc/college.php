@@ -1,27 +1,6 @@
 <?PHP include("header.php"); ?>
       <div id=collegeForm>
       <form method="post" action="college.php">
-      	   <table border="1">
-	   <tr>
-		<td>A+<?php echo '<input type="text" name="Apval" value="'.getVal('Apval').'" size="10">'; ?></td>
-		<td>A<?php echo '<input type="text" name="Aval" value="'.getVal('Aval').'" size="10">'; ?></td>
-                <td>A-<?php echo '<input type="text" name="Amval" value="'.getVal('Amval').'" size="10">'; ?></td>
-	</tr><tr>
-                <td>B+<?php echo '<input type="text" name="Bpval" value="'.getVal('Bpval').'" size="10">'; ?></td>
-                <td>B<?php echo '<input type="text" name="Bval" value="'.getVal('Bval').'" size="10">'; ?></td>
-                <td>B-<?php echo '<input type="text" name="Bmval" value="'.getVal('Bmval').'" size="10">'; ?></td>
-	</tr><tr>
-                <td>C+<?php echo '<input type="text" name="Cpval" value="'.getVal('Cpval').'" size="10">'; ?></td>
-                <td>C<?php echo '<input type="text" name="Cval" value="'.getVal('Cval').'" size="10">'; ?></td>
-                <td>C-<?php echo '<input type="text" name="Cmval" value="'.getVal('Cmval').'" size="10">'; ?></td>
-	</tr><tr>
-                <td>D+<?php echo '<input type="text" name="Dpval" value="'.getVal('Dpval').'" size="10">'; ?></td>
-                <td>D<?php echo '<input type="text" name="Dval" value="'.getVal('Dval').'" size="10">'; ?></td>
-                <td>D-<?php echo '<input type="text" name="Dmval" value="'.getVal('Dmval').'" size="10">'; ?></td>
-	</tr><tr><td></td>
-		<td>F<?php echo '<input type="text" name="Fval" value="'.getVal('Fval').'" size="10">'; ?></td><td></td>
-	</tr>
-	   </table>
       	   <br><h1><b>College Grade Calculator</b></h1>
       	   <table border="1">
 		<tr>
@@ -170,12 +149,38 @@
 			<?php echo '<td><input type="text" name="F5" value="'.$_POST['F5'].'" size="10"></td>'; ?>
                 </tr>
 	   </table>
-	   <input type="submit" value="Calculate!">
-	   </form>
+	   <input type="submit" value="Calculate!"><br>
 
-	   <div id=result>
-	   GPA: <?php calculate() ?>
-	   </div>
+
+           <div id=result>
+	              GPA: <?php calculate() ?>
+           </div>
+	   <hr>
+
+           <h4>GPA Grade Weights</h4>
+           <table border="1">
+           <tr>
+                <td>A+<?php echo '<input type="text" name="Apval" value="'.getVal('Apval').'" size="10">'; ?></td>
+                <td>A<?php echo '<input type="text" name="Aval" value="'.getVal('Aval').'" size="10">'; ?></td>
+                <td>A-<?php echo '<input type="text" name="Amval" value="'.getVal('Amval').'" size="10">'; ?></td>
+        </tr><tr>
+                <td>B+<?php echo '<input type="text" name="Bpval" value="'.getVal('Bpval').'" size="10">'; ?></td>
+                <td>B<?php echo '<input type="text" name="Bval" value="'.getVal('Bval').'" size="10">'; ?></td>
+                <td>B-<?php echo '<input type="text" name="Bmval" value="'.getVal('Bmval').'" size="10">'; ?></td>
+        </tr><tr>
+                <td>C+<?php echo '<input type="text" name="Cpval" value="'.getVal('Cpval').'" size="10">'; ?></td>
+                <td>C<?php echo '<input type="text" name="Cval" value="'.getVal('Cval').'" size="10">'; ?></td>
+                <td>C-<?php echo '<input type="text" name="Cmval" value="'.getVal('Cmval').'" size="10">'; ?></td>
+        </tr><tr>
+                <td>D+<?php echo '<input type="text" name="Dpval" value="'.getVal('Dpval').'" size="10">'; ?></td>
+                <td>D<?php echo '<input type="text" name="Dval" value="'.getVal('Dval').'" size="10">'; ?></td>
+                <td>D-<?php echo '<input type="text" name="Dmval" value="'.getVal('Dmval').'" size="10">'; ?></td>
+        </tr><tr><td></td>
+                <td>F<?php echo '<input type="text" name="Fval" value="'.getVal('Fval').'" size="10">'; ?></td><td></td>
+        </tr>
+           </table>
+
+	   </form>
      </div>
 <?PHP include("footer.php"); ?>
 
