@@ -192,9 +192,9 @@
 function calculate(){
  $Apval=getVal('Apval');  $Aval=getVal('Aval');  $Amval=getVal('Amval');
  $Bpval=getVal('Bpval');  $Bval=getVal('Bval');  $Bmval=getVal('Bmval');
- $Cpval=getVal('Cpval');  $Cval=getVal('Cpval');  $Cmval=getVal('Cmval');
+ $Cpval=getVal('Cpval');  $Cval=getVal('Cval');  $Cmval=getVal('Cmval');
  $Dpval=getVal('Dpval');  $Dval=getVal('Dval');  $Dmval=getVal('Dmval');
- $Fval=getVal('Fpval');
+ $Fval=getVal('Fval');
 
  $Ap1=0;  $Ap2=0;  $Ap3=0;  $Ap4=0;  $Ap5=0;
  $A1=0;  $A2=0;  $A3=0;  $A4=0;  $A5=0;
@@ -264,7 +264,7 @@ function getVal($type){
 
 
          if($type == 'Cpval')
-                  if($_POST['C[val'] == '') return 2.3;
+                  if($_POST['Cpval'] == '') return 2.3;
                   else return $_POST['Cpval'];
          if($type == 'Cval')
                   if($_POST['Cval'] == '') return 2.0;

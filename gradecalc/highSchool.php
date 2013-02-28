@@ -2,17 +2,15 @@
 <?PHP include("highSchoolCalcLabels.php"); ?>
       <div id=highSchoolForm>
       <form method="post" action="highSchool.php">
-      	   <br><h1><b>College Grade Calculator</b></h1>
+      	   <br><h1><b>High School Grade Calculator</b></h1>
 	   <p>Calculate your high school GPA by entering the number of clases you received a certain grade in and the number of units they were worth.  Then click enter or the Calculate! button and it will display your GPA.</p>
       	   <table border="1">
 		<tr>
-		<div id=topLabels>
+		<div id=hsCalcTopLabels>
 			<td></td>
-			<td>1 Unit</td>
-			<td>2 Units</td>
-			<td>3 Units</td>
-			<td>4 Units</td>
-			<td>5 Units</td>
+			<td align="center">Regular</td>
+			<td align="center">Honors</td>
+			<td align="center">AP</td>
 		</div>
 		</tr>
 		<tr>
@@ -157,6 +155,7 @@
         </tr>
            </table>
 
+	   <br><input type="checkbox" name="honorsBump" value="honorsBump" checked>Extra point for honors classes?<br>
 	   </form>
      </div>
 <?PHP include("footer.php"); ?>
@@ -200,21 +199,68 @@ function calculate(){
 	echo $GPA;
 }
 
-function setVariables($Ap1,$Ap2,$Ap3,$Ap4,$Ap5,$A1,$A2,$A3,$A4,$A5,$Am1,$Am2,$Am3,$Am4,$Am5,$Bp1,$Bp2,$Bp3,$Bp4,$Bp5,$B1,$B2,$B3,$B4,$B5,$Bm1,$Bm2,$Bm3,$Bm4,$Bm5,$Cp1,$Cp2,$Cp3,$Cp4,$Cp5,$C1,$C2,$C3,$C4,$C5,$Cm1,$Cm2,$Cm3,$Cm4,$Cm5,$Dp1,$Dp2,$Dp3,$Dp4,$Dp5,$D1,$D2,$D3,$D4,$D5,$Dm1,$Dm2,$Dm3,$Dm4,$Dm5,$F1,$F2,$F3,$F4,$F5){
+function setVariables($Apr,$Aph,$Apa,$Ar,$Ah,$Aa,$Amr,$Amh,$Ama,$Bpr,$Bph,$Bpa,$Br,$Bh,$Ba,$Bmr,$Bmh,$Bma,$Cpr,$Cph,$Cpa,$Cr,$Ch,$Ca,$Cmr,$Cmh,$Cma,$Dpr,$Dph,$Dpa,$Dr,$Dh,$Da,$Dmr,$Dmh,$Dma,$Fr,$Fh,$Fa){
 
-	 $Ap1 = (int)$_POST["Ap1"]; $Ap2 = (int)$_POST["Ap2"]; $Ap3 = (int)$_POST["Ap3"]; $Ap4 = (int)$_POST["Ap4"]; $Ap5 = (int)$_POST["Ap5"]; $A1 = (int)$_POST["A1"]; $A2 = (int)$_POST["A2"]; $A3 = (int)$_POST["A3"]; $A4 = (int)$_POST["A4"]; $A5 = (int)$_POST["A5"]; $Am1 = (int)$_POST["Am1"]; $Am2 = (int)$_POST["Am2"]; $Am3 = (int)$_POST["Am3"]; $Am4 = (int)$_POST["Am4"]; $Am5 = (int)$_POST["Am5"];
+	 $Apr = (int)$_POST["Apr"]; $Aph = (int)$_POST["Aph"]; $Apa = (int)$_POST["Apa"];
+	 $Ar = (int)$_POST["Ar"]; $Ah = (int)$_POST["Ah"]; $Aa = (int)$_POST["Aa"];
+	 $Amr = (int)$_POST["Amr"]; $Amh = (int)$_POST["Amh"]; $Ama = (int)$_POST["Ama"];
 
-     $Bp1 = (int)$_POST["Bp1"]; $Bp2 = (int)$_POST["Bp2"]; $Bp3 = (int)$_POST["Bp3"]; $Bp4 = (int)$_POST["Bp4"]; $Bp5 = (int)$_POST["Bp5"]; $B1 = (int)$_POST["B1"]; $B2 = (int)$_POST["B2"]; $B3 = (int)$_POST["B3"]; $B4 = (int)$_POST["B4"]; $B5 = (int)$_POST["B5"]; $Bm1 = (int)$_POST["Bm1"]; $Bm2 = (int)$_POST["Bm2"]; $Bm3 = (int)$_POST["Bm3"]; $Bm4 = (int)$_POST["Bm4"]; if($_POST["Bm5"]!="")$Bm5 = (int)$_POST["Bm5"];
+	 $Bpr = (int)$_POST["Bpr"]; $Bph = (int)$_POST["Bph"]; $Bpa = (int)$_POST["Bpa"];
+	 $Br = (int)$_POST["Br"]; $Bh = (int)$_POST["Bh"]; $Ba = (int)$_POST["Ba"];
+	 $Bmr = (int)$_POST["Bmr"]; $Bmh = (int)$_POST["Bmh"]; $Bma = (int)$_POST["Bma"];
 
-     $Cp1 = (int)$_POST["Cp1"]; $Cp2 = (int)$_POST["Cp2"]; $Cp3 = (int)$_POST["Cp3"]; $Cp4 = (int)$_POST["Cp4"]; $Cp5 = (int)$_POST["Cp5"]; $C1 = (int)$_POST["C1"]; $C2 = (int)$_POST["C2"]; $C3 = (int)$_POST["C3"]; $C4 = (int)$_POST["C4"]; $C5 = (int)$_POST["C5"]; $Cm1 = (int)$_POST["Cm1"]; $Cm2 = (int)$_POST["Cm2"]; $Cm3 = (int)$_POST["Cm3"]; $Cm4 = (int)$_POST["Cm4"]; $Cm5 = (int)$_POST["Cm5"];
+         $Cpr = (int)$_POST["Cpr"]; $Cph = (int)$_POST["Cph"]; $Cpa = (int)$_POST["Cpa"];
+         $Cr = (int)$_POST["Cr"]; $Ch = (int)$_POST["Ch"]; $Ca = (int)$_POST["Ca"];
+         $Cmr = (int)$_POST["Cmr"]; $Cmh = (int)$_POST["Cmh"]; $Cma = (int)$_POST["Cma"];
 
-     $Dp1 = (int)$_POST["Dp1"]; $Dp2 = (int)$_POST["Dp2"]; $Dp3 = (int)$_POST["Dp3"]; $Dp4 = (int)$_POST["Dp4"]; $Dp5 = (int)$_POST["Dp5"]; $D1 = (int)$_POST["D1"]; $D2 = (int)$_POST["D2"]; $D3 = (int)$_POST["D3"]; $D4 = (int)$_POST["D4"]; $D5 = (int)$_POST["D5"]; $Dm1 = (int)$_POST["Dm1"]; $Dm2 = (int)$_POST["Dm2"]; $Dm3 = (int)$_POST["Dm3"]; $Dm4 = (int)$_POST["Dm4"]; $Dm5 = (int)$_POST["Dm5"];
+         $Dpr = (int)$_POST["Dpr"]; $Dph = (int)$_POST["Dph"]; $Dpa = (int)$_POST["Dpa"];
+         $Dr = (int)$_POST["Dr"]; $Dh = (int)$_POST["Dh"]; $Da = (int)$_POST["Da"];
+         $Dmr = (int)$_POST["Dmr"]; $Dmh = (int)$_POST["Dmh"]; $Dma = (int)$_POST["Dma"];
 
-     $F1 = (int)$_POST["F1"]; $F2 = (int)$_POST["F2"]; $F3 = (int)$_POST["F3"]; $F4 = (int)$_POST["F4"]; $F5 = (int)$_POST["F5"];
+         $Fr = (int)$_POST["Fr"]; $Fh = (int)$_POST["Fh"]; $Fa = (int)$_POST["Fa"];
 }
 
 
 function getVal($type){
+	 $Arpval = 4.3; $Arval = 4.0; $Armval = 3.7;
+         $Brpval = 3.3; $Brval = 3.0; $Brmval = 2.7;
+         $Crpval = 2.3; $Crval = 2.0; $Crmval = 1.7;
+         $Drpval = 1.3; $Drval = 1.0; $Drmval = 0.7;
+         $Frval = 0.0;
+
+         if($type == 'Arpval')
+                  if($_POST['Arpval'] == '') return $Arpval;
+                  else return $_POST['Arpval'];
+         if($type == 'Arval')
+                  if($_POST['Arval'] == '') return $Arval;
+                  else return $_POST['Arval'];
+         if($type == 'Armval')
+                  if($_POST['Armval'] == '') return $Armval;
+                  else return $_POST['Armval'];
+
+         if($type == 'Ahpval')
+                  if($_POST['Arpval'] == '') return $Arpval;
+                  else return $_POST['Ahpval'];
+         if($type == 'Ahval')
+                  if($_POST['Ahval'] == '') return $Ahval;
+                  else return $_POST['Ahval'];
+         if($type == 'Ahmval')
+                  if($_POST['Ahmval'] == '') return $Ahmval;
+                  else return $_POST['Ahmval'];
+
+         if($type == 'Ahpval')
+                  if($_POST['Ahpval'] == '') return $Ahpval;
+                  else return $_POST['Ahpval'];
+         if($type == 'Ahval')
+                  if($_POST['Ahval'] == '') return $Ahval;
+                  else return $_POST['Ahval'];
+         if($type == 'Ahmval')
+                  if($_POST['Ahmval'] == '') return $Ahmval;
+                  else return $_POST['Ahmval'];
+
+
+
+
          if($type == 'Apval')
                   if($_POST['Apval'] == '') return 4.3;
                   else return $_POST['Apval'];
