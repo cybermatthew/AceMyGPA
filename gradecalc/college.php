@@ -1,6 +1,8 @@
 <?PHP include("header.php"); ?>
       <div id=collegeForm>
-      	   <form method="post" action="college.php">
+	   </table>
+      	   <br><h1><b>College Grade Calculator</b></h1>
+       	   <form method="post" action="college.php">
       	   <table border="1">
 		<tr>
 		<div id=topLabels>
@@ -162,7 +164,7 @@
 function calculate(){
  $Apval=4.3;  $Aval=4.0;  $Amval=3.7;
  $Bpval=3.3;  $Bval=3.0;  $Bmval=2.7;
- $Cpval=2.3;  $Bval=3.0;  $Bmval=2.7;
+ $Cpval=2.3;  $Cval=2.0;  $Cmval=1.7;
  $Dpval=1.3;  $Dval=1.0;  $Dmval=0.7;
  $Fval = 0.0;
 
@@ -192,7 +194,7 @@ function calculate(){
 
 
 	$GPA = $PtsTimesUnits/$SumUnits;
-
+	$GPA = round($GPA, 2);
 	echo $GPA;
 }
 
