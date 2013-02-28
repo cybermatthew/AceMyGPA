@@ -15,34 +15,18 @@
 function calculate(){
 	 $error = 0;
 
-	 echo "<div id=errors>";
-
 	 if($_POST['totalPossible'] == ''){
-	 	echo "<div id=totalPossible>Enter the total points possible before the final.</div>";
 		$error = 1;
-	 }else{
-                echo "<div id=invisibleTotalPossible></div>";
          }
 	 if($_POST['yourPoints'] == ''){
-		echo "<div id=yourPoints>Enter your points before the final.</div>";
 		$error = 1;
-         }else{
-                echo "<div id=invisibleYourPoints></div>";
          }
 	 if($_POST['finalPoints'] == ''){
-		echo "<div id=finalPoints>Enter the total worth of the final exam in points.</div>";
 		$error = 1;
-         }else{
-                echo "<div id=invisibleFinalPoints></div>";
          }
 	 if($_POST['desiredPercent'] == ''){
-		echo "<div id=desiredPts>Enter the desired percentage grade in the class.</div>";
 		$error = 1;
-         }else{
-                echo "<div id=invisibleDesiredPts></div>";
          }
-
-	 echo "</div>";
 
 	 if($error == 1) return;
 
@@ -53,13 +37,12 @@ function calculate(){
 
 	 $result = ($desiredPercent/100)*($totalPossible+$finalPoints)-$yourPoints;
 
-	 echo "<div id=pointMessage>";
+
 
 	 if($result <= 0) echo "You got this no matter what!";
 	 else if($result > $finalPoints) echo "Not a chance! ~ " . round($result,2) . " / " . $finalPoints . " ~ " . round($result/$finalPoints*100,2) . "%";
 	 else echo $result . " / " . $finalPoints . " ~ " . round($result/$finalPoints*100,2) . "%";
 	 
-	 echo "</div>";
 }
 
 function setForm(){
@@ -69,6 +52,11 @@ function setForm(){
 	 echo 'Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br><br><br>';
 	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br>';
 	 echo '<hr>';
+}
+
+function setValue($type){
+
+
 }
 
 ?>
