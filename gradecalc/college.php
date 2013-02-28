@@ -155,7 +155,7 @@
 
 
            <div id=result>
-	              GPA: <?php calculate() ?>
+	              <br>GPA: <?php calculate() ?>
            </div>
 	   <hr>
 

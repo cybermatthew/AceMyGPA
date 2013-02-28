@@ -127,7 +127,7 @@
 
 
            <div id=result>
-	              GPA: <?php calculate() ?>
+	              <?php calculate() ?>
            </div>
 	   <hr>
 
@@ -164,11 +164,11 @@
 <?php
 
 function calculate(){
- $Apval=getVal('Apval');  $Aval=getVal('Aval');  $Amval=getVal('Amval');
- $Bpval=getVal('Bpval');  $Bval=getVal('Bval');  $Bmval=getVal('Bmval');
- $Cpval=getVal('Cpval');  $Cval=getVal('Cval');  $Cmval=getVal('Cmval');
- $Dpval=getVal('Dpval');  $Dval=getVal('Dval');  $Dmval=getVal('Dmval');
- $Fval=getVal('Fval');
+ $Aprval=getVal('Apval');  $Arval=getVal('Aval');  $Amrval=getVal('Amval');
+ $Bprval=getVal('Bpval');  $Brval=getVal('Bval');  $Bmrval=getVal('Bmval');
+ $Cprval=getVal('Cpval');  $Crval=getVal('Cval');  $Cmrval=getVal('Cmval');
+ $Dprval=getVal('Dpval');  $Drval=getVal('Dval');  $Dmrval=getVal('Dmval');
+ $Frval=getVal('Fval');
 
  $Apr=0; $Aph=0; $Apa=0;
  $Ar=0; $Ah=0; $Aa=0;
@@ -188,44 +188,47 @@ function calculate(){
 
  $Fr=0; $Fh=0; $Fa=0;
 
- $Aphval=$Apval; $Ahval=$Aval; $Amhval=$Amval;
- $Bphval=$Bpval; $Bhval=$Bval; $Bmhval=$Bmval;
- $Cphval=$Cpval; $Chval=$Cval; $Cmhval=$Cmval;
- $Dphval=$Dpval; $Dhval=$Dval; $Dmhval=$Dmval;
- $Fhval=$Fval;
+ $Aphval=$Aprval; $Ahval=$Arval; $Amhval=$Amrval;
+ $Bphval=$Bprval; $Bhval=$Brval; $Bmhval=$Bmrval;
+ $Cphval=$Cprval; $Chval=$Crval; $Cmhval=$Cmrval;
+ $Dphval=$Dprval; $Dhval=$Drval; $Dmhval=$Dmrval;
+ $Fhval=$Frval;
 
- $Apaval=$Apval+1; $Aaval=$Aval+1; $Amaval=$Amval+1;
- $Bpaval=$Bpval+1; $Baval=$Bval+1; $Bmaval=$Bmval+1;
- $Cpaval=$Cpval+1; $Caval=$Cval+1; $Cmaval=$Cmval+1;
- $Dpaval=$Dpval+1; $Daval=$Dval+1; $Dmaval=$Dmval+1;
- $Faval=$Fval+1;
+ $Apaval=$Aprval+1; $Aaval=$Arval+1; $Amaval=$Amrval+1;
+ $Bpaval=$Bprval+1; $Baval=$Brval+1; $Bmaval=$Bmrval+1;
+ $Cpaval=$Cprval+1; $Caval=$Crval+1; $Cmaval=$Cmrval+1;
+ $Dpaval=$Dprval+1; $Daval=$Drval+1; $Dmaval=$Dmrval+1;
+ $Faval=$Frval+1;
 
 	 setVariables(&$Apr,&$Aph,&$Apa,&$Ar,&$Ah,&$Aa,&$Amr,&$Amh,&$Ama,&$Bpr,&$Bph,&$Bpa,&$Br,&$Bh,&$Ba,&$Bmr,&$Bmh,&$Bma,&$Cpr,&$Cph,&$Cpa,&$Cr,&$Ch,&$Ca,&$Cmr,&$Cmh,&$Cma,&$Dpr,&$Dph,&$Dpa,&$Dr,&$Dh,&$Da,&$Dmr,&$Dmh,&$Dma,&$Fr,&$Fh,&$Fa);
 
 
-	 $UnweightedTotal = ($Apval*($Apr+$Aph+$Apa))+($Aval*($Ar+$Ah+$Aa))+($Amval*($Amr+$Amh+$Ama))+($Bpval*($Bpr+$Bph+$Bpa))+($Bval*($Br+$Bh+$Ba))+($Bmval*($Bmr+$Bmh+$Bma))+($Cpval*($Cpr+$Cph+$Cpa))+($Cval*($Cr+$Ch+$Ca))+($Cmval*($Cmr+$Cmh+$Cma))+($Dpval*($Dpr+$Dph+$Dpa))+($Dval*($Dr+$Dh+$Da))+($Dmval*($Dmr+$Dmh+$Dma))+($Fval*($Fr+$Fh+$Fa));
+	 $UnweightedTotal = ($Aprval*($Apr+$Aph+$Apa))+($Arval*($Ar+$Ah+$Aa))+($Amrval*($Amr+$Amh+$Ama))+($Bprval*($Bpr+$Bph+$Bpa))+($Brval*($Br+$Bh+$Ba))+($Bmrval*($Bmr+$Bmh+$Bma))+($Cprval*($Cpr+$Cph+$Cpa))+($Crval*($Cr+$Ch+$Ca))+($Cmrval*($Cmr+$Cmh+$Cma))+($Dprval*($Dpr+$Dph+$Dpa))+($Drval*($Dr+$Dh+$Da))+($Dmrval*($Dmr+$Dmh+$Dma))+($Frval*($Fr+$Fh+$Fa));
 
 if($_POST['honorsBump'] == 'True'){
- $Aphval=$Apval+1; $Ahval=$Aval+1; $Amhval=$Amval+1;
- $Bphval=$Bpval+1; $Bhval=$Bval+1; $Bmhval=$Bmval+1;
- $Cphval=$Cpval+1; $Chval=$Cval+1; $Cmhval=$Cmval+1;
- $Dphval=$Dpval+1; $Dhval=$Dval+1; $Dmhval=$Dmval+1;
- $Fhval=$Fval+1;
+ $Aphval=$Aprval+1; $Ahval=$Arval+1; $Amhval=$Amrval+1;
+ $Bphval=$Bprval+1; $Bhval=$Brval+1; $Bmhval=$Bmrval+1;
+ $Cphval=$Cprval+1; $Chval=$Crval+1; $Cmhval=$Cmrval+1;
+ $Dphval=$Dprval+1; $Dhval=$Drval+1; $Dmhval=$Dmrval+1;
+ $Fhval=$Frval+1;
 }
 
-	$WeightedTotal = 
 
-	 $PtsTimesUnits = ($Apval*($Ap1+$Ap2+$Ap3+$Ap4+$Ap5))+($Aval*($A1+$A2+$A3+$A4+$A5))+($Amval*($Am1+$Am2+$Am3+$Am4+$Am5))+($Bpval*($Bp1+$Bp2+$Bp3+$Bp4+$Bp5))+($Bval*($B1+$B2+$B3+$B4+$B5))+($Bmval*($Bm1+$Bm2+$Bm3+$Bm4+$Bm5))+($Cpval*($Cp1+$Cp2+$Cp3+$Cp4+$Cp5))+($Cval*($C1+$C2+$C3+$C4+$C5))+($Cmval*($Cm1+$Cm2+$Cm3+$Cm4+$Cm5))+($Dpval*($Dp1+$Dp2+$Dp3+$Dp4+$Dp5))+($Dval*($D1+$D2+$D3+$D4+$D5))+($Dmval*($Dm1+$Dm2+$Dm3+$Dm4+$Dm5))+($Fval*($F1+$F2+$F3+$F4+$F5));
-
-	$SumUnits = ($Apr+$Aph+$Apa)+($Ar+$Ah+$Aa)+($Amr+$Amh+$Ama)+($Bpr+$Bph+$Bpa)+($Br+$Bh+$Ba)+($Bmr+$Bmh+$Bma)+($Cpr+$Cph+$Cpa)+($Cr+$Ch+$Ca)+($Cmr+$Cmh+$Cma)+($Dpr+$Dph+$Dpa)+($Dr+$Dh+$Da)+($Dmr+$Dmh+$Dma)+($Fr+$Fh+$Fa);
+	$WeightedTotal = ($Aprval*$Apr+$Aphval*$Aph+$Apaval*$Apa)+($Bprval*$Bpr+$Bphval*$Bph+$Bpaval*$Bpa)+($Cprval*$Cpr+$Cphval*$Cph+$Cpaval*$Cpa)+($Dprval*$Dpr+$Dphval*$Dph+$Dpaval*$Dpa)+($Arval*$Ar+$Ahval*$Ah+$Aaval*$Aa)+($Brval*$Br+$Bhval*$Bh+$Baval*$Ba)+($Crval*$Cr+$Chval*$Ch+$Caval*$Ca)+($Drval*$Dr+$Dhval*$Dh+$Daval*$Da)+($Amrval*$Amr+$Amhval*$Amh+$Amaval*$Ama)+($Bmrval*$Bmr+$Bmhval*$Bmh+$Bmaval*$Bma)+($Cmrval*$Cmr+$Cmhval*$Cmh+$Cmaval*$Cma)+($Dmrval*$Dmr+$Dmhval*$Dmh+$Dmaval*$Dma)+($Frval*$Fr+$Fh+$Fa);
 
 
-	$UnweightedGPA = $UnweightedTotal/$SumUnits;
+	$SumClasses = ($Apr+$Aph+$Apa)+($Ar+$Ah+$Aa)+($Amr+$Amh+$Ama)+($Bpr+$Bph+$Bpa)+($Br+$Bh+$Ba)+($Bmr+$Bmh+$Bma)+($Cpr+$Cph+$Cpa)+($Cr+$Ch+$Ca)+($Cmr+$Cmh+$Cma)+($Dpr+$Dph+$Dpa)+($Dr+$Dh+$Da)+($Dmr+$Dmh+$Dma)+($Fr+$Fh+$Fa);
+
+
+	$UnweightedGPA = $UnweightedTotal/$SumClasses;
 	$UnweightedGPA = round($UnweightedGPA, 2);
 
+	$WeightedGPA = $WeightedTotal/$SumClasses;
+	$WeightedGPA = round($WeightedGPA, 2);
 
 
-	echo $UnweightedGPA;
+	echo '<br>Unweighted GPA: '.$UnweightedGPA;
+	echo '<br>Weighted GPA: '.$WeightedGPA;
 }
 
 function setVariables($Apr,$Aph,$Apa,$Ar,$Ah,$Aa,$Amr,$Amh,$Ama,$Bpr,$Bph,$Bpa,$Br,$Bh,$Ba,$Bmr,$Bmh,$Bma,$Cpr,$Cph,$Cpa,$Cr,$Ch,$Ca,$Cmr,$Cmh,$Cma,$Dpr,$Dph,$Dpa,$Dr,$Dh,$Da,$Dmr,$Dmh,$Dma,$Fr,$Fh,$Fa){
