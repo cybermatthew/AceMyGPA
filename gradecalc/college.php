@@ -1,8 +1,28 @@
 <?PHP include("header.php"); ?>
       <div id=collegeForm>
+      <form method="post" action="college.php">
+      	   <table border="1">
+	   <tr>
+		<td>A+<?php echo '<input type="text" name="Apval" value="'.getVal('Apval').'" size="10">'; ?></td>
+		<td>A<?php echo '<input type="text" name="Aval" value="'.getVal('Aval').'" size="10">'; ?></td>
+                <td>A-<?php echo '<input type="text" name="Amval" value="'.getVal('Amval').'" size="10">'; ?></td>
+	</tr><tr>
+                <td>B+<?php echo '<input type="text" name="Bpval" value="'.getVal('Bpval').'" size="10">'; ?></td>
+                <td>B<?php echo '<input type="text" name="Bval" value="'.getVal('Bval').'" size="10">'; ?></td>
+                <td>B-<?php echo '<input type="text" name="Bmval" value="'.getVal('Bmval').'" size="10">'; ?></td>
+	</tr><tr>
+                <td>C+<?php echo '<input type="text" name="Cpval" value="'.getVal('Cpval').'" size="10">'; ?></td>
+                <td>C<?php echo '<input type="text" name="Cval" value="'.getVal('Cval').'" size="10">'; ?></td>
+                <td>C-<?php echo '<input type="text" name="Cmval" value="'.getVal('Cmval').'" size="10">'; ?></td>
+	</tr><tr>
+                <td>D+<?php echo '<input type="text" name="Dpval" value="'.getVal('Dpval').'" size="10">'; ?></td>
+                <td>D<?php echo '<input type="text" name="Dval" value="'.getVal('Dval').'" size="10">'; ?></td>
+                <td>D-<?php echo '<input type="text" name="Dmval" value="'.getVal('Dmval').'" size="10">'; ?></td>
+	</tr><tr><td></td>
+		<td>F<?php echo '<input type="text" name="Fval" value="'.getVal('Fval').'" size="10">'; ?></td><td></td>
+	</tr>
 	   </table>
       	   <br><h1><b>College Grade Calculator</b></h1>
-       	   <form method="post" action="college.php">
       	   <table border="1">
 		<tr>
 		<div id=topLabels>
@@ -16,7 +36,7 @@
 		</tr>
 		<tr>
 		<div id=sideLabels>
-                        <td>A+</td>
+                        <td align="left">A+</td>
                 </div>
                         <?php echo '<td><input type="text" name="Ap1" value="'.$_POST['Ap1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Ap2" value="'.$_POST['Ap2'].'" size="10"></td>'; ?>
@@ -25,7 +45,7 @@
                         <?php echo '<td><input type="text" name="Ap5" value="'.$_POST['Ap5'].'" size="10"></td>'; ?>
                 </tr>
 		<div id=sideLabels>
-			<td>A</td>
+			<td align="left">A</td>
 		</div>
 			<?php echo '<td><input type="text" name="A1" value="'.$_POST['A1'].'" size="10"></td>'; ?>
 			<?php echo '<td><input type="text" name="A2" value="'.$_POST['A2'].'" size="10"></td>'; ?>
@@ -35,7 +55,7 @@
 		</tr>
                 <tr>
                 <div id=sideLabels>
-                        <td>A-</td>
+                        <td align="left">A-</td>
                 </div>
                         <?php echo '<td><input type="text" name="Am1" value="'.$_POST['Am1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Am2" value="'.$_POST['Am2'].'" size="10"></td>'; ?>
@@ -46,7 +66,7 @@
 
                 <tr>
                 <div id=sideLabels>
-                        <td>B+</td>
+                        <td align="left">B+</td>
                 </div>
                         <?php echo '<td><input type="text" name="Bp1" value="'.$_POST['Bp1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Bp2" value="'.$_POST['Bp2'].'" size="10"></td>'; ?>
@@ -56,7 +76,7 @@
                 </tr>
 		<tr>
 		<div id=sideLabels>
-			<td>B</td>
+			<td align="left">B</td>
 		</div>
 		      	<?php echo '<td><input type="text" name="B1" value="'.$_POST['B1'].'" size="10"></td>'; ?>
 			<?php echo '<td><input type="text" name="B2" value="'.$_POST['B2'].'" size="10"></td>'; ?>
@@ -66,7 +86,7 @@
 		</tr>
                 <tr>
                 <div id=sideLabels>
-                        <td>B-</td>
+                        <td align="left">B-</td>
                 </div>
                         <?php echo '<td><input type="text" name="Bm1" value="'.$_POST['Bm1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Bm2" value="'.$_POST['Bm2'].'" size="10"></td>'; ?>
@@ -77,7 +97,7 @@
 
                 <tr>
                 <div id=sideLabels>
-                        <td>C+</td>
+                        <td align="left">C+</td>
                 </div>
                         <?php echo '<td><input type="text" name="Cp1" value="'.$_POST['Cp1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Cp2" value="'.$_POST['Cp2'].'" size="10"></td>'; ?>
@@ -88,7 +108,7 @@
 
 		<tr>  
 		<div id=sideLabels>  
-                        <td>C</td>			
+                        <td align="left">C</td>			
 		</div>
 			<?php echo '<td><input type="text" name="C1" value="'.$_POST['C1'].'" size="10"></td>'; ?>
 			<?php echo '<td><input type="text" name="C2" value="'.$_POST['C2'].'" size="10"></td>'; ?>
@@ -98,7 +118,7 @@
                 </tr>
                 <tr>
                 <div id=sideLabels>
-                        <td>C-</td>
+                        <td align="left">C-</td>
                 </div>
                         <?php echo '<td><input type="text" name="Cm1" value="'.$_POST['Cm1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Cm2" value="'.$_POST['Cm2'].'" size="10"></td>'; ?>
@@ -109,7 +129,7 @@
 
                 <tr>
                 <div id=sideLabels>
-                        <td>D+</td>
+                        <td align="left">D+</td>
                 </div>
                         <?php echo '<td><input type="text" name="Dp1" value="'.$_POST['Dp1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Dp2" value="'.$_POST['Dp2'].'" size="10"></td>'; ?>
@@ -119,7 +139,7 @@
 		</tr>
 		<tr>  
 		<div id=sideLabels>  
-                        <td>D</td>
+                        <td align="left">D</td>
 		</div>
 			<?php echo '<td><input type="text" name="D1" value="'.$_POST['D1'].'" size="10"></td>'; ?>
 			<?php echo '<td><input type="text" name="D2" value="'.$_POST['D2'].'" size="10"></td>'; ?>
@@ -129,7 +149,7 @@
                 </tr>
                 <tr>
                 <div id=sideLabels>
-                        <td>D-</td>
+                        <td align="left">D-</td>
                 </div>
                         <?php echo '<td><input type="text" name="Dm1" value="'.$_POST['Dm1'].'" size="10"></td>'; ?>
                         <?php echo '<td><input type="text" name="Dm2" value="'.$_POST['Dm2'].'" size="10"></td>'; ?>
@@ -141,7 +161,7 @@
 
 		<tr>    
 		<div id=sideLabels>
-                        <td>F</td>
+                        <td align="left">F</td>
 		</Div>
 			<?php echo '<td><input type="text" name="F1" value="'.$_POST['F1'].'" size="10"></td>'; ?>
 			<?php echo '<td><input type="text" name="F2" value="'.$_POST['F2'].'" size="10"></td>'; ?>
@@ -209,6 +229,56 @@ function setVariables($Ap1,$Ap2,$Ap3,$Ap4,$Ap5,$A1,$A2,$A3,$A4,$A5,$Am1,$Am2,$Am
      $Dp1 = (int)$_POST["Dp1"]; $Dp2 = (int)$_POST["Dp2"]; $Dp3 = (int)$_POST["Dp3"]; $Dp4 = (int)$_POST["Dp4"]; $Dp5 = (int)$_POST["Dp5"]; $D1 = (int)$_POST["D1"]; $D2 = (int)$_POST["D2"]; $D3 = (int)$_POST["D3"]; $D4 = (int)$_POST["D4"]; $D5 = (int)$_POST["D5"]; $Dm1 = (int)$_POST["Dm1"]; $Dm2 = (int)$_POST["Dm2"]; $Dm3 = (int)$_POST["Dm3"]; $Dm4 = (int)$_POST["Dm4"]; $Dm5 = (int)$_POST["Dm5"];
 
      $F1 = (int)$_POST["F1"]; $F2 = (int)$_POST["F2"]; $F3 = (int)$_POST["F3"]; $F4 = (int)$_POST["F4"]; $F5 = (int)$_POST["F5"];
+}
 
+
+function getVal($type){
+         if($type == 'Apval')
+                  if($_POST['Apval'] == '') return 4.3;
+                  else return $_POST['Apval'];
+         if($type == 'Aval')
+                  if($_POST['Aval'] == '') return 4.0;
+	          else return $_POST['Aval'];
+	 if($type == 'Amval')
+                  if($_POST['Amval'] == '') return 3.7;
+		  else return $_POST['Amval'];
+
+
+         if($type == 'Bpval')
+                  if($_POST['Bpval'] == '') return 3.3;
+                  else return $_POST['Bpval'];
+         if($type == 'Bval')
+                  if($_POST['Bval'] == '') return 3.0;
+                  else return $_POST['Bval'];
+         if($type == 'Bmval')
+                  if($_POST['Bmval'] == '') return 2.7;
+                  else return $_POST['Bmval'];
+
+
+         if($type == 'Cpval')
+                  if($_POST['C[val'] == '') return 2.3;
+                  else return $_POST['Cpval'];
+         if($type == 'Cval')
+                  if($_POST['Cval'] == '') return 2.0;
+                  else return $_POST['Cval'];
+         if($type == 'Cmval')
+                  if($_POST['Cmval'] == '') return 1.7;
+                  else return $_POST['Cmval'];
+
+
+         if($type == 'Dpval')
+                  if($_POST['Dpval'] == '') return 1.3;
+                  else return $_POST['Dpval'];
+         if($type == 'Dval')
+                  if($_POST['Dval'] == '') return 1.0;
+                  else return $_POST['Dval'];
+         if($type == 'Dmval')
+                  if($_POST['Dmval'] == '') return 0.7;
+                  else return $_POST['Dmval'];
+
+
+         if($type == 'Fval')
+                  if($_POST['Fval'] == '') return 0.0;
+                  else return $_POST['Fval'];
 }
 ?>
