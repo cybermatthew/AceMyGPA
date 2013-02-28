@@ -56,8 +56,8 @@ function calculate(){
 	 echo "<div id=pointMessage>";
 
 	 if($result <= 0) echo "You got this no matter what!";
-	 else if($result > $finalPoints) echo "Not a chance! ~ " . $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
-	 else echo $result . " / " . $finalPoints . " ~ " . ($result/$finalPoints*100) . "%";
+	 else if($result > $finalPoints) echo "Not a chance! ~ " . round($result,2) . " / " . $finalPoints . " ~ " . round($result/$finalPoints*100,2) . "%";
+	 else echo $result . " / " . $finalPoints . " ~ " . round($result/$finalPoints*100,2) . "%";
 	 
 	 echo "</div>";
 }

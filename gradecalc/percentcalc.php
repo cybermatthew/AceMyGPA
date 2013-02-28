@@ -49,8 +49,8 @@ function calculate(){
 	 echo "<div id=percentMessage>";
 
 	 if($result <= 0) echo "You got this no matter what!";
-	 else if($result >1) echo "Not a chance! ~ ".($result*100)."%";
-	 else echo ($result*100) . "%";
+	 else if($result >1) echo "Not a chance! ~ ".round($result*100,2)."%";
+	 else echo round($result*100,2) . "%";
 
 	 echo "</div>";
 }
