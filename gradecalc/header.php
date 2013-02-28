@@ -10,7 +10,7 @@
     <div id=wrap>
       <?PHP include("topbar.php"); ?>
       <div id=topPane>
-	<br><a href="login.php">Log In</a>
+	<br><a href="help.php">Help</a>
 	 | 
 	<a href="about.php">About</a>
 	 | 

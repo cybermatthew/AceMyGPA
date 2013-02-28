@@ -29,7 +29,6 @@ body{
     position: relative;
     bottom:0;
     margin-bottom:13px;
-    width:530px;
 }
 
 #topbar a, #topbar a:link, #topbar a:visited{
@@ -111,8 +110,4 @@ a.button, a.button:link, a.button:visited{
 hr{
     height:2px;
     background-color:black;
-}
-
-#result{
-//    border: solid;
 }
