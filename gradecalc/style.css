@@ -86,7 +86,7 @@ a.button, a.button:link, a.button:visited{
     font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
 }
 
-#percentLabel, #pointLabel{
+#percentLabel, #pointLabel, #collegeLabel, #highSchoolLabel{
     float:left;
     margin-left:35px;
 

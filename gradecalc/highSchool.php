@@ -1,9 +1,9 @@
 <?PHP include("header.php"); ?>
-<?PHP include("collegeCalcLabels.php"); ?>
-      <div id=collegeForm>
-      <form method="post" action="college.php">
+<?PHP include("highSchoolCalcLabels.php"); ?>
+      <div id=highSchoolForm>
+      <form method="post" action="highSchool.php">
       	   <br><h1><b>College Grade Calculator</b></h1>
-	   <p>Calculate your college GPA by entering the number of clases you received a certain grade in and the number of units they were worth.  Then click enter or the Calculate! button and it will display your GPA.</p>
+	   <p>Calculate your high school GPA by entering the number of clases you received a certain grade in and the number of units they were worth.  Then click enter or the Calculate! button and it will display your GPA.</p>
       	   <table border="1">
 		<tr>
 		<div id=topLabels>
@@ -19,124 +19,100 @@
 		<div id=sideLabels>
                         <td align="left">A+</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Ap1" value="'.$_POST['Ap1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Ap2" value="'.$_POST['Ap2'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Ap3" value="'.$_POST['Ap3'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Ap4" value="'.$_POST['Ap4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Ap5" value="'.$_POST['Ap5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Apr" value="'.$_POST['Apr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Aph" value="'.$_POST['Aph'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Apa" value="'.$_POST['Apa'].'" size="10"></td>'; ?>
                 </tr>
 		<div id=sideLabels>
 			<td align="left">A</td>
 		</div>
-			<?php echo '<td><input type="text" name="A1" value="'.$_POST['A1'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="A2" value="'.$_POST['A2'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="A3" value="'.$_POST['A3'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="A4" value="'.$_POST['A4'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="A5" value="'.$_POST['A5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Ar" value="'.$_POST['Ar'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Ah" value="'.$_POST['Ah'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Aa" value="'.$_POST['Aa'].'" size="10"></td>'; ?>
 		</tr>
                 <tr>
                 <div id=sideLabels>
                         <td align="left">A-</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Am1" value="'.$_POST['Am1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Am2" value="'.$_POST['Am2'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Am3" value="'.$_POST['Am3'].'"  size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Am4" value="'.$_POST['Am4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Am5" value="'.$_POST['Am5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Amr" value="'.$_POST['Amr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Amh" value="'.$_POST['Amh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Ama" value="'.$_POST['Ama'].'" size="10"></td>'; ?>
                 </tr>
 
                 <tr>
                 <div id=sideLabels>
                         <td align="left">B+</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Bp1" value="'.$_POST['Bp1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bp2" value="'.$_POST['Bp2'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bp3" value="'.$_POST['Bp3'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bp4" value="'.$_POST['Bp4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bp5" value="'.$_POST['Bp5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bpr" value="'.$_POST['Bpr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bph" value="'.$_POST['Bph'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bpa" value="'.$_POST['Bpa'].'" size="10"></td>'; ?>
                 </tr>
 		<tr>
 		<div id=sideLabels>
 			<td align="left">B</td>
 		</div>
-		      	<?php echo '<td><input type="text" name="B1" value="'.$_POST['B1'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="B2" value="'.$_POST['B2'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="B3" value="'.$_POST['B3'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="B4" value="'.$_POST['B4'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="B5" value="'.$_POST['B5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Br" value="'.$_POST['Br'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bh" value="'.$_POST['Bh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Ba" value="'.$_POST['Ba'].'" size="10"></td>'; ?>
 		</tr>
                 <tr>
                 <div id=sideLabels>
                         <td align="left">B-</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Bm1" value="'.$_POST['Bm1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bm2" value="'.$_POST['Bm2'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bm3" value="'.$_POST['Bm3'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bm4" value="'.$_POST['Bm4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Bm5" value="'.$_POST['Bm5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bmr" value="'.$_POST['Bmr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bmh" value="'.$_POST['Bmh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Bma" value="'.$_POST['Bma'].'" size="10"></td>'; ?>
                 </tr>
 
                 <tr>
                 <div id=sideLabels>
                         <td align="left">C+</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Cp1" value="'.$_POST['Cp1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cp2" value="'.$_POST['Cp2'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cp3" value="'.$_POST['Cp3'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cp4" value="'.$_POST['Cp4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cp5" value="'.$_POST['Cp5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cpr" value="'.$_POST['Cpr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cph" value="'.$_POST['Cph'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cpa" value="'.$_POST['Cpa'].'" size="10"></td>'; ?>
                 </tr>
 
 		<tr>  
 		<div id=sideLabels>  
                         <td align="left">C</td>			
 		</div>
-			<?php echo '<td><input type="text" name="C1" value="'.$_POST['C1'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="C2" value="'.$_POST['C2'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="C3" value="'.$_POST['C3'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="C4" value="'.$_POST['C4'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="C5" value="'.$_POST['C5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cr" value="'.$_POST['Cr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Ch" value="'.$_POST['Ch'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Ca" value="'.$_POST['Ca'].'" size="10"></td>'; ?>
                 </tr>
                 <tr>
                 <div id=sideLabels>
                         <td align="left">C-</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Cm1" value="'.$_POST['Cm1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cm2" value="'.$_POST['Cm2'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cm3" value="'.$_POST['Cm3'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cm4" value="'.$_POST['Cm4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Cm5" value="'.$_POST['Cm5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cmr" value="'.$_POST['Cmr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cmh" value="'.$_POST['Cmh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Cma" value="'.$_POST['Cma'].'" size="10"></td>'; ?>
                 </tr>
 
                 <tr>
                 <div id=sideLabels>
                         <td align="left">D+</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Dp1" value="'.$_POST['Dp1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Dp2" value="'.$_POST['Dp2'].'" size="10"></td>'; ?>
-	     		<?php echo '<td><input type="text" name="Dp3" value="'.$_POST['Dp3'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Dp4" value="'.$_POST['Dp4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Dp5" value="'.$_POST['Dp5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dpr" value="'.$_POST['Dpr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dph" value="'.$_POST['Dph'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dpa" value="'.$_POST['Dpa'].'" size="10"></td>'; ?>
 		</tr>
 		<tr>  
 		<div id=sideLabels>  
                         <td align="left">D</td>
 		</div>
-			<?php echo '<td><input type="text" name="D1" value="'.$_POST['D1'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="D2" value="'.$_POST['D2'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="D3" value="'.$_POST['D3'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="D4" value="'.$_POST['D4'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="D5" value="'.$_POST['D5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dr" value="'.$_POST['Dr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dh" value="'.$_POST['Dh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Da" value="'.$_POST['Da'].'" size="10"></td>'; ?>
                 </tr>
                 <tr>
                 <div id=sideLabels>
                         <td align="left">D-</td>
                 </div>
-                        <?php echo '<td><input type="text" name="Dm1" value="'.$_POST['Dm1'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Dm2" value="'.$_POST['Dm2'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="Dm3" value="'.$_POST['Dm3'].'" size="10"></td>'; ?>
-   		        <?php echo '<td><input type="text" name="Dm4" value="'.$_POST['Dm4'].'" size="10"></td>'; ?>
-                        <?php echo '<td><input type="text" name="Dm5" value="'.$_POST['Dm5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dmr" value="'.$_POST['Dmr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dmh" value="'.$_POST['Dmh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Dma" value="'.$_POST['Dma'].'" size="10"></td>'; ?>
                 </tr>
 
 
@@ -144,11 +120,9 @@
 		<div id=sideLabels>
                         <td align="left">F</td>
 		</Div>
-			<?php echo '<td><input type="text" name="F1" value="'.$_POST['F1'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="F2" value="'.$_POST['F2'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="F3" value="'.$_POST['F3'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="F4" value="'.$_POST['F4'].'" size="10"></td>'; ?>
-			<?php echo '<td><input type="text" name="F5" value="'.$_POST['F5'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Fr" value="'.$_POST['Fr'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Fh" value="'.$_POST['Fh'].'" size="10"></td>'; ?>
+                        <?php echo '<td><input type="text" name="Fa" value="'.$_POST['Fa'].'" size="10"></td>'; ?>
                 </tr>
 	   </table>
 	   <input type="submit" value="Calculate!"><br>
@@ -196,25 +170,25 @@ function calculate(){
  $Dpval=getVal('Dpval');  $Dval=getVal('Dval');  $Dmval=getVal('Dmval');
  $Fval=getVal('Fpval');
 
- $Ap1=0;  $Ap2=0;  $Ap3=0;  $Ap4=0;  $Ap5=0;
- $A1=0;  $A2=0;  $A3=0;  $A4=0;  $A5=0;
- $A1=0;  $Am2=0;  $Am3=0;  $Am4=0;  $Am5=0;
+ $Apr=0; $Aph=0; $Apa=0;
+ $Ar=0; $Ah=0; $Aa=0;
+ $Amr=0; $Amh=0; $Ama=0;
 
- $Bp1=0;  $Bp2=0;  $Bp3=0;  $Bp4=0;  $Bp5=0;
- $B1=0;  $B2=0;  $B3=0;  $B4=0;  $B5=0;
- $Bm1=0;  $Bm2=0;  $Bm3=0;  $Bm4=0;  $Bm5=0;
+ $Bpr=0; $Bph=0; $Bpa=0;
+ $Br=0; $Bh=0; $Ba=0;
+ $Bmr=0; $Bmh=0; $Bma=0;
 
- $Cp1=0;  $Cp2=0;  $Cp3=0;  $Cp4=0;  $Cp5=0;
- $C1=0;  $C2=0;  $C3=0;  $C4=0;  $C5=0;
- $Cm1=0;  $Cm2=0;  $Cm3=0;  $Cm4=0;  $Cm5=0;
+ $Cpr=0; $Cph=0; $Cpa=0;
+ $Cr=0; $Ch=0; $Ca=0;
+ $Cmr=0; $Cmh=0; $Cma=0;
 
- $Dp1=0;  $Dp2=0;  $Dp3=0;  $Dp4=0;  $Dp5=0;
- $D1=0;  $D2=0;  $D3=0;  $D4=0;  $D5=0;
- $Dm1=0;  $Dm2=0;  $Dm3=0;  $Dm4=0;  $Dm5=0;
+ $Dpr=0; $Dph=0; $Dpa=0;
+ $Dr=0; $Dh=0; $Da=0;
+ $Dmr=0; $Dmh=0; $Dma=0;
 
- $F1=0;  $F2=0;  $F3=0;  $F4=0;  $F5=0;
+ $Fr=0; $Fh=0; $Fa=0;
 
-	 setVariables(&$Ap1,&$Ap2,&$Ap3,&$Ap4,&$Ap5,&$A1,&$A2,&$A3,&$A4,&$A5,&$Am1,&$Am2,&$Am3,&$Am4,&$Am5,&$Bp1,&$Bp2,&$Bp3,&$Bp4,&$Bp5,&$B1,&$B2,&$B3,&$B4,&$B5,&$Bm1,&$Bm2,&$Bm3,&$Bm4,&$Bm5,&$Cp1,&$Cp2,&$Cp3,&$Cp4,&$Cp5,&$C1,&$C2,&$C3,&$C4,&$C5,&$Cm1,&$Cm2,&$Cm3,&$Cm4,&$Cm5,&$Dp1,&$Dp2,&$Dp3,&$Dp4,&$Dp5,&$D1,&$D2,&$D3,&$D4,&$D5,&$Dm1,&$Dm2,&$Dm3,&$Dm4,&$Dm5,&$F1,&$F2,&$F3,&$F4,&$F5);
+	 setVariables(&$Apr,&$Aph,&$Apa,&$Ar,&$Ah,&$Aa,&$Amr,&$Amh,&$Ama,&$Bpr,&$Bph,&$Bpa,&$Br,&$Bh,&$Ba,&$Bmr,&$Bmh,&$Bma,&$Cpr,&$Cph,&$Cpa,&$Cr,&$Ch,&$Ca,&$Cmr,&$Cmh,&$Cma,&$Dpr,&$Dph,&$Dpa,&$Dr,&$Dh,&$Da,&$Dmr,&$Dmh,&$Dma,&$Fr,&$Fh,&$Fa);
 
 	 $PtsTimesUnits = ($Apval*($Ap1+$Ap2+$Ap3+$Ap4+$Ap5))+($Aval*($A1+$A2+$A3+$A4+$A5))+($Amval*($Am1+$Am2+$Am3+$Am4+$Am5))+($Bpval*($Bp1+$Bp2+$Bp3+$Bp4+$Bp5))+($Bval*($B1+$B2+$B3+$B4+$B5))+($Bmval*($Bm1+$Bm2+$Bm3+$Bm4+$Bm5))+($Cpval*($Cp1+$Cp2+$Cp3+$Cp4+$Cp5))+($Cval*($C1+$C2+$C3+$C4+$C5))+($Cmval*($Cm1+$Cm2+$Cm3+$Cm4+$Cm5))+($Dpval*($Dp1+$Dp2+$Dp3+$Dp4+$Dp5))+($Dval*($D1+$D2+$D3+$D4+$D5))+($Dmval*($Dm1+$Dm2+$Dm3+$Dm4+$Dm5))+($Fval*($F1+$F2+$F3+$F4+$F5));
 
