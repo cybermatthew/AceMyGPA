@@ -213,7 +213,7 @@ if($_POST['honorsBump'] == 'True'){
  $Fhval=$Fval+1;
 }
 
-	$WeightedTotal = 
+	$WeightedTotal = ($Aprval*($
 
 	 $PtsTimesUnits = ($Apval*($Ap1+$Ap2+$Ap3+$Ap4+$Ap5))+($Aval*($A1+$A2+$A3+$A4+$A5))+($Amval*($Am1+$Am2+$Am3+$Am4+$Am5))+($Bpval*($Bp1+$Bp2+$Bp3+$Bp4+$Bp5))+($Bval*($B1+$B2+$B3+$B4+$B5))+($Bmval*($Bm1+$Bm2+$Bm3+$Bm4+$Bm5))+($Cpval*($Cp1+$Cp2+$Cp3+$Cp4+$Cp5))+($Cval*($C1+$C2+$C3+$C4+$C5))+($Cmval*($Cm1+$Cm2+$Cm3+$Cm4+$Cm5))+($Dpval*($Dp1+$Dp2+$Dp3+$Dp4+$Dp5))+($Dval*($D1+$D2+$D3+$D4+$D5))+($Dmval*($Dm1+$Dm2+$Dm3+$Dm4+$Dm5))+($Fval*($F1+$F2+$F3+$F4+$F5));
 

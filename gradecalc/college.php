@@ -160,7 +160,7 @@
 	   <hr>
 
            <h4>GPA Grade Weights</h4>
-	   <p>You can use our default GPA weights (see below) or you can customize them	for your university.</p>
+	   <p>You can use our default GPA weights or you can customize them	for your university.</p>
            <table border="1">
            <tr>
                 <td>A+<?php echo '<input type="text" name="Apval" value="'.getVal('Apval').'" size="10">'; ?></td>
@@ -216,9 +216,9 @@ function calculate(){
 
 	 setVariables(&$Ap1,&$Ap2,&$Ap3,&$Ap4,&$Ap5,&$A1,&$A2,&$A3,&$A4,&$A5,&$Am1,&$Am2,&$Am3,&$Am4,&$Am5,&$Bp1,&$Bp2,&$Bp3,&$Bp4,&$Bp5,&$B1,&$B2,&$B3,&$B4,&$B5,&$Bm1,&$Bm2,&$Bm3,&$Bm4,&$Bm5,&$Cp1,&$Cp2,&$Cp3,&$Cp4,&$Cp5,&$C1,&$C2,&$C3,&$C4,&$C5,&$Cm1,&$Cm2,&$Cm3,&$Cm4,&$Cm5,&$Dp1,&$Dp2,&$Dp3,&$Dp4,&$Dp5,&$D1,&$D2,&$D3,&$D4,&$D5,&$Dm1,&$Dm2,&$Dm3,&$Dm4,&$Dm5,&$F1,&$F2,&$F3,&$F4,&$F5);
 
-	 $PtsTimesUnits = ($Apval*($Ap1+$Ap2+$Ap3+$Ap4+$Ap5))+($Aval*($A1+$A2+$A3+$A4+$A5))+($Amval*($Am1+$Am2+$Am3+$Am4+$Am5))+($Bpval*($Bp1+$Bp2+$Bp3+$Bp4+$Bp5))+($Bval*($B1+$B2+$B3+$B4+$B5))+($Bmval*($Bm1+$Bm2+$Bm3+$Bm4+$Bm5))+($Cpval*($Cp1+$Cp2+$Cp3+$Cp4+$Cp5))+($Cval*($C1+$C2+$C3+$C4+$C5))+($Cmval*($Cm1+$Cm2+$Cm3+$Cm4+$Cm5))+($Dpval*($Dp1+$Dp2+$Dp3+$Dp4+$Dp5))+($Dval*($D1+$D2+$D3+$D4+$D5))+($Dmval*($Dm1+$Dm2+$Dm3+$Dm4+$Dm5))+($Fval*($F1+$F2+$F3+$F4+$F5));
+	 $PtsTimesUnits = ($Apval*($Ap1+2*$Ap2+3*$Ap3+4*$Ap4+5*$Ap5))+($Aval*($A1+2*$A2+3*$A3+4*$A4+5*$A5))+($Amval*($Am1+2*$Am2+3*$Am3+4*$Am4+5*$Am5))+($Bpval*($Bp1+2*$Bp2+3*$Bp3+4*$Bp4+5*$Bp5))+($Bval*($B1+2*$B2+3*$B3+4*$B4+5*$B5))+($Bmval*($Bm1+2*$Bm2+3*$Bm3+4*$Bm4+5*$Bm5))+($Cpval*($Cp1+2*$Cp2+3*$Cp3+4*$Cp4+5*$Cp5))+($Cval*($C1+2*$C2+3*$C3+4*$C4+5*$C5))+($Cmval*($Cm1+2*$Cm2+3*$Cm3+4*$Cm4+5*$Cm5))+($Dpval*($Dp1+2*$Dp2+3*$Dp3+4*$Dp4+5*$Dp5))+($Dval*($D1+2*$D2+3*$D3+4*$D4+5*$D5))+($Dmval*($Dm1+2*$Dm2+3*$Dm3+4*$Dm4+5*$Dm5))+($Fval*($F1+2*$F2+3*$F3+4*$F4+5*$F5));
 
-	$SumUnits = ($Ap1+$Ap2+$Ap3+$Ap4+$Ap5)+($A1+$A2+$A3+$A4+$A5)+($Am1+$Am2+$Am3+$Am4+$Am5)+($Bp1+$Bp2+$Bp3+$Bp4+$Bp5)+($B1+$B2+$B3+$B4+$B5)+($Bm1+$Bm2+$Bm3+$Bm4+$Bm5)+($Cp1+$Cp2+$Cp3+$Cp4+$Cp5)+($C1+$C2+$C3+$C4+$C5)+($Cm1+$Cm2+$Cm3+$Cm4+$Cm5)+($Dp1+$Dp2+$Dp3+$Dp4+$Dp5)+($D1+$D2+$D3+$D4+$D5)+($Dm1+$Dm2+$Dm3+$Dm4+$Dm5)+($F1+$F2+$F3+$F4+$F5);
+	$SumUnits = ($Ap1+2*$Ap2+3*$Ap3+4*$Ap4+5*$Ap5)+($A1+2*$A2+3*$A3+4*$A4+5*$A5)+($Am1+2*$Am2+3*$Am3+4*$Am4+5*$Am5)+($Bp1+2*$Bp2+3*$Bp3+4*$Bp4+5*$Bp5)+($B1+2*$B2+3*$B3+4*$B4+5*$B5)+($Bm1+2*$Bm2+3*$Bm3+4*$Bm4+5*$Bm5)+($Cp1+2*$Cp2+3*$Cp3+4*$Cp4+5*$Cp5)+($C1+2*$C2+3*$C3+4*$C4+5*$C5)+($Cm1+2*$Cm2+3*$Cm3+4*$Cm4+5*$Cm5)+($Dp1+2*$Dp2+3*$Dp3+4*$Dp4+5*$Dp5)+($D1+2*$D2+3*$D3+4*$D4+5*$D5)+($Dm1+2*$Dm2+3*$Dm3+4*$Dm4+5*$Dm5)+($F1+2*$F2+3*$F3+4*$F4+5*$F5);
 
 
 	$GPA = $PtsTimesUnits/$SumUnits;
