@@ -90,16 +90,14 @@ a.button, a.button:link, a.button:visited{
 #percentLabel, #pointLabel{
     float:left;
     margin-left:35px;
-    width: 100px;
+
     margin-top:-15px;
 }
 
 #calcPageText{
-    margin-top:60px;
     margin-left: 25px;
     text-align: left;
     z-index:1;
-    height: 330px;
 }
 
 

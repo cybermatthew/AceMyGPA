@@ -46,16 +46,23 @@ function calculate(){
 }
 
 function setForm(){
-	 echo 'Total Possible: <input type="text" value="'.$_POST['totalPossible'].'" name="totalPossible"><br><br><br>';
-	 echo 'Your Points: <input type="text" value="'.$_POST['yourPoints'].'" name="yourPoints"><br><br>';
+	 echo '<br>Total Possible: <input type="text" value="'.$_POST['totalPossible'].'" name="totalPossible"><br><br><div id=error>'.setValue('totalPossible').'</div><br>';
+	 echo 'Your Points: <input type="text" value="'.$_POST['yourPoints'].'" name="yourPoints"><br><br><div id=error>'.setValue('yourPoints').'</div><br>';
 	 echo '<hr>';
-	 echo 'Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br><br><br>';
-	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br>';
+	 echo '<br>Final Exam Points: <input type="text" value="'.$_POST['finalPoints'].'" name="finalPoints"><br><br><div id=error>'.setValue('finalPoints').'</div><br>';
+	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br><div id=error>'.setValue('desiredPercent').'</div><br>';
 	 echo '<hr>';
 }
 
 function setValue($type){
-
+	 if($type == 'totalPossible')
+                  if($_POST['totalPossible'] == '') return 'Enter the total points possible before the final.';
+        if($type == 'yourPoints')
+                 if($_POST['yourPoints'] == '') return 'Enter your points before the final.';
+        if($type == 'finalPoints')
+                 if($_POST['yourPoints'] == '') return 'Enter the total worth of the final exam in points.';
+	if($type == 'desiredPercent')
+                 if($_POST['desiredPercent'] == '') return 'Enter the desired percentage grade in the class.';
 
 }
 

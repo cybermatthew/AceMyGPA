@@ -43,7 +43,7 @@ function calculate(){
 }
 
 function setForm(){
-	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br><br><div id=error>'.setValue('currentPercent').'</div><br>';
+	 echo '<br>Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br><br><div id=error>'.setValue('currentPercent').'</div><br>';
 	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['finalPercent'].'" name="finalPercent">%<br><br><div id=error>'.setValue('finalPercent').'</div><br>';
 	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br><div id=error>'.setValue('desiredPercent').'</div><br>';
 	 echo '<hr>';
