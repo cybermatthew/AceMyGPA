@@ -103,59 +103,11 @@ a.button, a.button:link, a.button:visited{
 }
 
 
-#errors{
+#error{
     z-index:2;
     color:#e51c1c;
-    position:absolute;
-}
-
-/*
-  Percent error formatting.
-*/
-
-#currentPercent{
-    margin-top:-240px;
     margin-left: 75px;
-    width: 290px;
-}
-
-#finalPercent{
-    margin-top:43px;
-    margin-left:75px;
-    width: 270px;
-}
-
-#desiredPercent{
-    margin-top:43px;
-    margin-left:75px;
-    width: 270px;
-}
-
-#invisibleCurrentPercent{
-    margin-top:-240px;
-    margin-left: 75px;
-    width: 290px;
     height: 18px;
-}
-
-#invisibleFinalPercent{
-    margin-top:43px;
-    margin-left:75px;
-    width: 270px;
-    height: 18px;
-}
-
-#invisibleDesiredPercent{
-    margin-top:43px;
-    margin-left:75px;
-    width: 270px;
-    height: 18px;
-}
-
-
-#percentMessage{
-    margin-top:66px;
-    margin-left:185px;
 }
 
 hr{

@@ -15,28 +15,15 @@
 function calculate(){
 	 $error = 0;
 
-	 echo "<div id=errors>";
-
 	 if($_POST['currentPercent'] == ''){
-		echo "<div id=currentPercent>Enter your current percentage in the class.</div>";
 		$error = 1;
-	 }else{
-		echo "<div id=invisibleCurrentPercent></div>";
 	 }
 	 if($_POST['finalPercent'] == ''){
-		echo "<div id=finalPercent>Enter the percentage weight of the final.</div>";
 		$error = 1;
-         }else{
-		echo "<div id=invisibleFinalPercent></div>";
-	}
+         }
 	 if($_POST['desiredPercent'] == ''){
-		echo "<div id=desiredPercent>Enter your desired percent in class.</div>";
 		$error = 1;
-         }else{
-		echo "<div id=invisibleDesiredPercent></div>";
-	}
-
-	echo "</div>";
+         }
 
 	 if($error == 1) return;
 
@@ -46,20 +33,29 @@ function calculate(){
 
 	 $result = (-(($currentPercent/100)*(100-$finalPercent))+$desiredPercent)/($finalPercent);
 
-	 echo "<div id=percentMessage>";
+
 
 	 if($result <= 0) echo "You got this no matter what!";
 	 else if($result >1) echo "Not a chance! ~ ".round($result*100,2)."%";
 	 else echo round($result*100,2) . "%";
 
-	 echo "</div>";
+
 }
 
 function setForm(){
-	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br><br><br>';
-	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['finalPercent'].'" name="finalPercent">%<br><br><br>';
-	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br><br>';
+	 echo 'Current Percent: <input type="text" value="'.$_POST['currentPercent'].'" name="currentPercent">%<br><br><div id=error>'.setValue('currentPercent').'</div><br>';
+	 echo 'Final Exam Percent: <input type="text" value="'.$_POST['finalPercent'].'" name="finalPercent">%<br><br><div id=error>'.setValue('finalPercent').'</div><br>';
+	 echo 'Desired Percent in Class: <input type="text" value="'.$_POST['desiredPercent'].'" name="desiredPercent">%<br><br><div id=error>'.setValue('desiredPercent').'</div><br>';
 	 echo '<hr>';
+}
+
+function setValue($type){
+	 if($type == 'currentPercent')
+	 	  if($_POST['currentPercent'] == '') return 'Enter your current percentage in the class.';
+	if($type == 'finalPercent')
+		 if($_POST['finalPercent'] == '') return 'Enter the percentage weight of the final.';
+	if($type == 'desiredPercent')		 
+		 if($_POST['desiredPercent'] == '') return 'Enter your desired percent in class.';
 }
 
 ?>
