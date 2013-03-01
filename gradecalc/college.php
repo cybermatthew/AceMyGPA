@@ -8,11 +8,11 @@
 		<tr>
 		<div id=topLabels>
 			<td></td>
-			<td>1 Unit</td>
-			<td>2 Units</td>
-			<td>3 Units</td>
-			<td>4 Units</td>
-			<td>5 Units</td>
+			<td align="center">1 Unit</td>
+			<td align="center">2 Units</td>
+			<td align="center">3 Units</td>
+			<td align="center">4 Units</td>
+			<td align="center">5 Units</td>
 		</div>
 		</tr>
 		<tr>
