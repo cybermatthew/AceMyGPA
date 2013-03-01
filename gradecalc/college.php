@@ -155,7 +155,7 @@
 
 
            <div id=result>
-	              <br>GPA: <?php calculate() ?>
+	              <?php calculate() ?>
            </div>
 	   <hr>
 
@@ -223,7 +223,8 @@ function calculate(){
 
 	$GPA = $PtsTimesUnits/$SumUnits;
 	$GPA = round($GPA, 2);
-	echo $GPA;
+	echo '<br>GPA: '.$GPA;
+	echo '<br>Units: '.$SumUnits;
 }
 
 function setVariables($Ap1,$Ap2,$Ap3,$Ap4,$Ap5,$A1,$A2,$A3,$A4,$A5,$Am1,$Am2,$Am3,$Am4,$Am5,$Bp1,$Bp2,$Bp3,$Bp4,$Bp5,$B1,$B2,$B3,$B4,$B5,$Bm1,$Bm2,$Bm3,$Bm4,$Bm5,$Cp1,$Cp2,$Cp3,$Cp4,$Cp5,$C1,$C2,$C3,$C4,$C5,$Cm1,$Cm2,$Cm3,$Cm4,$Cm5,$Dp1,$Dp2,$Dp3,$Dp4,$Dp5,$D1,$D2,$D3,$D4,$D5,$Dm1,$Dm2,$Dm3,$Dm4,$Dm5,$F1,$F2,$F3,$F4,$F5){
