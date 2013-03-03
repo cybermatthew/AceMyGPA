@@ -1,0 +1,10 @@
+function calculateCollege(){
+	var Apval=document.getElementById("Apval").value;
+	var Aval=document.getElementById("Aval").value;
+	var Amval=
+
+
+	document.getElementById("gpa").value=Apval;
+
+
+}
