@@ -47,7 +47,7 @@ var Dm1 = toFloat(document.getElementById("Dm1").value); var Dm2 = toFloat(docum
     GPA = Math.round(GPA*100)/100;
     
     document.getElementById("gpa").value=GPA;
-    
+//    document.getElementById("units").value=SumUnits;
 }
 
 function toFloat(strNum){
