@@ -41,13 +41,16 @@ var Dm1 = toFloat(document.getElementById("Dm1").value); var Dm2 = toFloat(docum
 
     var SumUnits = (Ap1+2*Ap2+3*Ap3+4*Ap4+5*Ap5)+(A1+2*A2+3*A3+4*A4+5*A5)+(Am1+2*Am2+3*Am3+4*Am4+5*Am5)+(Bp1+2*Bp2+3*Bp3+4*Bp4+5*Bp5)+(B1+2*B2+3*B3+4*B4+5*B5)+(Bm1+2*Bm2+3*Bm3+4*Bm4+5*Bm5)+(Cp1+2*Cp2+3*Cp3+4*Cp4+5*Cp5)+(C1+2*C2+3*C3+4*C4+5*C5)+(Cm1+2*Cm2+3*Cm3+4*Cm4+5*Cm5)+(Dp1+2*Dp2+3*Dp3+4*Dp4+5*Dp5)+(D1+2*D2+3*D3+4*D4+5*D5)+(Dm1+2*Dm2+3*Dm3+4*Dm4+5*Dm5)+(F1+2*F2+3*F3+4*F4+5*F5);
 
-    if(SumUnits == 0) return;
+    if(SumUnits == 0){
+	document.getElementById("gpa").value="";
+	return;
+    }
 
     var GPA = PtsTimesUnits/SumUnits;
     GPA = Math.round(GPA*100)/100;
     
     document.getElementById("gpa").value=GPA;
-//    document.getElementById("units").value=SumUnits;
+    document.getElementById("units").value=SumUnits;
 }
 
 function toFloat(strNum){

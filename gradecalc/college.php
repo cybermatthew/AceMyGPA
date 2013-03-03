@@ -154,6 +154,7 @@
 	   <br><input type="button" onClick="calculateCollege()" value="Calculate!" style="font-size: 100%; height: 30px; width: 105px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px"><br>
            <div id=result>
 	              <br>GPA&nbsp<input type="text" name="gpa" id="gpa" size="3" readonly>
+		      <br>Units&nbsp<input type="text" name="units" id="units" size="3" readonly>
            </div>
 	   <hr>
 
