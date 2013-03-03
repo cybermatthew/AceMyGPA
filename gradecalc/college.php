@@ -169,22 +169,22 @@
            <table border="1">
  		<tr>
 			<td> &nbsp A+ &nbsp <input type="text" id="Apval" value="4.3" size="3"></td>
-			<td> &nbsp A &nbsp  <input type="text" id="Aval"  value="4.0" size="3"></td>
+			<td> &nbsp A &nbsp  <input type="text" id="Aval"  value="4" size="3"></td>
 			<td> &nbsp A- &nbsp <input type="text" id="Amval" value="3.7" size="3"></td>
         	</tr><tr>
 			<td> &nbsp B+ &nbsp <input type="text" id="Bpval" value="3.3" size="3"></td>
-			<td> &nbsp B  &nbsp <input type="text" id="Bval"  value="3.0" size="3"></td>
+			<td> &nbsp B  &nbsp <input type="text" id="Bval"  value="3" size="3"></td>
 			<td> &nbsp B- &nbsp <input type="text" id="Bmval" value="3.7" size="3"></td>
         	</tr><tr>
 			<td> &nbsp C+ &nbsp <input type="text" id="Cpval" value="2.3" size="3"></td>
-			<td> &nbsp C  &nbsp <input type="text" id="Cval"  value="2.0" size="3"></td>
+			<td> &nbsp C  &nbsp <input type="text" id="Cval"  value="2" size="3"></td>
 			<td> &nbsp C- &nbsp <input type="text" id="Cmval" value="1.7" size="3"></td>
         	</tr><tr>
 			<td> &nbsp D+ &nbsp <input type="text" id="Dpval" value="1.3" size="3"></td>
-			<td> &nbsp D  &nbsp <input type="text" id="Dval"  value="1.0" size="3"></td>
+			<td> &nbsp D  &nbsp <input type="text" id="Dval"  value="1" size="3"></td>
 			<td> &nbsp D- &nbsp <input type="text" id="Dmval" value="0.7" size="3"></td>
         	</tr><tr><td> &nbsp </td>
-			<td> &nbsp F  &nbsp <input type="text" id="Fval"  value="0.0" size="3"></td><td></td>
+			<td> &nbsp F  &nbsp <input type="text" id="Fval"  value="0" size="3"></td><td></td>
         	</tr>
            </table>
 

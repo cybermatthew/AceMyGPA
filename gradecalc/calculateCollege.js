@@ -43,6 +43,7 @@ var Dm1 = toFloat(document.getElementById("Dm1").value); var Dm2 = toFloat(docum
 
     if(SumUnits == 0){
 	document.getElementById("gpa").value="";
+	document.getElementById("units").value="";
 	return;
     }
 
