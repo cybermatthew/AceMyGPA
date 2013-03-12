@@ -18,7 +18,7 @@
 	{
 		clicked = 1; // disable the calc button
 		
-		document.getElementById(TypePage).innerHTML='Final Exam Calculator by Percentage - <u>EXAMPLE</u>';
+		document.getElementById(TypePage).innerHTML='Final Exam Calculator by Percentage - <u>EXAMPLE</u> -';
 		
 		document.getElementById(HiddenPercentageExample1).style.display = 'block';
 		
@@ -189,7 +189,7 @@
 		document.getElementById(PercentFeasibility).innerHTML = "Final Exam Grade is not feasible since it is greater than 100%!";
 		}
         else if( ((Math.round(((( cell3 - ( cell1 * (100 - cell2 )) / 100)/ cell2 ) * 100) *100))/100) <= 0 ){
-            document.getElementById(PercentFeasibility).innerHTML = "You can get a "+document.getElementById(NecessaryResultsFromPercentage).value+"% no matter what!";
+            document.getElementById(PercentFeasibility).innerHTML = "You can get a "+document.getElementById(DesiredPercentage).value+"% in the class no matter what!";
         }
 		else
 		{
@@ -492,7 +492,7 @@
 <div id=calcLabels>
      <hr>
  
-<font size="6" color="red"><p id="TypeOfPageDescription">Final Exam Calculator by Percentage</p></font>
+<font size="6" color="red"><center><p id="TypeOfPageDescription">Final Exam Calculator by Percentage</p></center></font>
      <hr>
 </div>
 
