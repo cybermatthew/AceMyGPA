@@ -9,6 +9,7 @@
 	// START OF EXAMPLE SECTION
 	
 	var PercentDataArray = new Array();
+    var FeasibilityMessage;
 
 	var clicked = 0;
 
@@ -40,6 +41,9 @@
 		
 		PercentDataArray[3] = document.getElementById(percent_data4).value;
 		
+        FeasibilityMessage = document.getElementById("DetermineFeasibilityPercentage").innerHTML;
+        document.getElementById("DetermineFeasibilityPercentage").innerHTML = "";
+        
 		document.getElementById(percent_data4).disabled = true;
 
 		
@@ -82,6 +86,9 @@
 		document.getElementById(percent_data4).value = PercentDataArray[3];
 		
 		document.getElementById(percent_data4).disabled = false;
+        
+        document.getElementById("DetermineFeasibilityPercentage").innerHTML = FeasibilityMessage;
+
 	}
 
 	function Example_Switch(percent_data1, percent_data2, percent_data3, percent_data4,PercentWarning1,PercentWarning2,PercentWarning3,PercentWarning4,TypePage, HiddenPercentageExample1)
