@@ -1,4 +1,7 @@
-<?PHP include("header.php"); ?>
+<!DOCTYPE html>
+<html>
+  <head>
+  <?PHP include("header.php"); ?>
       <div id=frontPageText> 
       <ul> 
         <li>FindMyGPA is a Web Application for all your grade calculation needs.</li>

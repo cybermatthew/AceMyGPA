@@ -21,6 +21,7 @@ body{
 #frontPageText{
     list-style-image: url("images/arrow.png");
     text-align:left;
+
     margin-left: 40px;
     font-size:25px;
 }
@@ -103,8 +104,9 @@ a.button, a.button:link, a.button:visited{
 #error{
     z-index:2;
     color:#e51c1c;
-    margin-left: 75px;
+    text-align:center;
     height: 18px;
+    font-size: 20px;
 }
 
 hr{
