@@ -9,11 +9,11 @@
     <div id=siteTitle align=center><a href="index.php"><img src="images/F.png" style="border-style:none"></div>
     <div id=wrap>
       <?PHP include("topbar.php"); ?>
-      <div id=topPane>
+<!--      <div id=topPane>
 	<br><a href="help.php">Help</a>
 	 | 
 	<a href="about.php">About</a>
 	 | 
 	<a href="faq.php">FAQ</a>
       </div>
-      
+      --!>
