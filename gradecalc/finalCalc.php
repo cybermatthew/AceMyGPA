@@ -561,8 +561,7 @@
 			<!-- START OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	 
 
 			<div id = "HiddenPercentExample" style="DISPLAY: none">
-
-					<font color="white">	
+	
 					<table border="0" bgcolor="#000033"	>
 						 <tr>
 						 <td align="center"><b><u>IN THE EXAMPLE:</u></b></td>
@@ -580,7 +579,6 @@
 						 <td align="left">Results: From these three parameters, you would need to receive a minimum grade of 83.58% on the final exam to achieve the 90% grade you desire for the course.</td>
 						 </tr>
 					</table>
-					<font color="black">
         </div>
 		</form>
 					<br><br>
@@ -643,8 +641,7 @@
 <!-- START OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	 
 
 	<div id = "HiddenPointsExample" style="DISPLAY: none">
-
-		<font color="white">	
+	
 		<table border="0" bgcolor="#000033"	>
 			 <tr>
 			 <td align="center"><b><u>IN THE EXAMPLE:</u></b></td>
@@ -665,7 +662,6 @@
 			 <td align="left">Results: From these four parameters, you would need to receive a minimum grade of 175 on the final exam to achieve the 90% grade you desire for the course.</td>
 			 </tr>
 		</table>
-		<font color="black">
         </div>
 			   </form>
 		<br><br>
@@ -676,6 +672,5 @@
 
    
 
-
-	</div>
 <?PHP include("footer.php"); ?>
+</div>
