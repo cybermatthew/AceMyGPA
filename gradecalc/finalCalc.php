@@ -9,7 +9,8 @@
 	// START OF EXAMPLE SECTION
 	
 	var PercentDataArray = new Array();
-    var FeasibilityMessage;
+    var PercentFeasibilityMessage;
+    var PointsFeasibilityMessage;
 
 	var clicked = 0;
 
@@ -41,7 +42,7 @@
 		
 		PercentDataArray[3] = document.getElementById(percent_data4).value;
 		
-        FeasibilityMessage = document.getElementById("DetermineFeasibilityPercentage").innerHTML;
+        PercentFeasibilityMessage = document.getElementById("DetermineFeasibilityPercentage").innerHTML;
         document.getElementById("DetermineFeasibilityPercentage").innerHTML = "";
         
 		document.getElementById(percent_data4).disabled = true;
@@ -87,7 +88,7 @@
 		
 		document.getElementById(percent_data4).disabled = false;
         
-        document.getElementById("DetermineFeasibilityPercentage").innerHTML = FeasibilityMessage;
+        document.getElementById("DetermineFeasibilityPercentage").innerHTML = PercentFeasibilityMessage;
 
 	}
 
@@ -255,6 +256,9 @@
 
 			PointsDataArray[4] = document.getElementById(points_data5).value;
 			
+            PointsFeasibilityMessage = document.getElementById("DetermineFeasibilityPoints").innerHTML;
+            document.getElementById("DetermineFeasibilityPoints").innerHTML = "";
+            
 			document.getElementById(points_data5).disabled = true;
 
 			
@@ -306,6 +310,8 @@
 			document.getElementById(points_data5).value = PointsDataArray[4];
 			
 			document.getElementById(points_data5).disabled = false;
+            
+            document.getElementById("DetermineFeasibilityPoints").innerHTML = PointsFeasibilityMessage;
 		}
 
 
@@ -364,27 +370,27 @@
 			
 						if( document.getElementById(TotalPointsPossible).value < 0 )
 							{
-							document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible Before Final cannot be negative";
+							document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible cannot be negative";
 							}
 						else if ( document.getElementById(TotalPointsPossible).value ==  0 )
 							{
-							document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible Before Final cannot be zero or blank";
+							document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible cannot be zero or blank";
 							}
 						else {document.getElementById(PointsWarning1).innerHTML = "";}
 
 						
 						if( document.getElementById(YourPointsToDate).value < 0 )
 							{
-							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points Before Final cannot be negative";
+							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points cannot be negative";
 							}
 						else if (document.getElementById(YourPointsToDate).value == 0)
 							{
-							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points Before Final cannot zero or blank";
+							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points cannot be zero or blank";
 							}
-						else if (document.getElementById(YourPointsToDate).value > document.getElementById(TotalPointsPossible).value)
+					/*	else if (document.getElementById(YourPointsToDate).value > document.getElementById(TotalPointsPossible).value)
 							{
 							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points Before Final cannot be greater than the Total Points Possible Before Final";
-							}
+							}*/
 						else {document.getElementById(PointsWarning2).value = "";}
 						
 						
@@ -392,11 +398,11 @@
 						
 						if( document.getElementById(FinalExamPoints).value < 0 )
 							{
-							document.getElementById(PointsWarning3).innerHTML = "WARNING: Final Exam Points Value cannot be negative";
+							document.getElementById(PointsWarning3).innerHTML = "WARNING: Final Exam Points cannot be negative";
 							}
 						else if ( document.getElementById(FinalExamPoints).value ==  0 )
 							{
-							document.getElementById(PointsWarning3).innerHTML = "WARNING: Final Exam Points Value cannot be zero or blank";
+							document.getElementById(PointsWarning3).innerHTML = "WARNING: Final Exam Points cannot be zero or blank";
 							}
 						else {document.getElementById(PointsWarning3).innerHTML = "";}
 
@@ -430,7 +436,7 @@
 			}
 			else if( ((Math.round(((((parseFloat(cellA) + parseFloat(cellC)) * parseFloat(cellD)) / 100) - parseFloat(cellB)) *100))/100) < 0)
 			{
-			document.getElementById(PointsFeasibility).innerHTML = " Necessary grade on the final exam can not be less than zero";
+			document.getElementById(PointsFeasibility).innerHTML = "You can get a "+document.getElementById(DesiredPercentageInClass).value+"% in the class no matter what!";
 			}
 			else
 			{
@@ -548,7 +554,7 @@
 			<b>Necessary Grade Needed on the Final as a Percentage:</b>&nbsp	
 
 			<input type="text" name="DesiredPercentage1" id="PercentageNumber_tmp" size="4" style="text-align:center;" readonly="">%
-            <br><center><p style="font-size: 20px"><i>Minimum "Percentage" needed on the final exam to achieve the "Percent Desired in Course".</i></p><center>
+            <br><center><p style="font-size: 20px"><i>Minimum "Percentage" needed on the final exam to achieve the "Percent Desired in Course".</i></p></center>
 			<p id="DetermineFeasibilityPercentage" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
 
 
@@ -591,35 +597,44 @@
 
 	<p><input type="button" value="Click to See An Example" id="ExamplePointsButton" style="height: 30px; width: 200px;"
 		onClick="Example_Points_Switch('totalPossible','yourPoints','finalPoints','desiredPercentFromPoints','PointsNumber_tmp', 'PointsWarning1', 'PointsWarning2', 'PointsWarning3','PointsWarning4', 'DetermineFeasibilityPercent','TypeOfPageDescription','HiddenPointsExample')"></p>
-
+    <br>
 	
 		<form action="pointcalc.php" method="post">
-			<br><b>Total Points Possible Before Final: </b><input type="text" id="totalPossible" size="8" style="text-align:center;"><br><div id=error><i>Enter the total points possible in the course before the final exam.</i></div>
-			<p id="PointsWarning1" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
+            <div id=calcPageText>
+			<b>Total Points Possible Before Final: </b><input type="text" title="Enter the total points possible in the course before the final exam." id="totalPossible" size="8" style="text-align:center;"><br>
+            <div id=error>
+			<p id="PointsWarning1"> &nbsp </p>
+            </div>
 			
-			
-			<b>Your Total Points Before Final: </b><input type="text" id="yourPoints" size="8" style="text-align:center;"><br><div id=error><i>Enter your total points achieved in the course before the final exam.</i></div>
-			<p id="PointsWarning2" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
-			
-			<br><b>Final Exam Points Value: </b><input type="text" id="finalPoints" size="8" style="text-align:center;"><br><div id=error><i>Enter the total point value of the final exam.</i></div>
-			<p id="PointsWarning3" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
+			<br><b>Your Total Points Before Final: </b><input type="text" title="Enter your total points achieved in the course before the final exam." id="yourPoints" size="8" style="text-align:center;"><br>
+            <div id=error>
+			<p id="PointsWarning2"> &nbsp </p>
+            </div>
 
-			<hr>
+            <br>
+            <hr>
+
+			<br><b>Final Exam Points Value: </b><input type="text" title="Enter the total point value of the final exam." id="finalPoints" size="8" style="text-align:center;"><br>
+            <div id=error>
+			<p id="PointsWarning3"> &nbsp </p>
+            </div>
 			
-			<br><br><b>Percent Desired to Achieve in Course (after the final): </b><input type="text" id="desiredPercentFromPoints" size="8" style="text-align:center;">%<br><div id=error><i>Enter the eventual percentage grade you want to achieve for the course following the final exam.</i></div>
-			<p id="PointsWarning4" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
-			
+			<br><br><b>Percent Desired to Achieve in Course (after the final): </b><input type="text" title="Enter the eventual percentage grade you want to achieve for the course following the final exam." id="desiredPercentFromPoints" size="8" style="text-align:center;">%<br>
+            <div id=error>
+			<p id="PointsWarning4"> &nbsp </p>
+            </div>
+
 			<br><hr>
 
 			<br>
-			<input type="button" id="CalculatePoints" value="Calculate!" style="font-size: 100%; height: 30px; width: 130px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px"
-				onclick="Calculate_Necessary_Grade_On_Final_From_Points('totalPossible', 'yourPoints', 'finalPoints', 'desiredPercentFromPoints', 'PointsNumber_tmp', 'DetermineFeasibilityPoints', 'PointsWarning1', 'PointsWarning2', 'PointsWarning3', 'PointsWarning4','TypeOfPageDescription','HiddenPointsExample')">
-			<br><br>
+			<center><input type="button" id="CalculatePoints" value="Calculate!" style="font-size: 100%; height: 30px; width: 130px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px"
+				onclick="Calculate_Necessary_Grade_On_Final_From_Points('totalPossible', 'yourPoints', 'finalPoints', 'desiredPercentFromPoints', 'PointsNumber_tmp', 'DetermineFeasibilityPoints', 'PointsWarning1', 'PointsWarning2', 'PointsWarning3', 'PointsWarning4','TypeOfPageDescription','HiddenPointsExample')"></center>
+			<br>
 
 
 			<b>Necessary Grade Needed on the Final in Points:</b>&nbsp
 			<input type="text" name="DesiredPercentage2" id="PointsNumber_tmp" size="8	" style="text-align:center;" readonly="">
-			<br><div id=error><i>Minimum "Point Value" needed on the final exam to achieve the "Percent Desired to Achieve in Course".</i></div>
+			<br><center><p style="font-size: 20px"><i>Minimum "Point Value" needed on the final exam to achieve the "Percent Desired to Achieve in Course".</i></p></center>
 			<p id="DetermineFeasibilityPoints" size="150" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
 
 	   </form>
@@ -651,7 +666,7 @@
 			 </tr>
 		</table>
 		<font color="black">
-
+        </div>
 			   </form>
 		<br><br>
 	</div>  <!-- END OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	
