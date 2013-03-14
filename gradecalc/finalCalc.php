@@ -459,13 +459,13 @@
 		{
 			if(clicked == 1)
 			{
-				if(document.getElementById(divId).style.display == 'block')
+				if(document.getElementById("button1").value == "Change to Final Exam Calculator by POINTS")
 				{
-				Example_Switch(data1, data2, data3, data4,PerWarning1,PerWarning2,PerWarning3,PerWarning4,TypePage,HiddenPercentageExample1);
+					Example_Switch(data1, data2, data3, data4,PerWarning1,PerWarning2,PerWarning3,PerWarning4,TypePage,HiddenPercentageExample1);
 				}
 				else
 				{
-				Example_Points_Switch(data1points, data2points, data3points, data4points, data5points, PointsWarning1, PointsWarning2, PointsWarning3, PointsWarning4, PointsWarning5, TypePage, HiddenPointsExample1);
+					Example_Points_Switch(data1points, data2points, data3points, data4points, data5points, PointsWarning1, PointsWarning2, PointsWarning3, PointsWarning4, PointsWarning5, TypePage, HiddenPointsExample1);
 				}
 			}	
 
@@ -560,8 +560,8 @@
 
 			<!-- START OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	 
 
-			<div id = "HiddenPercentExample" style="DISPLAY: none">
-	
+    <div id = "HiddenPercentExample" style="DISPLAY: none">
+                    <font color="white">
 					<table border="0" bgcolor="#000033"	>
 						 <tr>
 						 <td align="center"><b><u>IN THE EXAMPLE:</u></b></td>
@@ -579,6 +579,7 @@
 						 <td align="left">Results: From these three parameters, you would need to receive a minimum grade of 83.58% on the final exam to achieve the 90% grade you desire for the course.</td>
 						 </tr>
 					</table>
+                    </font>
         </div>
 		</form>
 					<br><br>
@@ -641,7 +642,8 @@
 <!-- START OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	 
 
 	<div id = "HiddenPointsExample" style="DISPLAY: none">
-	
+
+        <font color="white">
 		<table border="0" bgcolor="#000033"	>
 			 <tr>
 			 <td align="center"><b><u>IN THE EXAMPLE:</u></b></td>
@@ -662,6 +664,7 @@
 			 <td align="left">Results: From these four parameters, you would need to receive a minimum grade of 175 on the final exam to achieve the 90% grade you desire for the course.</td>
 			 </tr>
 		</table>
+        </font>
         </div>
 			   </form>
 		<br><br>
