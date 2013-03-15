@@ -2,6 +2,7 @@
 <html>
   <head>
   <?PHP include("header.php"); ?>
+  <br>
       <div id=frontPageText> 
       <ul> 
         <li>FindMyGPA is a Web Application for all your grade calculation needs.</li>

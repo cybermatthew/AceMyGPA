@@ -1190,20 +1190,10 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 <?PHP include("header.php"); ?>
       
 <div id=calcLabels>
-<!--
-     <hr>
-     <p>Calculate for:</p>
-     <table>
-	<tr>
-
-	<td><div id=collegeLabel><a href="college.php">College &#x2713</a></div></td>
-	     <td><div id=highSchoolLabel><a href="http://www.counsyl.com/">High School</a></div></td>
-	</tr>
-  
-	 
-	 </table>
--->
-     <br>
+<hr>
+<font size="6" color="red"><center><p id="TypeOfPageDescription">College Grade Calculator</p></center></font>
+<hr>
+</div>
 
 <input type="button" name="button1" id="button1" value="Change to High School Calculator" style="font-size: 100%; height: 30px; width: 450px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px"
 		onclick="ShowHide(this,'Change to High School Calculator','Change to College Calculator', 'HiddenDiv', 'HiddenDiv2', 'TypeOfPageDescription','ExampleButton','ExampleHighSchoolButton',
@@ -1227,10 +1217,6 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 				
 		<br><br>
 
-				
-
-
-	<font size="6" color="red"><p id="TypeOfPageDescription">College Grade Calculator</p></font>
 
 	<div id = "HiddenDiv">
     <form method="post" action="college.php">

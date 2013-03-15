@@ -230,7 +230,7 @@
 		{
 			clicked = 1; // disable the calc button
 			
-			document.getElementById(TypePage).innerHTML='Final Exam Calculator by Points - <u>EXAMPLE</u>';
+			document.getElementById(TypePage).innerHTML='Final Exam Calculator by Points <br>- <u>EXAMPLE</u> -';
 			
 			document.getElementById(HiddenPointsExample1).style.display = 'block';
 			
@@ -503,10 +503,9 @@
   
 <?PHP include("header.php"); ?>
 <div id=calcLabels>
-<hr>
- 
+<hr> 
 <font size="6" color="red"><center><p id="TypeOfPageDescription">Final Exam Calculator by Percentage</p></center></font>
-     <hr>
+<hr>
 </div>
 
 
