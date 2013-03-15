@@ -1187,6 +1187,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 
 <!-- START OF HTML CODING, FOR REMAINDER OF THE PAGE -->  
 
+<script src="calculateCollegeAndHighSchool.js"></script>
 <?PHP include("header.php"); ?>
       
 <div id=calcLabels>
@@ -1441,14 +1442,13 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 <td align="left"> and total Units completed is 86.</td>
 </tr>
 </table>
-<font color="black">
+</font>
 
 
 <br><br>
-</div>
 
 </div>  <!-- END OF HIDDEN SECTION 1-->
-
+</div>
 
 
 
@@ -1686,16 +1686,8 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 	</div>
 
 </div>  <!-- END OF HIDDEN SECTION 2-->	 
-	 
 
 
-	   
-     </div>
-    <div id=footer>
-    	 <p>&#169; Matthew Pick 2013</p>
-    </div>
-    </center>
-    </div>
-  </body>
-</html>
-
+<?PHP include("footer.php"); ?>
+</div>
+</div>
