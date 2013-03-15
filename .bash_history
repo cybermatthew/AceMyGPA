@@ -657,3 +657,26 @@ cp -r . /var/www
 git add .
 git commit
 git push -u origin master
+wget -q0- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+which heroku
+heroku login
+ssh-keygen -t rsa
+heroku keys:add
+heroku create
+git push heroku master
+git checkout master
+git log
+git push -u origin master
+git log
+git branch
+git push heroku master
+l
+ls
+cd -r gradecalc/* .
+cp -r gradecalc/* .
+ls
+git add .
+git commit
+git push -u origin master
+git push heroku master

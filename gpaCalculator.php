@@ -609,7 +609,7 @@
 			Apval = 4.0; Aval = 4.0; Amval = 3.7;
 			Bpval = 3.3; Bval = 3.0; Bmval = 2.7;
 			Cpval = 2.3; Cval = 2.0; Cmval = 1.7;
-			Dpval = 37; Dval = 1.0; Dmval = 0.7;
+			Dpval = 3.7; Dval = 1.0; Dmval = 0.7;
 			Fval = 0.0;
 									}
 		else if(DefaultsButton.checked){
