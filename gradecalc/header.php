@@ -1,5 +1,6 @@
     <title>F mygpa</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./images/FIcon.jpg"> 
   </head>
   <body>
     <center>

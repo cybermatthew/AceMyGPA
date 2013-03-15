@@ -592,24 +592,24 @@
 			Fval = 0.0;
 									}
 		else if(HarvardButton.checked){
-			Apval = 11; Aval = 12; Amval = 13;
-			Bpval = 14; Bval = 15; Bmval = 16;
-			Cpval = 17; Cval = 18; Cmval = 19;	
-			Dpval = 17; Dval = 18; Dmval = 19;
+			Apval = 4.0; Aval = 4.0; Amval = 3.67;
+			Bpval = 3.33; Bval = 3.0; Bmval = 2.67;
+			Cpval = 2.33; Cval = 2.0; Cmval = 1.67;
+			Dpval = 1.33; Dval = 1.0; Dmval = 0.67;
 			Fval = 0.0;
 									}			
 		else if(YaleButton.checked){
-			Apval = 21; Aval = 22; Amval = 23;
-			Bpval = 24; Bval = 25; Bmval = 26;
-			Cpval = 27; Cval = 28; Cmval = 29;	
-			Dpval = 27; Dval = 28; Dmval = 29;
+			Apval = 4.33; Aval = 4.0; Amval = 3.67;
+			Bpval = 3.33; Bval = 3.0; Bmval = 2.67;
+			Cpval = 2.33; Cval = 2.0; Cmval = 1.67;
+			Dpval = 1.0; Dval = 1.0; Dmval = 1.0;
 			Fval = 0.0;
 									}
 		else if(UCLAButton.checked){
-			Apval = 31; Aval = 32; Amval = 33;
-			Bpval = 34; Bval = 35; Bmval = 36;
-			Cpval = 37; Cval = 38; Cmval = 39;	
-			Dpval = 37; Dval = 38; Dmval = 39;
+			Apval = 4.0; Aval = 4.0; Amval = 3.7;
+			Bpval = 3.3; Bval = 3.0; Bmval = 2.7;
+			Cpval = 2.3; Cval = 2.0; Cmval = 1.7;
+			Dpval = 37; Dval = 1.0; Dmval = 0.7;
 			Fval = 0.0;
 									}
 		else if(DefaultsButton.checked){
@@ -1238,6 +1238,61 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 
 			<br>
 
+
+<!-- START OF HIDDEN COLLEGE EXAMPLE SECTION-->
+
+<div id = "HiddenCollegeExample" style="DISPLAY: none">
+
+<font color="white">
+<table border="0" bgcolor="#000033"	>
+<tr>
+<td align="center"><b>IN THE EXAMPLE, YOU HAVE RECEIVED</b></td>
+</tr>
+<tr>
+<td align="center"><b><u>THE FOLLOWING GRADES THUS FAR:</u></b></td>
+<tr>
+<tr></tr><tr></tr><tr></tr>
+<td align="left">1. (2) A+'s in (1) unit courses.</td>
+</tr>
+<tr>
+<td align="left">2. (3) A+'s in (3) unit courses.</td>
+</tr>
+<tr>
+<td align="left">3. (4) A's in (4) unit courses.</td>
+</tr>
+<tr>
+<td align="left">4. (1) A in a (5) unit course.</td>
+</tr>
+<tr>
+<td align="left">5. (1) A- in a (2) unit course.</td>
+</tr>
+<tr>
+<td align="left">6. (2) B+'s in (4) unit courses.</td>
+</tr>
+<tr>
+<td align="left">7. (5) B's in (3) unit courses.</td>
+</tr>
+<tr>
+<td align="left">8. (5) B's in (5) unit courses.</td>
+</tr>
+<tr>
+<td align="left">9. (1) C+ in a (4) unit course.</td>
+</tr>
+<tr> <td>&nbsp</td></tr>
+<td align="left">Results: Your Weighted GPA is 3.42, Unweighted GPA is 3.35,</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="left"> and total Units completed is 86.</td>
+</tr>
+</table>
+</font>
+
+
+<br><br>
+
+</div>  <!-- END OF HIDDEN SECTION 1-->
 <!-- END OF HIDDEN COLLEGE EXAMPLE SECTION-->
 
 
@@ -1392,62 +1447,6 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 
 
 		</form>
-
-
-<!-- START OF HIDDEN COLLEGE EXAMPLE SECTION-->
-
-<div id = "HiddenCollegeExample" style="DISPLAY: none">
-
-<font color="white">
-<table border="0" bgcolor="#000033"	>
-<tr>
-<td align="center"><b>IN THE EXAMPLE, YOU HAVE RECEIVED</b></td>
-</tr>
-<tr>
-<td align="center"><b><u>THE FOLLOWING GRADES THUS FAR:</u></b></td>
-<tr>
-<tr></tr><tr></tr><tr></tr>
-<td align="left">1. (2) A+'s in (1) unit courses.</td>
-</tr>
-<tr>
-<td align="left">2. (3) A+'s in (3) unit courses.</td>
-</tr>
-<tr>
-<td align="left">3. (4) A's in (4) unit courses.</td>
-</tr>
-<tr>
-<td align="left">4. (1) A in a (5) unit course.</td>
-</tr>
-<tr>
-<td align="left">5. (1) A- in a (2) unit course.</td>
-</tr>
-<tr>
-<td align="left">6. (2) B+'s in (4) unit courses.</td>
-</tr>
-<tr>
-<td align="left">7. (5) B's in (3) unit courses.</td>
-</tr>
-<tr>
-<td align="left">8. (5) B's in (5) unit courses.</td>
-</tr>
-<tr>
-<td align="left">9. (1) C+ in a (4) unit course.</td>
-</tr>
-<tr> <td>&nbsp</td></tr>
-<td align="left">Results: Your Weighted GPA is 3.42, Unweighted GPA is 3.35,</td>
-</tr>
-<tr>
-</tr>
-<tr>
-<td align="left"> and total Units completed is 86.</td>
-</tr>
-</table>
-</font>
-
-
-<br><br>
-
-</div>  <!-- END OF HIDDEN SECTION 1-->
 </div>
 
 
