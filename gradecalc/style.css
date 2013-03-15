@@ -32,6 +32,11 @@ body{
     margin-bottom:13px;
 }
 
+#topbarwrapper{
+    position: relative;
+    height: 71px;
+}
+
 #topbar a, #topbar a:link, #topbar a:visited{
     color:black;
     text-decoration:none;

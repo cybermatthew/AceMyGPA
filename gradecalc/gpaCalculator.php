@@ -1187,23 +1187,6 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 
 <!-- START OF HTML CODING, FOR REMAINDER OF THE PAGE -->  
 
-  
-  
-    <title>F mygpa</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-    <script src="calculateCollegeAndHighSchool.js"></script>
-
-  </head>
-  <body>
-    <center>
-    <div id=siteTitle align=center><a href="index.php"><img src="images/F.png" style="border-style:none"></div>
-    <div id=wrap>
-      <div id=topbar>
-	<div id=indexButton><a class="button" href="index.php">Home</a></div>
-	<div id=collegeButton><a class="button" href="college.php">GPA</a></div>
-     	<div id=finalButton><a class="button" href="percentcalc.php">Final Exam</a></div>  
-</div>
-
 <?PHP include("header.php"); ?>
       
 <div id=calcLabels>
@@ -1222,7 +1205,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 -->
      <br>
 
-<input type="button" name="button1" id="button1" value="Change to High School Calculator" style="font-size: 100%; height: 30px; width: 300px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px" 
+<input type="button" name="button1" id="button1" value="Change to High School Calculator" style="font-size: 100%; height: 30px; width: 450px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px"
 		onclick="ShowHide(this,'Change to High School Calculator','Change to College Calculator', 'HiddenDiv', 'HiddenDiv2', 'TypeOfPageDescription','ExampleButton','ExampleHighSchoolButton',
 				'Ap1', 'Ap2', 'Ap3', 'Ap4', 'Ap5', 'A1', 'A2', 'A3', 'A4', 'A5', 'Am1', 'Am2', 'Am3', 'Am4', 'Am5',
 				'Bp1', 'Bp2', 'Bp3', 'Bp4', 'Bp5', 'B1', 'B2', 'B3', 'B4', 'B5', 'Bm1', 'Bm2', 'Bm3', 'Bm4', 'Bm5',

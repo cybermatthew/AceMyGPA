@@ -503,7 +503,7 @@
   
 <?PHP include("header.php"); ?>
 <div id=calcLabels>
-     <hr>
+<hr>
  
 <font size="6" color="red"><center><p id="TypeOfPageDescription">Final Exam Calculator by Percentage</p></center></font>
      <hr>
