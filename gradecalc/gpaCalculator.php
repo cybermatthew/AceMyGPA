@@ -27,7 +27,7 @@
 		
 		clicked = 1; // disable the calc button
 		
-		document.getElementById(TypePage).innerHTML='College Grade Calculator - <u>EXAMPLE</u>';
+		document.getElementById(TypePage).innerHTML='College Grade Calculator<br>- <u>EXAMPLE</u> -';
 		
 		document.getElementById(HiddenCollegeExample1).style.display = 'block';
 		
@@ -1203,7 +1203,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 				'Dp1', 'Dp2', 'Dp3', 'Dp4', 'Dp5', 'D1', 'D2', 'D3', 'D4', 'D5', 'Dm1', 'Dm2', 'Dm3', 'Dm4', 'Dm5',
 				'F1', 'F2', 'F3', 'F4', 'F5',
 				'gpa','Unweighted_gpa','units', 'Apval', 'Aval', 'Amval', 'Bpval', 'Bval', 'Bmval', 'Cpval', 'Cval', 'Cmval', 'Dpval', 'Dval', 'Dmval', 'Fval',
-				'HiddenPercentExample',
+				'HiddenCollegeExample',
 				'Apr', 'Aph', 'Apa', 'Ar', 'Ah', 'Aa', 'Amr', 'Amh', 'Ama',
 				'Bpr', 'Bph', 'Bpa', 'Br', 'Bh', 'Ba', 'Bmr', 'Bmh', 'Bma',
 				'Cpr', 'Cph', 'Cpa', 'Cr', 'Ch', 'Ca', 'Cmr', 'Cmh', 'Cma',
@@ -1233,64 +1233,11 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 				'Dp1', 'Dp2', 'Dp3', 'Dp4', 'Dp5', 'D1', 'D2', 'D3', 'D4', 'D5', 'Dm1', 'Dm2', 'Dm3', 'Dm4', 'Dm5',
 				'F1', 'F2', 'F3', 'F4', 'F5',
 				'gpa','Unweighted_gpa','units', 'Apval', 'Aval', 'Amval', 'Bpval', 'Bval', 'Bmval', 'Cpval', 'Cval', 'Cmval', 'Dpval', 'Dval', 'Dmval', 'Fval',
-				'TypeOfPageDescription','HiddenPercentExample')"></p>
+				'TypeOfPageDescription','HiddenCollegeExample')"></p>
 
 			<br>
 
-
-			<!-- START OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	 
-
-			<div id = "HiddenPercentExample" style="DISPLAY: none">
-
-					<font color="white">	
-					<table border="0" bgcolor="#000033"	>
-						 <tr>
-						 <td align="center"><b>IN THE EXAMPLE, YOU HAVE RECEIVED</b></td>
-						 </tr>
-						 <tr>
-						 <td align="center"><b><u>THE FOLLOWING GRADES THUS FAR:</u></b></td>
-						 <tr>
-						 <tr></tr><tr></tr><tr></tr>
-						 <td align="left">1. (2) A+'s in (1) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">2. (3) A+'s in (3) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">3. (4) A's in (4) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">4. (1) A in a (5) unit course.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">5. (1) A- in a (2) unit course.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">6. (2) B+'s in (4) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">7. (5) B's in (3) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">8. (5) B's in (5) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">9. (1) C+ in a (4) unit course.</td>
-						 </tr>
-						 <tr> <td>&nbsp</td></tr>
-						 <td align="left">Results: Your Weighted GPA is 3.42, Unweighted GPA is 3.35,</td>
-						 </tr>
-						 <tr>
-						 </tr>
-						 <tr>
-						 <td align="left"> and total Units completed is 86.</td>
-						 </tr>
-					</table>
-					<font color="black">
-
-
-					<br><br>
-			</div>  <!-- END OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	
+<!-- END OF HIDDEN COLLEGE EXAMPLE SECTION-->
 
 
 			
@@ -1381,7 +1328,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 				'Dp1', 'Dp2', 'Dp3', 'Dp4', 'Dp5', 'D1', 'D2', 'D3', 'D4', 'D5', 'Dm1', 'Dm2', 'Dm3', 'Dm4', 'Dm5',
 				'F1', 'F2', 'F3', 'F4', 'F5',
 				'gpa','Unweighted_gpa','units', 'Apval', 'Aval', 'Amval', 'Bpval', 'Bval', 'Bmval', 'Cpval', 'Cval', 'Cmval', 'Dpval', 'Dval', 'Dmval', 'Fval',
-				'TypeOfPageDescription','HiddenPercentExample')" id="Calculate" value="Calculate!" style="font-size: 100%; height: 30px; width: 130px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px">
+				'TypeOfPageDescription','HiddenCollegeExample')" id="Calculate" value="Calculate!" style="font-size: 100%; height: 30px; width: 130px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px">
 
 <br><br>
 
@@ -1443,14 +1390,69 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 <br><br>	   
 
 
-		</form>			
-			
+		</form>
+
+
+<!-- START OF HIDDEN COLLEGE EXAMPLE SECTION-->
+
+<div id = "HiddenCollegeExample" style="DISPLAY: none">
+
+<font color="white">
+<table border="0" bgcolor="#000033"	>
+<tr>
+<td align="center"><b>IN THE EXAMPLE, YOU HAVE RECEIVED</b></td>
+</tr>
+<tr>
+<td align="center"><b><u>THE FOLLOWING GRADES THUS FAR:</u></b></td>
+<tr>
+<tr></tr><tr></tr><tr></tr>
+<td align="left">1. (2) A+'s in (1) unit courses.</td>
+</tr>
+<tr>
+<td align="left">2. (3) A+'s in (3) unit courses.</td>
+</tr>
+<tr>
+<td align="left">3. (4) A's in (4) unit courses.</td>
+</tr>
+<tr>
+<td align="left">4. (1) A in a (5) unit course.</td>
+</tr>
+<tr>
+<td align="left">5. (1) A- in a (2) unit course.</td>
+</tr>
+<tr>
+<td align="left">6. (2) B+'s in (4) unit courses.</td>
+</tr>
+<tr>
+<td align="left">7. (5) B's in (3) unit courses.</td>
+</tr>
+<tr>
+<td align="left">8. (5) B's in (5) unit courses.</td>
+</tr>
+<tr>
+<td align="left">9. (1) C+ in a (4) unit course.</td>
+</tr>
+<tr> <td>&nbsp</td></tr>
+<td align="left">Results: Your Weighted GPA is 3.42, Unweighted GPA is 3.35,</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align="left"> and total Units completed is 86.</td>
+</tr>
+</table>
+<font color="black">
+
+
+<br><br>
+</div>
+
 </div>  <!-- END OF HIDDEN SECTION 1-->
 
 
 
 
-<!-- START OF HIDDEN SECTION 2-->	 
+<!-- START OF HIDDEN SECTION 2-->
 
 	<div id = "HiddenDiv2" style="DISPLAY: none">
       <form method="post" action="highSchool.php">
@@ -1469,7 +1471,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 
 
 
-<!-- START OF HIDDEN COLLEGE EXAMPLE SECTION-->	 
+<!-- START OF HIDDEN HIGH SCHOOL EXAMPLE SECTION-->
 
 	<div id = "HiddenPointsExample1" style="DISPLAY: none">
 
@@ -1520,7 +1522,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 					<font color="black">
 <br><br	>
 
-	</div>  <!-- END OF HIDDEN PERCENTAGE EXAMPLE SECTION-->	
+	</div>  <!-- END OF HIDDEN HIGH SCHOOL EXAMPLE SECTION-->
 
 		
 	<table border="1" id="HighSchoolTable">
