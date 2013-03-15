@@ -1,0 +1,114 @@
+body{
+    text-align: center;
+    background-image: url("images/Binder3.png");
+    background-repeat: repeat-y;
+    background-color: #4a170b;
+    background-position:center top;
+  
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#wrap{
+    width: 500px;
+    margin: auto;
+    border:none;
+    padding-top:20px;
+    padding-left: 75px;
+}
+
+#frontPageText{
+    list-style-image: url("images/arrow.png");
+    text-align:left;
+
+    margin-left: 40px;
+    font-size:25px;
+}
+
+#footer{
+    position: relative;
+    bottom:0;
+    margin-bottom:13px;
+}
+
+#topbar a, #topbar a:link, #topbar a:visited{
+    color:black;
+    text-decoration:none;
+}
+
+#indexButton{
+    padding-left:25px;
+}
+
+a.button, a.button:link, a.button:visited{
+    border: none;
+    background-repeat:no-repeat;
+    display:inline;
+    float: left;
+    height:71px;
+    width:140px;
+    color: black;
+    font:normal normal 30px Calibri,Tahoma,Verdana,sans-serif;
+    background-image:url("images/button.png");
+    text-decoration: none;
+    margin-left: 8px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#topbar a.button:hover{
+    background-image:url("images/buttonFilled.png");
+    color:white;
+    text-decoration:none;
+}
+
+
+#topPane{
+    padding-top:60px;
+    font:normal normal 15px Calibri,Tahoma,Verdana,sans-serif;
+}
+
+#topPane a{
+    padding-right: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#topPane a:hover{
+    text-decoration: underline;
+}
+
+#calcLabels{
+    text-align:left;
+    margin-top:27px;
+    margin-left:25px;
+    font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
+}
+
+#percentLabel, #pointLabel, #collegeLabel, #highSchoolLabel{
+    float:left;
+    margin-left:35px;
+
+    margin-top:-15px;
+}
+
+#calcPageText{
+    margin-left: 25px;
+    text-align: left;
+    z-index:1;
+}
+
+
+#error{
+    z-index:2;
+    color:#e51c1c;
+    margin-left: 75px;
+    height: 18px;
+}
+
+hr{
+    height:2px;
+    background-color:black;
+}

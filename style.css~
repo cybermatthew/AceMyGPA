@@ -1,0 +1,12 @@
+body{
+    background-image: url("images/Binder3.png");
+    background-repeat: repeat-y;
+    background-color: #4a170b;
+    background-position:center top;
+}
+
+#topPane{
+    background-image: url("images/BinderTop.png");
+    background-position:center top;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,6 @@
+<?PHP include("header.php"); ?>
+<?PHP include("sidebar.php"); ?>
+      <div id=pointPageText>
+      	   <p>here</p>
+      </div>
+<?PHP include("footer.php"); ?>

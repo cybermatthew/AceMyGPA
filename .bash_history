@@ -482,3 +482,178 @@ git commit
 git add .
 git commit
 emacs college.php
+cd gradecalc/
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+make
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+git add .
+git commit
+emacs header.php
+cp -r . /var/www
+emacs header.php
+cp -r . /var/www
+emacs style.css
+cp -r . /var/www
+emacs style.css
+cp -r . /var/www
+emacs style.css
+cp -r . /var/www
+emacs style.css
+cp -r . /var/www
+emacs style.css
+cp -r . /var/www
+git log
+git checkout dd6b49821ca00e2ffe492578658c31d705b63dad
+git push -u origin master
+git branch
+git branch master
+git checkout master
+ls
+git branch
+git add .
+git commit
+ls
+git branch
+git checkout master
+git push -u origin master
+git log
+git branch
+emacs style.css
+cp -r . /var/www
+emacs style.css
+cp -r . /var/www
+git show-ref -h HEAD
+git fsck --lost-found
+git reflog
+git merge dd6b498
+git stash
+git merge dd6b498
+ls
+rm finalCalc.php 
+git merge dd6b498
+ls
+cp -r . /var/www
+git branch
+git push -u origin master
+ls
+cd gradecalc/
+cp -r . /var/www/
+emacs style.css
+cp -r . /var/www/
+emacs style.css
+emacs footer.php
+cd gradecalc/
+cd gradecalc/
+emacs style.css
+cd gradecalc/
+cp -r . /var/www
+git add .
+git commit
+emacs index.php
+cp -r . /var/www
+git add .
+git commit
+git push -u origin master
+cd gradecalc/
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+ls
+mv college.php OLDcollege.php
+ls
+rm college.php~ 
+ls
+mkdir OLDfiles
+ls
+mv OLDpercentcalc.php OLDfiles/
+ls
+mv OLDcollege.php OLDfiles/
+ls
+mv OLDpointcalc.php OLDfiles/
+ls
+rm oldcollege.php 
+ls
+mv signupStyle.css OLDfiles/
+ls
+mv calculateCollege.js OLDcalculateCollege.js
+mv OLDcalculateCollege.js OLDfiles/
+ls
+mv collegeCalcLabels.php OLDcollegeCalcLabels.php
+ls
+cd gradecalc/
+git log
+cp -r . /var/www
+ls
+mv F.png images/
+ls
+emacs header.php
+cd images/
+ls
+cd ..
+ls
+cd images/
+ls
+cd ..
+ls
+emacs header.php
+cp -r . /var/www
+git add .
+git commit
+cd gradecalc/
+cp -r . /var/www
+ls
+emacs header.php
+emacs topbar.php
+cp -r . /var/www
+ls
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+emacs header.php
+emacs topbar.php
+emacs style.css
+cp -r . /var/www
+emacs header.php
+cp -r . /var/www
+emacs header.php
+emacs style.css
+emacs header.php
+emacs topbar.php
+emacs header.php
+emacs index.php
+cd gradecalc/
+ls
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+git add .
+git commit
+cp -r . /var/www
+emacs header.php
+cp -r . /var/www
+ls
+cd OLDfiles/
+ls
+cd ..
+ls
+rm calculateCollege.js~ 
+cp -r . /var/www
+git add .
+git commit
+git push -u origin master
+cp -r . /var/www
+git add .
+git commit
+git push -u origin master
