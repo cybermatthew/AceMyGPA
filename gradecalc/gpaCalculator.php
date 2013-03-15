@@ -668,7 +668,7 @@
 			
 			clicked = 1; // disable the calc button
 			
-			document.getElementById(TypePage).innerHTML='High School Grade Calculator - <u>EXAMPLE</u>';
+			document.getElementById(TypePage).innerHTML='High School Grade Calculator<br>- <u>EXAMPLE</u> -';
 		
 			document.getElementById(HiddenPointsExample1).style.display = 'block';
 	
@@ -1361,22 +1361,22 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 	<table border="1">
 		<tr>
 			<td> &nbsp A+ &nbsp <input type="text" id="Apval" value="4.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp A &nbsp  <input type="text" id="Aval"  value="4.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp A &nbsp  <input type="text" id="Aval"  value="4" size="3" style="text-align:center;"></td>
 			<td> &nbsp A- &nbsp <input type="text" id="Amval" value="3.7" size="3" style="text-align:center;"></td>
         </tr><tr>
 			<td> &nbsp B+ &nbsp <input type="text" id="Bpval" value="3.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp B  &nbsp <input type="text" id="Bval"  value="3.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp B  &nbsp <input type="text" id="Bval"  value="3" size="3" style="text-align:center;"></td>
 			<td> &nbsp B- &nbsp <input type="text" id="Bmval" value="2.7" size="3" style="text-align:center;"></td>
         </tr><tr>
 			<td> &nbsp C+ &nbsp <input type="text" id="Cpval" value="2.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp C  &nbsp <input type="text" id="Cval"  value="2.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp C  &nbsp <input type="text" id="Cval"  value="2" size="3" style="text-align:center;"></td>
 			<td> &nbsp C- &nbsp <input type="text" id="Cmval" value="1.7" size="3" style="text-align:center;"></td>
         </tr><tr>
 			<td> &nbsp D+ &nbsp <input type="text" id="Dpval" value="1.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp D  &nbsp <input type="text" id="Dval"  value="1.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp D  &nbsp <input type="text" id="Dval"  value="1" size="3" style="text-align:center;"></td>
 			<td> &nbsp D- &nbsp <input type="text" id="Dmval" value="0.7" size="3" style="text-align:center;"></td>
         </tr><tr><td> &nbsp </td>
-			<td> &nbsp F  &nbsp <input type="text" id="Fval"  value="0.0" size="3" style="text-align:center;"></td><td></td>
+			<td> &nbsp F  &nbsp <input type="text" id="Fval"  value="0" size="3" style="text-align:center;"></td><td></td>
         </tr>
 	</table>
 </br></br>
@@ -1519,7 +1519,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 						 <td align="left"> and total Units completed is 86.</td>
 						 </tr>
 					</table>
-					<font color="black">
+					</font>
 <br><br	>
 
 	</div>  <!-- END OF HIDDEN HIGH SCHOOL EXAMPLE SECTION-->
@@ -1652,22 +1652,22 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 	<table border="1">
 		<tr>
 			<td> &nbsp A+ &nbsp <input type="text" id="HSApval" value="4.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp A &nbsp  <input type="text" id="HSAval"  value="4.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp A &nbsp  <input type="text" id="HSAval"  value="4" size="3" style="text-align:center;"></td>
 			<td> &nbsp A- &nbsp <input type="text" id="HSAmval" value="3.7" size="3" style="text-align:center;"></td>
         </tr><tr>
 			<td> &nbsp B+ &nbsp <input type="text" id="HSBpval" value="3.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp B  &nbsp <input type="text" id="HSBval"  value="3.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp B  &nbsp <input type="text" id="HSBval"  value="3" size="3" style="text-align:center;"></td>
 			<td> &nbsp B- &nbsp <input type="text" id="HSBmval" value="2.7" size="3" style="text-align:center;"></td>
         </tr><tr>
 			<td> &nbsp C+ &nbsp <input type="text" id="HSCpval" value="2.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp C  &nbsp <input type="text" id="HSCval"  value="2.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp C  &nbsp <input type="text" id="HSCval"  value="2" size="3" style="text-align:center;"></td>
 			<td> &nbsp C- &nbsp <input type="text" id="HSCmval" value="1.7" size="3" style="text-align:center;"></td>
         </tr><tr>
 			<td> &nbsp D+ &nbsp <input type="text" id="HSDpval" value="1.3" size="3" style="text-align:center;"></td>
-			<td> &nbsp D  &nbsp <input type="text" id="HSDval"  value="1.0" size="3" style="text-align:center;"></td>
+			<td> &nbsp D  &nbsp <input type="text" id="HSDval"  value="1" size="3" style="text-align:center;"></td>
 			<td> &nbsp D- &nbsp <input type="text" id="HSDmval" value="0.7" size="3" style="text-align:center;"></td>
         </tr><tr><td> &nbsp </td>
-			<td> &nbsp F  &nbsp <input type="text" id="HSFval"  value="0.0" size="3" style="text-align:center;"></td><td></td>
+			<td> &nbsp F  &nbsp <input type="text" id="HSFval"  value="0" size="3" style="text-align:center;"></td><td></td>
         </tr>
 	</table>
 </br></br>
@@ -1683,7 +1683,6 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 		<br><br>
 
 	</form>
-	</div>
 
 </div>  <!-- END OF HIDDEN SECTION 2-->	 
 
