@@ -1312,67 +1312,67 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 		<div id=sideLabels>
 			<td align="left">A+</td>
 		</div>
-			<td><input type="text" id="Ap1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Ap2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Ap3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Ap4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Ap5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Ap1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Ap2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Ap3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Ap4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Ap5" size="9" style="text-align:center;"></td>		</tr>
 			
 		<div id=sideLabels>
 			<td align="left">A</td>
 		</div>
-			<td><input type="text" id="A1" size="10" style="text-align:center;"></td>		<td><input type="text" id="A2" size="10" style="text-align:center;"></td>		<td><input type="text" id="A3" size="10" style="text-align:center;"></td>		<td><input type="text" id="A4" size="10" style="text-align:center;"></td>		<td><input type="text" id="A5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="A1" size="9" style="text-align:center;"></td>		<td><input type="text" id="A2" size="9" style="text-align:center;"></td>		<td><input type="text" id="A3" size="9" style="text-align:center;"></td>		<td><input type="text" id="A4" size="9" style="text-align:center;"></td>		<td><input type="text" id="A5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">A-</td>
 		</div>
-			<td><input type="text" id="Am1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Am2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Am3"  size="10" style="text-align:center;"></td>	<td><input type="text" id="Am4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Am5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Am1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Am2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Am3"  size="9" style="text-align:center;"></td>	<td><input type="text" id="Am4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Am5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">B+</td>
 		</div>
-			<td><input type="text" id="Bp1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bp2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bp3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bp4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bp5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Bp1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bp2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bp3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bp4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bp5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">B</td>
 		</div>
-			<td><input type="text" id="B1" size="10" style="text-align:center;"></td>		<td><input type="text" id="B2" size="10" style="text-align:center;"></td>		<td><input type="text" id="B3" size="10" style="text-align:center;"></td>		<td><input type="text" id="B4" size="10" style="text-align:center;"></td>		<td><input type="text" id="B5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="B1" size="9" style="text-align:center;"></td>		<td><input type="text" id="B2" size="9" style="text-align:center;"></td>		<td><input type="text" id="B3" size="9" style="text-align:center;"></td>		<td><input type="text" id="B4" size="9" style="text-align:center;"></td>		<td><input type="text" id="B5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">B-</td>
 		</div>
-			<td><input type="text" id="Bm1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bm2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bm3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bm4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Bm5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Bm1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bm2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bm3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bm4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Bm5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">C+</td>
 		</div>
-			<td><input type="text" id="Cp1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cp2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cp3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cp4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cp5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Cp1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cp2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cp3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cp4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cp5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>  
 			<td align="left">C</td>			
 		</div>
-			<td><input type="text" id="C1" size="10" style="text-align:center;"></td>		<td><input type="text" id="C2" size="10" style="text-align:center;"></td>		<td><input type="text" id="C3" size="10" style="text-align:center;"></td>		<td><input type="text" id="C4" size="10" style="text-align:center;"></td>		<td><input type="text" id="C5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="C1" size="9" style="text-align:center;"></td>		<td><input type="text" id="C2" size="9" style="text-align:center;"></td>		<td><input type="text" id="C3" size="9" style="text-align:center;"></td>		<td><input type="text" id="C4" size="9" style="text-align:center;"></td>		<td><input type="text" id="C5" size="9" style="text-align:center;"></td>		</tr>
 	
 		<div id=sideLabels>
 			<td align="left">C-</td>
 		</div>
-			<td><input type="text" id="Cm1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cm2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cm3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cm4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Cm5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Cm1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cm2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cm3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cm4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Cm5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">D+</td>
 		</div>
-			<td><input type="text" id="Dp1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dp2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dp3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dp4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dp5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Dp1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dp2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dp3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dp4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dp5" size="9" style="text-align:center;"></td>		</tr>
 	
 		<div id=sideLabels>  
 			<td align="left">D</td>
 		</div>
-			<td><input type="text" id="D1" size="10" style="text-align:center;"></td>		<td><input type="text" id="D2" size="10" style="text-align:center;"></td>		<td><input type="text" id="D3" size="10" style="text-align:center;"></td>		<td><input type="text" id="D4" size="10" style="text-align:center;"></td>		<td><input type="text" id="D5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="D1" size="9" style="text-align:center;"></td>		<td><input type="text" id="D2" size="9" style="text-align:center;"></td>		<td><input type="text" id="D3" size="9" style="text-align:center;"></td>		<td><input type="text" id="D4" size="9" style="text-align:center;"></td>		<td><input type="text" id="D5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">D-</td>
                 </div>
-			<td><input type="text" id="Dm1" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dm2" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dm3" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dm4" size="10" style="text-align:center;"></td>		<td><input type="text" id="Dm5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="Dm1" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dm2" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dm3" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dm4" size="9" style="text-align:center;"></td>		<td><input type="text" id="Dm5" size="9" style="text-align:center;"></td>		</tr>
 
 		<div id=sideLabels>
 			<td align="left">F</td>
 		</div>
-			<td><input type="text" id="F1" size="10" style="text-align:center;"></td>		<td><input type="text" id="F2" size="10" style="text-align:center;"></td>		<td><input type="text" id="F3" size="10" style="text-align:center;"></td>		<td><input type="text" id="F4" size="10" style="text-align:center;"></td>		<td><input type="text" id="F5" size="10" style="text-align:center;"></td>		</tr>
+			<td><input type="text" id="F1" size="9" style="text-align:center;"></td>		<td><input type="text" id="F2" size="9" style="text-align:center;"></td>		<td><input type="text" id="F3" size="9" style="text-align:center;"></td>		<td><input type="text" id="F4" size="9" style="text-align:center;"></td>		<td><input type="text" id="F5" size="9" style="text-align:center;"></td>		</tr>
 
 	</table>
 	
