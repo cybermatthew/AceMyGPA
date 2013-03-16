@@ -817,3 +817,34 @@ git add .
 git commit
 git push -u origin master
 git push heroku master
+sudo cp -r . /var/www
+git commit
+git add .
+git commit
+git push -u origin master
+git push heroku master
+sudo cp -r . /var/www
+git add .
+git commit
+sudo cp -r . /var/www
+git add .
+git commit
+git push heroku master
+sudo cp -r . /var/www
+emacs header.php
+emacs style.css
+sudo cp -r . /var/www
+git commit
+git add .
+git commit
+git push heroku master
+ls
+emacs index.php
+sudo cp -r . /var/www
+emacs index.php
+sudo cp -r . /var/www
+heroku domains:add www.acemygpa.com
+git add .
+git commit
+git push -u origin master
+git push heroku master
