@@ -20,7 +20,7 @@
 	{
 		clicked = 1; // disable the calc button
 		
-		document.getElementById(TypePage).innerHTML='Final Exam Calculator by Percentage - <u>EXAMPLE</u> -';
+		document.getElementById(TypePage).innerHTML='Final Exam Calculator by Percentage<br>- <u>EXAMPLE</u> -';
 		
 		document.getElementById(HiddenPercentageExample1).style.display = 'block';
 		
@@ -230,7 +230,7 @@
 		{
 			clicked = 1; // disable the calc button
 			
-			document.getElementById(TypePage).innerHTML='Final Exam Calculator by Points <br>- <u>EXAMPLE</u> -';
+			document.getElementById(TypePage).innerHTML='Final Exam Calculator by Points<br>- <u>EXAMPLE</u> -';
 			
 			document.getElementById(HiddenPointsExample1).style.display = 'block';
 			

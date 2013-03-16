@@ -89,7 +89,12 @@ a.button, a.button:link, a.button:visited{
     text-align:left;
     margin-top:27px;
     margin-left:25px;
-    font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
+//    font-size:100px;
+//    font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
+}
+
+#calcLabels p{
+    font-size:31px;
 }
 
 #CollegeTable input{
