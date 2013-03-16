@@ -467,19 +467,24 @@
 		document.getElementById(Results1).disabled = false;
 		document.getElementById(Results2).disabled = false;
 		document.getElementById(Results3).disabled = false;
-		document.getElementById(Apval).disabled = false;
-		document.getElementById(Aval).disabled = false;
-		document.getElementById(Amval).disabled = false;
-		document.getElementById(Bpval).disabled = false;
-		document.getElementById(Bval).disabled = false;
-		document.getElementById(Bmval).disabled = false;
-		document.getElementById(Cpval).disabled = false;
-		document.getElementById(Cval).disabled = false;
-		document.getElementById(Cmval).disabled = false;
-		document.getElementById(Dpval).disabled = false;
-		document.getElementById(Dval).disabled = false;
-		document.getElementById(Dmval).disabled = false;
-		document.getElementById(Fval).disabled = false;
+        
+        var CustomizeButton = document.getElementById("Customize");
+        
+        if(CustomizeButton.checked){
+            document.getElementById(Apval).disabled = false;
+            document.getElementById(Aval).disabled = false;
+            document.getElementById(Amval).disabled = false;
+            document.getElementById(Bpval).disabled = false;
+            document.getElementById(Bval).disabled = false;
+            document.getElementById(Bmval).disabled = false;
+            document.getElementById(Cpval).disabled = false;
+            document.getElementById(Cval).disabled = false;
+            document.getElementById(Cmval).disabled = false;
+            document.getElementById(Dpval).disabled = false;
+            document.getElementById(Dval).disabled = false;
+            document.getElementById(Dmval).disabled = false;
+            document.getElementById(Fval).disabled = false;
+        }
 	}
 
 
@@ -576,7 +581,7 @@
 		var HarvardButton = document.getElementById("Harvard");
 		var YaleButton = document.getElementById("Yale");
 		var UCLAButton = document.getElementById("UCLA");
-		var DefaultsButton = document.getElementById("Defaults");
+		var CustomizeButton = document.getElementById("Customize");
 			
 		var Apval=0; var Aval=0; var Amval=0;
 		var Bpval=0; var Bval=0; var Bmval=0;
@@ -612,13 +617,43 @@
 			Dpval = 3.7; Dval = 1.0; Dmval = 0.7;
 			Fval = 0.0;
 									}
-		else if(DefaultsButton.checked){
+		else if(CustomizeButton.checked){
 			Apval = 4.3; Aval = 4.0; Amval = 3.7;
 			Bpval = 3.3; Bval = 3.0; Bmval = 2.7;
 			Cpval = 2.3; Cval = 2.0; Cmval = 1.7;	
 			Dpval = 1.3; Dval = 1.0; Dmval = 0.7;
 			Fval = 0.0;
+            
+            document.getElementById("Apval").disabled = false;
+            document.getElementById("Aval").disabled = false;
+            document.getElementById("Amval").disabled = false;
+            document.getElementById("Bpval").disabled = false;
+            document.getElementById("Bval").disabled = false;
+            document.getElementById("Bmval").disabled = false;
+            document.getElementById("Cpval").disabled = false;
+            document.getElementById("Cval").disabled = false;
+            document.getElementById("Cmval").disabled = false;
+            document.getElementById("Dpval").disabled = false;
+            document.getElementById("Dval").disabled = false;
+            document.getElementById("Dmval").disabled = false;
+            document.getElementById("Fval").disabled = false;
 	}
+        
+        if(!CustomizeButton.checked){
+            document.getElementById("Apval").disabled = true;
+            document.getElementById("Aval").disabled = true;
+            document.getElementById("Amval").disabled = true;
+            document.getElementById("Bpval").disabled = true;
+            document.getElementById("Bval").disabled = true;
+            document.getElementById("Bmval").disabled = true;
+            document.getElementById("Cpval").disabled = true;
+            document.getElementById("Cval").disabled = true;
+            document.getElementById("Cmval").disabled = true;
+            document.getElementById("Dpval").disabled = true;
+            document.getElementById("Dval").disabled = true;
+            document.getElementById("Dmval").disabled = true;
+            document.getElementById("Fval").disabled = true;
+        }
 		
 		document.getElementById("Apval").value = Apval;
 		document.getElementById("Aval").value = Aval;
@@ -1411,7 +1446,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 	<hr>
     <h4>GPA Grade Weights</h4>
 
-	<p>You can use our default GPA weights, select a specific university or customize for your university.</p>
+	<p>You can use our default GPA weights, select a specific university or customize one for your university.</p>
 
 	<table border="1">
 		<tr>
@@ -1440,7 +1475,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 		<input type="radio" name="University" id="Harvard" value="Harvard" onclick="UniversityGPAWeights()">Harvard
 		<input type="radio" name="University" id="Yale" value="Yale" onclick="UniversityGPAWeights()">Yale
 		<input type="radio" name="University" id="UCLA" value="UCLA" onclick="UniversityGPAWeights()">UCLA
-		<input type="radio" name="University" id="Defaults" value="Defaults" onclick="UniversityGPAWeights()" checked="checked">Defaults
+		<input type="radio" name="University" id="Customize" value="Customize" onclick="UniversityGPAWeights()" checked="checked">Customize
 
 </form>	   
 <br><br>	   
