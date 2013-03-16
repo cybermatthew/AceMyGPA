@@ -516,6 +516,7 @@
 
 		<br>
 
+<p font-size:20px>Hover over input fields for help.</p>
 		
 <div id = "HiddenDiv">
 
@@ -553,7 +554,7 @@
 			<b>Necessary Grade Needed on the Final as a Percentage:</b>&nbsp	
 
 			<input type="text" name="DesiredPercentage1" id="PercentageNumber_tmp" size="4" style="text-align:center;" readonly="">%
-            <br><center><p style="font-size: 20px"><i>Minimum "Percentage" needed on the final exam to achieve the "Percent Desired in Course".</i></p></center>
+            <br><center><p style="font-size: 17px"><i>Minimum "Percentage" needed on the final exam to achieve the "Percent Desired in Course."</i></p></center>
 			<p id="DetermineFeasibilityPercentage" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
 
 
@@ -632,7 +633,7 @@
 
 			<b>Necessary Grade Needed on the Final in Points:</b>&nbsp
 			<input type="text" name="DesiredPercentage2" id="PointsNumber_tmp" size="8	" style="text-align:center;" readonly="">
-			<br><center><p style="font-size: 20px"><i>Minimum "Point Value" needed on the final exam to achieve the "Percent Desired to Achieve in Course".</i></p></center>
+			<br><center><p style="font-size: 17px"><i>Minimum "Point Value" needed on the final exam to achieve the "Percent Desired to Achieve in Course."</i></p></center>
 			<p id="DetermineFeasibilityPoints" size="150" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
 
 	   </form>
