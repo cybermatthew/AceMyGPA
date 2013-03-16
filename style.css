@@ -54,7 +54,7 @@ a.button, a.button:link, a.button:visited{
     height:71px;
     width:140px;
     color: black;
-    font:normal normal 30px Calibri,Tahoma,Verdana,sans-serif;
+    font:normal normal 170% Calibri,Tahoma,Verdana,sans-serif;
     background-image:url("images/button.png");
     text-decoration: none;
     margin-left: 8px;
@@ -90,6 +90,10 @@ a.button, a.button:link, a.button:visited{
     margin-top:27px;
     margin-left:25px;
     font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
+}
+
+#CollegeTable input{
+    width:85px;
 }
 
 #percentLabel, #pointLabel, #collegeLabel, #highSchoolLabel{

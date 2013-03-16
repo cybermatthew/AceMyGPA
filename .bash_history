@@ -680,3 +680,95 @@ git add .
 git commit
 git push -u origin master
 git push heroku master
+ls
+cd gradecalc/
+ls
+cd images/
+ls
+mv A.png ../images/
+ls
+mv A.png ../../images/
+ls
+cd
+ls
+rm -rf gradecalc/
+ls
+emacs header.php
+emacs topbar.php
+ls
+emacs index.php
+emacs header.php
+cp -r . /var/www
+sudo chown ubuntu:ubuntu -R /var/www
+cp -r . /var/www
+sudo chown ubuntu:ubuntu -R /var/www
+cp -r . /var/www
+sudo chown ubuntu:ubuntu -R /var/www
+cd /var/www
+ls
+cp -r . /var/www
+cd
+ls
+cp -r . /var/www
+sudo cp -r . /var/www
+ls
+sudo cp -r . /var/www
+emacs index.php
+sudo cp -r . /var/www
+emacs header.php
+sudo cp -r . /var/www
+emacs header.php
+sudo cp -r . /var/www
+ls
+cd images/
+ls
+rm FIcon.jpg 
+cd
+sudo cp -r . /var/www
+ls
+emacs header.php
+sudo cp -r . /var/www
+ls
+cd var.www/
+ld
+ls
+cd /var/www
+ls
+cd
+ls
+rm var.www/
+rmdir var.www/
+ls
+rm -r var.www/
+ls
+sudo cp -r . /var/www
+ls
+sudo cp -r . /var/www
+git add .
+git commit
+sudo cp -r . /var/www
+ls
+cd /var/www
+ls
+rm -rf .
+ls
+cd
+ls
+git add .
+git commit
+git push -u origin master
+git push heroku master
+heroku create
+git push heroku master
+sudo cp -r . /var/www
+emacs style.css
+sudo cp -r . /var/www
+git add .
+git commit
+git push -u origin master
+git push heroku master
+sudo cp -r . /var/www
+git add .
+git commit
+git push -u origin master
+git push heroku master
