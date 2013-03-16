@@ -548,7 +548,7 @@
 			document.getElementById(Results1).value="";
 			document.getElementById(Results2).value="";
 			document.getElementById(Results3).value="";
-			alert ("At least one of the entries is negative and needs to be corrected before you can calculate a GPA !!!!");
+			alert ("At least one of the entries is negative or invalid and needs to be corrected before you can calculate a GPA !!!!");
 			return;
 			}
 
@@ -1258,7 +1258,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
     <form method="post" action="college.php">
 
 
-		   <p>Calculate your college GPA by entering the number of classes you<br> received a certain grade in and the number of units they were worth.<br>  Then click enter or the Calculate! button and it will display your GPA.</p>
+		   <p>Calculate your college GPA by entering the number of classes you received a certain grade in and the number of units they were worth.  Then click enter or the Calculate! button and it will display your GPA.</p>
 
 		<!-- START OF HIDE/DISPLAY SECTION 1-->
 
@@ -1533,7 +1533,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 						 <td align="left">5. (1) B+ in an AP course.</td>
 						 </tr>
                          <tr>
-                         <td align="left">Include the extra point for Honors courses.</td>
+                         <td align="left">Including an extra point for Honors courses.</td>
                          </tr>
 						 <tr> <td>&nbsp</td></tr>
 						 <td align="left">Results: Your Weighted GPA is 4.76, Unweighted GPA is 3.83.</td>
