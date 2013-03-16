@@ -509,7 +509,7 @@
 </div>
 
 
-<input type="button" name="button1" id="button1" value="Change to Final Exam Calculator by POINTS" style="font-size: 100%; height: 30px; width: 450px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px"
+<input type="button" name="button1" id="button1" value="Change to Final Exam Calculator by POINTS" style="font-size: 100%; height: 30px; width: 450px; color:darkred; font-weight:bold; border-radius:15px/56px"
 		onclick="ShowHide(this,'Change to Final Exam Calculator by POINTS','Change to Final Exam Calculator by PERCENTAGE', 'HiddenDiv', 'HiddenDiv2', 'TypeOfPageDescription','ExampleButton','ExamplePointsButton',
 		'currentPercent','finalPercent','desiredPercentFromPercentages','PercentageNumber_tmp', 'PercentWarning1', 'PercentWarning2', 'PercentWarning3', 'DetermineFeasibilityPoints','HiddenPercentExample',
 		'totalPossible','yourPoints','finalPoints','desiredPercentFromPoints','PointsNumber_tmp', 'PointsWarning1', 'PointsWarning2', 'PointsWarning3','PointsWarning4', 'DetermineFeasibilityPercent','HiddenPointsExample')">
