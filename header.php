@@ -1,5 +1,6 @@
     <title>Ace My GPA</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/AIcon.ico">
   </head>
   <body>
     <center>

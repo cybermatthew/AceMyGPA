@@ -864,3 +864,9 @@ sudo cp -r . /var/www
 emacs index.php
 sudo cp -r . /var/www
 emacs index.php
+git push heroku master
+git add .
+git commit
+git push -u heroku master
+git push -u origin master
+emacs index.php
