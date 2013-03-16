@@ -1691,8 +1691,8 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
         </tr>
 	</table>
 </br></br>
-<p>Click the button to return to defaults.</p>
-<input type="button" value="Return to Defaults" style="font-size: 100%; height: 30px; width: 165px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px" onclick="HighSchoolGPAWeights()">
+<p>Click the button to reset the defaults.</p>
+<input type="button" value="Reset to Defaults" style="font-size: 100%; height: 30px; width: 165px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px" onclick="HighSchoolGPAWeights()">
 <br>
 
 </form>	   
