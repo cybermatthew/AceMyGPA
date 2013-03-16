@@ -273,18 +273,18 @@
 		document.getElementById(Results3).value = "86";
 
 		document.getElementById(Apval).value = "4.3";
-		document.getElementById(Aval).value = "4.0";
+		document.getElementById(Aval).value = "4";
 		document.getElementById(Amval).value = "3.7";
 		document.getElementById(Bpval).value = "3.3";
-		document.getElementById(Bval).value = "3.0";
+		document.getElementById(Bval).value = "3";
 		document.getElementById(Bmval).value = "2.7";
 		document.getElementById(Cpval).value = "2.3";
-		document.getElementById(Cval).value = "2.0";
+		document.getElementById(Cval).value = "2";
 		document.getElementById(Cmval).value = "1.7";
 		document.getElementById(Dpval).value = "1.3";
-		document.getElementById(Dval).value = "1.0";
+		document.getElementById(Dval).value = "1";
 		document.getElementById(Dmval).value = "0.7";
-		document.getElementById(Fval).value = "0.0";
+		document.getElementById(Fval).value = "0";
 		
 //		document.getElementById(PercentWarning1).innerHTML = '&nbsp';
 //		document.getElementById(PercentWarning2).innerHTML = '&nbsp';
@@ -836,18 +836,18 @@
 			document.getElementById(HS_units).value =  "12"
 
 			document.getElementById(HSApval).value = "4.3";
-			document.getElementById(HSAval).value = "4.0";
+			document.getElementById(HSAval).value = "4";
 			document.getElementById(HSAmval).value = "3.7";
 			document.getElementById(HSBpval).value = "3.3";
-			document.getElementById(HSBval).value = "3.0";
+			document.getElementById(HSBval).value = "3";
 			document.getElementById(HSBmval).value = "2.7";
 			document.getElementById(HSCpval).value = "2.3";
-			document.getElementById(HSCval).value = "2.0";
+			document.getElementById(HSCval).value = "2";
 			document.getElementById(HSCmval).value = "1.7";
 			document.getElementById(HSDpval).value = "1.3";
-			document.getElementById(HSDval).value = "1.0";
+			document.getElementById(HSDval).value = "1";
 			document.getElementById(HSDmval).value = "0.7";
-			document.getElementById(HSFval).value = "0.0";
+			document.getElementById(HSFval).value = "0";
 			
 
 //			document.getElementById(PointsWarning1).innerHTML = '&nbsp';
@@ -1483,39 +1483,25 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 						 <td align="center"><b><u>THE FOLLOWING GRADES THUS FAR:</u></b></td>
 						 <tr>
 						 <tr></tr><tr></tr><tr></tr>
-						 <td align="left">1. (2) A+'s in (1) unit courses.</td>
+						 <td align="left">1. (5) A+'s in AP courses.</td>
 						 </tr>
 						 <tr>
-						 <td align="left">2. (3) A+'s in (3) unit courses.</td>
+						 <td align="left">2. (2) A's in Regular courses.</td>
 						 </tr>
 						 <tr>
-						 <td align="left">3. (4) A's in (4) unit courses.</td>
+						 <td align="left">3. (3) A's in Honors courses.</td>
 						 </tr>
 						 <tr>
-						 <td align="left">4. (1) A in a (5) unit course.</td>
+						 <td align="left">4. (1) B+ in a Regular course.</td>
 						 </tr>
 						 <tr>
-						 <td align="left">5. (1) A- in a (2) unit course.</td>
+						 <td align="left">5. (1) B+ in an AP course.</td>
 						 </tr>
-						 <tr>
-						 <td align="left">6. (2) B+'s in (4) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">7. (5) B's in (3) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">8. (5) B's in (5) unit courses.</td>
-						 </tr>
-						 <tr>
-						 <td align="left">9. (1) C+ in a (4) unit course.</td>
-						 </tr>
+                         <tr>
+                         <td align="left">Include the extra point for Honors courses.</td>
+                         </tr>
 						 <tr> <td>&nbsp</td></tr>
-						 <td align="left">Results: Your Weighted GPA is 3.42, Unweighted GPA is 3.35,</td>
-						 </tr>
-						 <tr>
-						 </tr>
-						 <tr>
-						 <td align="left"> and total Units completed is 86.</td>
+						 <td align="left">Results: Your Weighted GPA is 4.76, Unweighted GPA is 3.83.</td>
 						 </tr>
 					</table>
 					</font>
@@ -1632,7 +1618,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 			<td align="left"> Unweighted GPA: &nbsp </td>	<td><input type="text" name="HS_Unweighted_gpa" id="HS_Unweighted_gpa" size="4" style="text-align:center;" readonly=""></td>
 		</tr>
 		<tr>
-			<td align="left"> Units: &nbsp </td>	<td><input type="text" name="HS_units" id="HS_units" size="4" style="text-align:center;" readonly=""></td>
+			<td align="left"> Total Courses: &nbsp </td>	<td><input type="text" name="HS_units" id="HS_units" size="4" style="text-align:center;" readonly=""></td>
         </tr>
 	</table>
 
