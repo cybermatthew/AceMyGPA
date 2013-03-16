@@ -1079,7 +1079,7 @@
 			document.getElementById(HS_gpa).value="";
 			document.getElementById(HS_Unweighted_gpa).value="";
 			document.getElementById(HS_units).value="";
-			alert ("At least one of the entries is negative and needs to be corrected before you can calculate a GPA !!!!");
+			alert ("At least one of the entries is negative or invalid and needs to be corrected before you can calculate a GPA !!!!");
 			return;
 			}
 
@@ -1491,7 +1491,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 	<div id = "HiddenDiv2" style="DISPLAY: none">
       <form method="post" action="highSchool.php">
 
-	   <p>Calculate your high school GPA by entering the number of classes you<br>received a certain grade in and the number of units they were worth.<br>Then click enter or the Calculate! button and it will display your GPA.</p>
+	   <p>Calculate your high school GPA by entering the number of classes you received a certain grade in and the number of units they were worth.  Then click enter or the Calculate! button and it will display your GPA.</p>
 
 		<p><input type="button" value="Click to See An Example" id="ExampleHighSchoolButton" style="height: 30px; width: 200px;"
 			onClick="Example_High_School_Switch('Apr', 'Aph', 'Apa', 'Ar', 'Ah', 'Aa', 'Amr', 'Amh', 'Ama',
