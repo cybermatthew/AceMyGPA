@@ -848,3 +848,19 @@ git add .
 git commit
 git push -u origin master
 git push heroku master
+git remote rm origin
+git remote add origin git@github.com:cybermatthew/AceMyGPA.git
+git branch
+git push -u origin master
+ls
+emacs index.php
+git add .
+git commit
+git push -u origin master
+git push heroku master
+ls
+emacs gpaCalculator.php 
+sudo cp -r . /var/www
+emacs index.php
+sudo cp -r . /var/www
+emacs index.php
