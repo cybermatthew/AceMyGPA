@@ -89,8 +89,6 @@ a.button, a.button:link, a.button:visited{
     text-align:left;
     margin-top:27px;
     margin-left:25px;
-//    font-size:100px;
-//    font:normal normal 20px Calibri,Tahoma,Verdana,sans-serif;
 }
 
 #calcLabels p{
@@ -98,7 +96,7 @@ a.button, a.button:link, a.button:visited{
 }
 
 #CollegeTable input{
-    width:85px;
+    width:80px;
 }
 
 #percentLabel, #pointLabel, #collegeLabel, #highSchoolLabel{
