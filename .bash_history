@@ -913,3 +913,9 @@ emacs header.php
 sudo cp -r . /var/wwwd
 sudo cp -r . /var/www
 emacs style.css
+sudo cp -r . /var/www
+git add .
+git commit
+git push -u origin maste
+git push -u origin master
+git push heroku master
