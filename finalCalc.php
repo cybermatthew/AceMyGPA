@@ -121,11 +121,11 @@
 	// COMPUTE THE GRADE ON FINAL EXAM
 	function Calculate_Grade(CurrentPercentage, FinalExamPercentage, DesiredPercentage, NecessaryResultsFromPercentage, PercentFeasibility, PercentWarning1, PercentWarning2, PercentWarning3)
 	  {
-		var cell1 = document.getElementById(CurrentPercentage).value;
+		var cell1 = parseFloat(document.getElementById(CurrentPercentage).value);
 		
-		var cell2 = document.getElementById(FinalExamPercentage).value;
+		var cell2 = parseFloat(document.getElementById(FinalExamPercentage).value);
 		
-		var cell3 = document.getElementById(DesiredPercentage).value;
+		var cell3 = parseFloat(document.getElementById(DesiredPercentage).value);
 		
 
 		document.getElementById(PercentWarning1).innerHTML = '&nbsp';
@@ -141,7 +141,7 @@
 		}
 		
 	// START OF ERROR CHECKING SECTION
-		if( document.getElementById(CurrentPercentage).value <= 0  || document.getElementById(CurrentPercentage).value > 100 || document.getElementById(FinalExamPercentage).value <= 0  || document.getElementById(FinalExamPercentage).value > 100  || document.getElementById(DesiredPercentage).value <= 0 || document.getElementById(DesiredPercentage).value > 100 )
+		if( document.getElementById(CurrentPercentage).value == "" || document.getElementById(FinalExamPercentage).value == "" || document.getElementById(DesiredPercentage).value == "" || cell1 <= 0  || cell1 > 100 || cell2 <= 0  || cell2 > 100  || cell3 <= 0 || cell3 > 100 )
 		{
 			document.getElementById(NecessaryResultsFromPercentage).value = '';
 			document.getElementById(PercentFeasibility).value = "";
