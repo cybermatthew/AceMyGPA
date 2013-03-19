@@ -387,7 +387,7 @@
                   return;
               }*/
               
-			if(document.getElementById(TotalPointsPossible).value == "" || document.getElementById(YourPointsToDate).value == "" || document.getElementById(FinalExamPoints).value == "" || document.getElementById(DesiredPercentageInClass).value == "" || totalPossible <= 0 || yourPoints <= 0  || yourPoints > totalPossible || finalPoints <= 0  || desiredPercent <= 0 || desiredPercent > 100 )
+			if(document.getElementById(TotalPointsPossible).value == "" || document.getElementById(YourPointsToDate).value == "" || document.getElementById(FinalExamPoints).value == "" || document.getElementById(DesiredPercentageInClass).value == "" || totalPossible <= 0 || yourPoints <= 0 || finalPoints <= 0  || desiredPercent <= 0 || desiredPercent > 100 )
 			{
 				document.getElementById(NecessaryResultsFromPoints).value = '';
 				document.getElementById(PointsFeasibility).innerHTML = "";
@@ -648,7 +648,7 @@
 			<p id="PointsWarning3"> &nbsp </p>
             </div>
 			
-			<br><br><b>Percent Desired in Course (after the final): </b><input type="text" title="Enter the eventual percentage grade you want to achieve for the course following the final exam." id="desiredPercentFromPoints" size="8" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Percent Desired in Course (after the final): </b><input type="text" title="Enter the eventual percentage grade you want to achieve for the course following the final exam." id="desiredPercentFromPoints" size="8" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
 			<a href="javascript: alert('Enter the eventual percentage grade you want to achieve for the course following the final exam.');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PointsWarning4"> &nbsp </p>
