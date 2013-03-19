@@ -903,3 +903,13 @@ sudo cp -r . /var/www
 git add . 
 git commit
 git push heroku master
+sudo cp -r . /var/www
+git add .
+git commit
+git push -u origin master
+git push heroku master
+sudo cp -r . /var/www
+emacs header.php
+sudo cp -r . /var/wwwd
+sudo cp -r . /var/www
+emacs style.css

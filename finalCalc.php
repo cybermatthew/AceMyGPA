@@ -545,20 +545,20 @@
 
 		<form>
             <div id=calcPageText>
-			<b>Current Percent: </b><input type="number" title="Enter the current percentage you are averaging in the course before the final exam. (i.e.; Averaging 95% for the course out of 100% before the final exam)." id="currentPercent" size="4" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
+			<b>Current Percent: </b><input type="text" title="Enter the current percentage you are averaging in the course before the final exam. (i.e.; Averaging 95% for the course out of 100% before the final exam)." id="currentPercent" size="6" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
 
             <a href="javascript: alert('Enter the current percentage you are averaging in the course before the final exam. (i.e.; Averaging 95% for the course out of 100% before the final exam).');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PercentWarning1"> &nbsp </p>
             </div>
 					
-			<br><b>Final Exam Percent: </b><input type="number" title="Enter the percentage value the final is of the entire total course. (i.e.; Final exam is worth 20% of the entire course value)." id="finalPercent" size="4" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Final Exam Percent: </b><input type="text" title="Enter the percentage value the final is of the entire total course. (i.e.; Final exam is worth 20% of the entire course value)." id="finalPercent" size="6" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
 			<a href="javascript: alert('Enter the percentage value the final is of the entire total course. (i.e.; Final exam is worth 20% of the entire course value).');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PercentWarning2" size="100"> &nbsp </p>
             </div>
 
-			<br><b>Percent Desired in Course (after the final): </b><input type="number" id="desiredPercentFromPercentages" title="Enter the eventual percentage grade you want to achieve for the course following the final exam. (i.e.; Want to achieve a 92% for the entire course following the final exam)." size="4" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Percent Desired in Course (after the final): </b><input type="text" id="desiredPercentFromPercentages" title="Enter the eventual percentage grade you want to achieve for the course following the final exam. (i.e.; Want to achieve a 92% for the entire course following the final exam)." size="6" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
 			<a href="javascript: alert('Enter the eventual percentage grade you want to achieve for the course following the final exam. (i.e.; Want to achieve a 92% for the entire course following the final exam).');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PercentWarning3" size="100"> &nbsp </p>
@@ -573,7 +573,7 @@
 
 			<b>Necessary Grade Needed on the Final as a Percentage:</b>&nbsp	
 
-			<input type="text" name="DesiredPercentage1" id="PercentageNumber_tmp" size="4" style="text-align:center;" readonly="">%
+			<input type="text" name="DesiredPercentage1" id="PercentageNumber_tmp" size="6" style="text-align:center;" readonly="">%
             <br><center><p style="font-size: 17px"><i>Minimum "Percentage" needed on the final exam to achieve the "Percent Desired in Course."</i></p></center>
 			<p id="DetermineFeasibilityPercentage" size="100" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>
 
