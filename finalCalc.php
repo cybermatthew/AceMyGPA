@@ -380,7 +380,14 @@
  
 			
 		// START OF ERROR CHECKING SECTION
-			if( totalPossible <= 0 || yourPoints <= 0  || yourPoints > totalPossible || finalPoints <= 0  || desiredPercent <= 0 || desiredPercent > 100 )
+              
+
+          /*    if(document.getElementById(TotalPointsPossible).value == "" || document.getElementById(YourPointsToDate).value == "" || document.getElementById(FinalExamPoints).value == "" || document.getElementById(DesiredPercentageInClass).value == "" ){
+                    document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible cannot be zero or blank";
+                  return;
+              }*/
+              
+			if(document.getElementById(TotalPointsPossible).value == "" || document.getElementById(YourPointsToDate).value == "" || document.getElementById(FinalExamPoints).value == "" || document.getElementById(DesiredPercentageInClass).value == "" || totalPossible <= 0 || yourPoints <= 0  || yourPoints > totalPossible || finalPoints <= 0  || desiredPercent <= 0 || desiredPercent > 100 )
 			{
 				document.getElementById(NecessaryResultsFromPoints).value = '';
 				document.getElementById(PointsFeasibility).innerHTML = "";
@@ -389,7 +396,7 @@
 							{
 							document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible cannot be negative";
 							}
-						else if ( totalPossible ==  0 )
+						else if ( totalPossible ==  0 || document.getElementById(TotalPointsPossible).value == "")
 							{
 							document.getElementById(PointsWarning1).innerHTML = "WARNING: Total Points Possible cannot be zero or blank";
 							}
@@ -400,7 +407,7 @@
 							{
 							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points cannot be negative";
 							}
-						else if (yourPoints == 0)
+						else if (yourPoints == 0 || document.getElementById(YourPointsToDate).value == "")
 							{
 							document.getElementById(PointsWarning2).innerHTML = "WARNING: Your Total Points cannot be zero or blank";
 							}
@@ -417,7 +424,7 @@
 							{
 							document.getElementById(PointsWarning3).innerHTML = "WARNING: Final Exam Points cannot be negative";
 							}
-						else if ( finalPoints ==  0 )
+						else if ( finalPoints ==  0 || document.getElementById(FinalExamPoints).value == "")
 							{
 							document.getElementById(PointsWarning3).innerHTML = "WARNING: Final Exam Points cannot be zero or blank";
 							}
@@ -428,7 +435,7 @@
 							{
 							document.getElementById(PointsWarning4).innerHTML = "WARNING: Percent Desired cannot be negative";
 							}
-						else if ( desiredPercent ==  0 )
+						else if ( desiredPercent ==  0 || document.getElementById(DesiredPercentageInClass).value == "")
 							{
 							document.getElementById(PointsWarning4).innerHTML = "WARNING: Percent Desired cannot be zero or blank";
 							}
