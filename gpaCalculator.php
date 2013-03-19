@@ -120,7 +120,13 @@
 		CollegeDataArray[78] = document.getElementById(Dval).value;
 		CollegeDataArray[79] = document.getElementById(Dmval).value;
 		CollegeDataArray[80] = document.getElementById(Fval).value;
-		
+	
+		CollegeDataArray[81] = document.getElementById("Stanford").checked;  //  STORES CHECK STATUS OF BUTTON
+		CollegeDataArray[82] = document.getElementById("Harvard").checked;  //  STORES CHECK STATUS OF BUTTON
+		CollegeDataArray[83] = document.getElementById("Yale").checked;  //  STORES CHECK STATUS OF BUTTON
+		CollegeDataArray[84] = document.getElementById("UCLA").checked;  //  STORES CHECK STATUS OF BUTTON
+		CollegeDataArray[85] = document.getElementById("Customize").checked;  //  STORES CHECK STATUS OF BUTTON
+			
 		document.getElementById(Ap1).disabled = true;
 		document.getElementById(Ap2).disabled = true;
 		document.getElementById(Ap3).disabled = true;
@@ -202,6 +208,17 @@
 		document.getElementById(Dval).disabled = true;
 		document.getElementById(Dmval).disabled = true;
 		document.getElementById(Fval).disabled = true;
+
+		document.getElementById("Stanford").disabled=true;  //  DEACTIVATES BUTTON
+		document.getElementById("Harvard").disabled=true;  //  DEACTIVATES BUTTON
+		document.getElementById("Yale").disabled=true;  //  DEACTIVATES BUTTON
+		document.getElementById("UCLA").disabled=true;  //  DEACTIVATES BUTTON
+		document.getElementById("Customize").disabled=true;  //  DEACTIVATES BUTTON
+		document.getElementById("Stanford").checked = false;  //  UNCHECKS BUTTON
+		document.getElementById("Harvard").checked = false;  //  UNCHECKS BUTTON
+		document.getElementById("Yale").checked = false;  //  UNCHECKS BUTTON
+		document.getElementById("UCLA").checked = false;  //  UNCHECKS BUTTON
+		document.getElementById("Customize").checked = false;  //  UNCHECKS BUTTON
 		
 		document.getElementById(Ap1).value = "2";
 		document.getElementById(Ap2).value =  "";
@@ -399,6 +416,12 @@
 		document.getElementById(Dmval).value = CollegeDataArray[79];
 		document.getElementById(Fval).value = CollegeDataArray[80];
 		
+		document.getElementById("Stanford").checked = CollegeDataArray[81];  //  RETURNS BUTTON TO CHECK STATUS BEFORE EXAMPLE
+		document.getElementById("Harvard").checked = CollegeDataArray[82];  //  RETURNS BUTTON TO CHECK STATUS BEFORE EXAMPLE
+		document.getElementById("Yale").checked = CollegeDataArray[83];  //  RETURNS BUTTON TO CHECK STATUS BEFORE EXAMPLE
+		document.getElementById("UCLA").checked = CollegeDataArray[84];  //  RETURNS BUTTON TO CHECK STATUS BEFORE EXAMPLE
+		document.getElementById("Customize").checked = CollegeDataArray[85];  //  RETURNS BUTTON TO CHECK STATUS BEFORE EXAMPLE
+		
 		document.getElementById(Ap1).disabled = false;
 		document.getElementById(Ap2).disabled = false;
 		document.getElementById(Ap3).disabled = false;
@@ -467,6 +490,13 @@
 		document.getElementById(Results1).disabled = false;
 		document.getElementById(Results2).disabled = false;
 		document.getElementById(Results3).disabled = false;
+
+		document.getElementById("Stanford").disabled=false;  //  REACTIVATES BUTTON
+		document.getElementById("Harvard").disabled=false;  //  REACTIVATES BUTTON
+		document.getElementById("Yale").disabled=false;  //  REACTIVATES BUTTON
+		document.getElementById("UCLA").disabled=false;  //  REACTIVATES BUTTON
+		document.getElementById("Customize").disabled=false;  //  REACTIVATES BUTTON	
+
         
         var CustomizeButton = document.getElementById("Customize");
         
@@ -768,7 +798,7 @@
 			HighSchoolDataArray[52] = document.getElementById(HSDval).value;
 			HighSchoolDataArray[53] = document.getElementById(HSDmval).value;
 			HighSchoolDataArray[54] = document.getElementById(HSFval).value;
-
+			HighSchoolDataArray[55] = document.getElementById("honorsBump").checked;  //  STORES HONORS CHECKBOX STATUS			
 			
 			document.getElementById(Apr).disabled = true;
 			document.getElementById(Aph).disabled = true;
@@ -825,7 +855,8 @@
 			document.getElementById(HSDval).disabled = true;
 			document.getElementById(HSDmval).disabled = true;
 			document.getElementById(HSFval).disabled = true;
-
+			document.getElementById("honorsBump").disabled=true;  //  DEACTIVATES HONORS EXTRA POINT CHECKBOX
+			document.getElementById("Reset_HS_GPA_Weight_Defaults").disabled=true;  //  DEACTIVATES WEIGHT BUTTON
 			
 			document.getElementById(Apr).value = "";
 			document.getElementById(Aph).value =  ""
@@ -883,7 +914,8 @@
 			document.getElementById(HSDval).value = "1";
 			document.getElementById(HSDmval).value = "0.7";
 			document.getElementById(HSFval).value = "0";
-			
+
+			document.getElementById("honorsBump").checked=true;  //  RESTORES HONORS EXTRA POINT CHECKBOX AS CHECKED FOR EXAMPLE
 
 //			document.getElementById(PointsWarning1).innerHTML = '&nbsp';
 //			document.getElementById(PointsWarning2).innerHTML = '&nbsp';
@@ -972,8 +1004,8 @@
 			document.getElementById(HSDval).value = HighSchoolDataArray[52];
 			document.getElementById(HSDmval).value = HighSchoolDataArray[53];
 			document.getElementById(HSFval).value = HighSchoolDataArray[54];
-
-			
+			document.getElementById("honorsBump").checked = HighSchoolDataArray[55];  //  STORES HONORS CHECKBOX STATUS
+						
 			document.getElementById(Apr).disabled = false;
 			document.getElementById(Aph).disabled = false;
 			document.getElementById(Apa).disabled = false;
@@ -1029,6 +1061,10 @@
 			document.getElementById(HSDval).disabled = false;
 			document.getElementById(HSDmval).disabled = false;
 			document.getElementById(HSFval).disabled = false;			
+			
+			document.getElementById("honorsBump").disabled=false;  //  REACTIVATES HONORS EXTRA POINT CHECKBOX
+			document.getElementById("Reset_HS_GPA_Weight_Defaults").disabled=false;  //  REACTIVATES BUTTON
+			
 		}
 		
 
@@ -1692,7 +1728,7 @@ function ShowHide(buttonID,init_val,end_val, divId, divId2,TypePage, ExampleBtn,
 	</table>
 </br></br>
 <p>Click the button to reset the defaults.</p>
-<input type="button" value="Reset to Defaults" style="font-size: 100%; height: 30px; width: 165px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px" onclick="HighSchoolGPAWeights()">
+<input type="button" id="Reset_HS_GPA_Weight_Defaults" value="Reset to Defaults" style="font-size: 100%; height: 30px; width: 165px; font-family:arial;color:darkred; font-weight:bold; border-radius:15px/56px" onclick="HighSchoolGPAWeights()">
 <br>
 
 </form>	   

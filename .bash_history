@@ -879,3 +879,27 @@ git add .
 git commit
 git push heroku master
 git push -u origin master
+ls
+emacs header.php
+sudo cp -r . /var/ww
+sudo cp -r . /var/www
+emacs index.php
+sudo cp -r . /var/ww
+emacs index.php
+emacs header.php
+emacs index.php
+emacs header.php
+sudo cp -r . /var/ww
+emacs index.php
+emacs header.php
+sudo cp -r . /var/ww
+emacs finalCalc.php 
+ls
+emacs header.php
+ls
+emacs index.php
+emacs header.php
+sudo cp -r . /var/www
+git add . 
+git commit
+git push heroku master

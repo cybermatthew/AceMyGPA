@@ -113,6 +113,10 @@ a.button, a.button:link, a.button:visited{
     z-index:1;
 }
 
+#calcPageText a{
+    font-size:15px;
+
+}
 
 #error{
     z-index:2;
