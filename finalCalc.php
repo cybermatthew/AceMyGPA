@@ -565,7 +565,7 @@
 			<p id="PercentWarning2" size="100"> &nbsp </p>
             </div>
 
-			<br><b>Percent Desired in Course (after the final): </b><input type="text" id="desiredPercentFromPercentages" title="Enter the eventual percentage grade you want to achieve for the course following the final exam. (i.e.; Want to achieve a 92% for the entire course following the final exam)." size="6" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Course Percent Desired After Final: </b><input type="text" id="desiredPercentFromPercentages" title="Enter the eventual percentage grade you want to achieve for the course following the final exam. (i.e.; Want to achieve a 92% for the entire course following the final exam)." size="6" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
 			<a href="javascript: alert('Enter the eventual percentage grade you want to achieve for the course following the final exam. (i.e.; Want to achieve a 92% for the entire course following the final exam).');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PercentWarning3" size="100"> &nbsp </p>
@@ -627,13 +627,13 @@
 	
 		<form action="pointcalc.php" method="post">
             <div id=calcPageText>
-			<b>Total Points Possible Before Final: </b><input type="text" title="Enter the total points possible in the course before the final exam." id="totalPossible" size="8" style="text-align:center;">&nbsp&nbsp&nbsp&nbsp&nbsp
+			<b>Total Points Possible Before Final: </b><input type="text" title="Enter the total points possible in the course before the final exam." id="totalPossible" size="8" style="text-align:center;">&nbsp&nbsp
 			<a href="javascript: alert('Enter the total points possible in the course before the final exam.');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PointsWarning1"> &nbsp </p>
             </div>
 			
-			<br><b>Your Total Points Before Final: </b><input type="text" title="Enter your total points achieved in the course before the final exam." id="yourPoints" size="8" style="text-align:center;">&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Your Total Points Before Final: </b><input type="text" title="Enter your total points achieved in the course before the final exam." id="yourPoints" size="8" style="text-align:center;">&nbsp&nbsp
 			<a href="javascript: alert('Enter your total points achieved in the course before the final exam.');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PointsWarning2"> &nbsp </p>
@@ -642,13 +642,13 @@
             <br>
             <hr>
 
-			<br><b>Final Exam Points Value: </b><input type="text" title="Enter the total point value of the final exam." id="finalPoints" size="8" style="text-align:center;">&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Final Exam Points Value: </b><input type="text" title="Enter the total point value of the final exam." id="finalPoints" size="8" style="text-align:center;">&nbsp&nbsp
             <a href="javascript: alert('Enter the total point value of the final exam.');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PointsWarning3"> &nbsp </p>
             </div>
 			
-			<br><b>Percent Desired in Course (after the final): </b><input type="text" title="Enter the eventual percentage grade you want to achieve for the course following the final exam." id="desiredPercentFromPoints" size="8" style="text-align:center;">%&nbsp&nbsp&nbsp&nbsp&nbsp
+			<br><b>Course Percent Desired After Final: </b><input type="text" title="Enter the eventual percentage grade you want to achieve for the course following the final exam." id="desiredPercentFromPoints" size="8" style="text-align:center;">%&nbsp&nbsp
 			<a href="javascript: alert('Enter the eventual percentage grade you want to achieve for the course following the final exam.');">&nbsp?&nbsp</a>
             <div id=error>
 			<p id="PointsWarning4"> &nbsp </p>

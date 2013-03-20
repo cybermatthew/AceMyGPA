@@ -951,3 +951,10 @@ sudo cp -r . /var/www
 git add .
 git commit
 git push heroku master
+emacs header.php
+sudo cp -r . /var/www
+git add. 
+git add .
+git commit
+git push heroku master
+sudo cp -r . /var/www
