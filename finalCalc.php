@@ -578,7 +578,7 @@
 					onclick="Calculate_Necessary_Grade_On_Final_From_Percentages('currentPercent', 'finalPercent', 'desiredPercentFromPercentages', 'PercentageNumber_tmp', 'DetermineFeasibilityPercentage', 'PercentWarning1', 'PercentWarning2', 'PercentWarning3','TypeOfPageDescription','HiddenPercentExample')"></center>
 			<br>
 
-			<b>Necessary Grade Needed on the Final as a Percentage:</b>&nbsp	
+			<b>Necessary Grade Needed on Final as Percentage:</b>&nbsp	
 
 			<input type="text" name="DesiredPercentage1" id="PercentageNumber_tmp" size="6" style="text-align:center;" readonly="">%
             <br><center><p style="font-size: 17px"><i>Minimum "Percentage" needed on the final exam to achieve the "Percent Desired in Course."</i></p></center>
@@ -662,7 +662,7 @@
 			<br>
 
 
-			<b>Necessary Grade Needed on the Final in Points:</b>&nbsp
+			<b>Necessary Grade Needed on Final in Points:</b>&nbsp
 			<input type="text" name="DesiredPercentage2" id="PointsNumber_tmp" size="8	" style="text-align:center;" readonly="">
 			<br><center><p style="font-size: 17px"><i>Minimum "Point Value" needed on the final exam to achieve the "Percent Desired to Achieve in Course."</i></p></center>
 			<p id="DetermineFeasibilityPoints" size="150" style="color:red;font-size:20px;text-align:center;"> &nbsp </p>

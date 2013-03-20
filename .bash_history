@@ -919,3 +919,35 @@ git commit
 git push -u origin maste
 git push -u origin master
 git push heroku master
+emacs header.php
+sudo cp -r . /var/www
+git commig
+git commit
+git add .
+git commit
+git push heroku master
+emacs header.php
+sudo cp -r . /var/www
+emacs header.php
+sudo cp -r . /var/www
+emacs header.php
+sudo cp -r . /var/www
+git add .
+git commit
+git push heroku master
+sudo cp -r . /var/www
+git add .
+git commit
+sudo cp -r . /var/www
+git add .
+git commit
+git push heroku master
+sudo cp -r . /var/www
+git add .
+git commit
+git add .
+git commit
+sudo cp -r . /var/www
+git add .
+git commit
+git push heroku master
