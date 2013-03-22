@@ -983,3 +983,9 @@ git add .
 git commit
 git push -u origin master
 git push heroku master
+emacs index.php
+sudo cp -r . /var/www
+git add .
+git commit
+git push -u origin master
+git push heroku master
