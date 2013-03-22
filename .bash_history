@@ -958,3 +958,7 @@ git add .
 git commit
 git push heroku master
 sudo cp -r . /var/www
+git add .
+git commit
+git push heroku master
+git push -u origin master
